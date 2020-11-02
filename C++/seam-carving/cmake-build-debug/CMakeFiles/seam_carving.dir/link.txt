@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/seam_carving.dir/src/main.cpp.o CMakeFiles/seam_carving.dir/src/Image.cpp.o CMakeFiles/seam_carving.dir/src/SeamCarver.cpp.o  -o seam_carving 

@@ -1,0 +1,13 @@
+#!/bin/bash
+answer=""
+read string
+if [[ $string == "q" ]]
+then echo ""
+else 
+	while [[ $string != "q" ]] 
+		do
+		answer=$answer$string
+		read string
+	done
+fi	
+echo $answer

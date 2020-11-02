@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bbf6f200-6144-4724-82fe-b5ac40ce5f14" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YUvZlfCP1XqDXhSu9v1dxYlSvN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DZ5" />
+  </component>
+  <component name="RunManager" selected="Application.QueueToArrayTest">
+    <configuration name="ArrayQueueTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="queue.ArrayQueueTest" />
+      <module name="DZ3" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayQueueToArrayTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="queue.ArrayQueueToArrayTest" />
+      <module name="DZ3" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueueTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="queue.QueueTest" />
+      <module name="DZ3" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueueToArrayTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="queue.QueueToArrayTest" />
+      <module name="DZ3" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ArrayQueueTest" />
+      <item itemvalue="Application.ArrayQueueToArrayTest" />
+      <item itemvalue="Application.QueueTest" />
+      <item itemvalue="Application.QueueToArrayTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.QueueToArrayTest" />
+        <item itemvalue="Application.QueueTest" />
+        <item itemvalue="Application.ArrayQueueToArrayTest" />
+        <item itemvalue="Application.ArrayQueueTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bbf6f200-6144-4724-82fe-b5ac40ce5f14" name="Default Changelist" comment="" />
+      <created>1583010044731</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583010044731</updated>
+      <workItem from="1583010047653" duration="2861000" />
+      <workItem from="1583015088595" duration="2381000" />
+      <workItem from="1583059646620" duration="4669000" />
+      <workItem from="1583080616000" duration="1496000" />
+      <workItem from="1583087445756" duration="289000" />
+      <workItem from="1583087753234" duration="4445000" />
+      <workItem from="1583094021262" duration="1934000" />
+      <workItem from="1583096470075" duration="50000" />
+      <workItem from="1583096589308" duration="76000" />
+      <workItem from="1583102583381" duration="50000" />
+      <workItem from="1583102729181" duration="501000" />
+      <workItem from="1583105167503" duration="251000" />
+      <workItem from="1583106046822" duration="1582000" />
+      <workItem from="1583114744811" duration="44000" />
+      <workItem from="1583169828546" duration="40000" />
+      <workItem from="1583190380767" duration="1543000" />
+      <workItem from="1583230727648" duration="27000" />
+      <workItem from="1583237918912" duration="811000" />
+      <workItem from="1583243842580" duration="50000" />
+      <workItem from="1583243899331" duration="52000" />
+      <workItem from="1583243956785" duration="3000" />
+      <workItem from="1583243965372" duration="2099000" />
+      <workItem from="1583350657027" duration="39000" />
+      <workItem from="1583353712538" duration="463000" />
+      <workItem from="1583687179051" duration="22000" />
+      <workItem from="1584189302213" duration="13000" />
+      <workItem from="1584302410290" duration="14000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583238621905">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1583238621905" />
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1583090417244">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1583090417244" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1584302422412">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1584302422412" />
+    <state width="1493" height="269" key="GridCell.Tab.0.bottom" timestamp="1584189314148">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="269" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584189314148" />
+    <state width="1493" height="269" key="GridCell.Tab.0.center" timestamp="1584189314148">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="269" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584189314148" />
+    <state width="1493" height="269" key="GridCell.Tab.0.left" timestamp="1584189314147">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="269" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584189314147" />
+    <state width="1493" height="269" key="GridCell.Tab.0.right" timestamp="1584189314148">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="269" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584189314148" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1583017472728">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583017472728" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1583017472728">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1583017472728" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1583017472727">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1583017472727" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1583017472728">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583017472728" />
+    <state x="499" y="178" key="extract.method.dialog" timestamp="1583061326545">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="178" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1583061326545" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1583237940057">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1583237940057" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1583012622682">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1583012622682" />
+  </component>
+</project>

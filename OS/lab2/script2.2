@@ -1,0 +1,3 @@
+#!/bin/bash
+touch solve2.2
+ps -eF | awk '$11 ~ /^\/sbin\// {print $2}' > solve2.2

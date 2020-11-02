@@ -1,0 +1,3 @@
+/media/hdd/github/Cplus/percolation/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/media/hdd/github/Cplus/percolation/cmake-build-debug/CMakeFiles/edit_cache.dir
+/media/hdd/github/Cplus/percolation/cmake-build-debug/CMakeFiles/percolation.dir

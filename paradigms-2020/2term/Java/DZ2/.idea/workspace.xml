@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="14768fa2-e86d-4359-ab88-60b426b29144" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Xkonp9RT2U6PQDWL8ythMLMrRB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DZ3" />
+  </component>
+  <component name="RunManager" selected="Application.BinarySearchSpanTest">
+    <configuration name="BinarySearch (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="search.BinarySearch" />
+      <module name="DZ14" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BinarySearch" />
+      <module name="DZ14" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinarySearchSpanTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="search.BinarySearchSpanTest" />
+      <module name="DZ14" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinarySearchTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="search.BinarySearchTest" />
+      <module name="DZ14" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="SOCKET" />
+      <setting name="configType" value="SPECIFY" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BinarySearchSpanTest" />
+        <item itemvalue="Application.BinarySearchTest" />
+        <item itemvalue="Application.BinarySearch (1)" />
+        <item itemvalue="Application.BinarySearch" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="14768fa2-e86d-4359-ab88-60b426b29144" name="Default Changelist" comment="" />
+      <created>1581599622106</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581599622106</updated>
+      <workItem from="1581599624564" duration="78000" />
+      <workItem from="1581958079240" duration="3671000" />
+      <workItem from="1581974997272" duration="838000" />
+      <workItem from="1582020646661" duration="1568000" />
+      <workItem from="1582028006631" duration="494000" />
+      <workItem from="1582030301466" duration="7441000" />
+      <workItem from="1582058322422" duration="333000" />
+      <workItem from="1582132052493" duration="12000" />
+      <workItem from="1582550182960" duration="1388000" />
+      <workItem from="1582552013595" duration="384000" />
+      <workItem from="1582635748871" duration="1911000" />
+      <workItem from="1583010089836" duration="6000" />
+      <workItem from="1583081643377" duration="1000" />
+      <workItem from="1583169870379" duration="76000" />
+      <workItem from="1583230537897" duration="165000" />
+      <workItem from="1583230755634" duration="155000" />
+      <workItem from="1583230955972" duration="70000" />
+      <workItem from="1583231145937" duration="228000" />
+      <workItem from="1583237853583" duration="64000" />
+      <workItem from="1583238731933" duration="2000" />
+      <workItem from="1583243662874" duration="902000" />
+      <workItem from="1591794136514" duration="17000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1583243804157">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583243804157" />
+    <state width="1493" height="525" key="GridCell.Tab.0.bottom" timestamp="1583244826706">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="525" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583244826706" />
+    <state width="1493" height="525" key="GridCell.Tab.0.center" timestamp="1583244826706">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="525" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583244826706" />
+    <state width="1493" height="525" key="GridCell.Tab.0.left" timestamp="1583244826705">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="525" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583244826705" />
+    <state width="1493" height="525" key="GridCell.Tab.0.right" timestamp="1583244826706">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="525" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583244826706" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1582022323757">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1582022323757" />
+    <state x="425" y="66" width="670" height="676" key="search.everywhere.popup" timestamp="1581959876766">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="66" width="670" height="676" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1581959876766" />
+  </component>
+</project>

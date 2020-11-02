@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/percolation.dir/src/main.cpp.o CMakeFiles/percolation.dir/src/Percolation.cpp.o CMakeFiles/percolation.dir/src/PercolationStats.cpp.o  -o percolation 

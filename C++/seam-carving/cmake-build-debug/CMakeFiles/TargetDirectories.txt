@@ -1,0 +1,3 @@
+/media/hdd/github/seam-carving/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/media/hdd/github/seam-carving/cmake-build-debug/CMakeFiles/edit_cache.dir
+/media/hdd/github/seam-carving/cmake-build-debug/CMakeFiles/seam_carving.dir

@@ -1,0 +1,17 @@
+#!/bin/bash
+answer=""
+max=0
+for pid in $(ps -A -o pid --no-header) 
+do
+file=/proc/$pid/status
+if [[ -f $file ]] 
+then
+	current=$(grep VmSize $file | awk '{print $2}')
+	if [[ $current -gt $max ]] 
+	then	
+		max=$current
+		answer=$pid
+	fi
+fi
+done
+echo $answer $max

@@ -1,0 +1,17 @@
+#!/bin/bash
+answer=""
+for pid in $(ps -A -o pid --no-header) 
+do
+file1=/proc/$pid/status
+file2=/proc/$pid/sched
+if [[ -f $file1 ]] 
+	then
+	ppid=$(grep PPid $file1 | awk '{print $2}')
+	a=$(grep se.sum_exec_runtime $file2 | awk '{print $3}')
+	b=$(grep nr_switches $file2 | awk '{print $3}')
+	art=$(echo $a $b | awk '{print $1/$2}')
+	echo 'ProcessID= ' $pid ' : ' 'Parent_ProcessID= ' $ppid ' : ' 'Average_Running_Time= ' $art >> temp
+fi	
+done
+cat temp | sort -n -k5  > solve2.4
+rm temp

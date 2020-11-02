@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8b738ca1-bac8-49bf-94e7-26cc2b8a4ce8" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1bfxtfIjlDz8dBabA4TZSSw1B60" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="SOCKET" />
+      <setting name="configType" value="SPECIFY" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="expression" type="ClojureScriptRunConfiguration" factoryName="Clojure Script" temporary="true">
+      <module name="dz11" />
+      <setting name="path" value="$PROJECT_DIR$/src/dz11/expression.clj" />
+      <setting name="namespace" value="" />
+      <setting name="execution" value="INTELLIJ" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="$PROJECT_DIR$/src/dz11" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Clojure Application.expression" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b738ca1-bac8-49bf-94e7-26cc2b8a4ce8" name="Default Changelist" comment="" />
+      <created>1589037164104</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589037164104</updated>
+      <workItem from="1589037167490" duration="374000" />
+      <workItem from="1589674921020" duration="71000" />
+      <workItem from="1589708703412" duration="2174000" />
+      <workItem from="1589712516993" duration="268000" />
+      <workItem from="1589712863422" duration="91000" />
+      <workItem from="1589713186320" duration="1367000" />
+      <workItem from="1589716797850" duration="205000" />
+      <workItem from="1589717740485" duration="357000" />
+      <workItem from="1589786859676" duration="174000" />
+      <workItem from="1589787518370" duration="166000" />
+      <workItem from="1589787785057" duration="413000" />
+      <workItem from="1589983514046" duration="10000" />
+      <workItem from="1589985716706" duration="110000" />
+      <workItem from="1589986832675" duration="9000" />
+      <workItem from="1589987962966" duration="40000" />
+      <workItem from="1590148605114" duration="38000" />
+      <workItem from="1590152965058" duration="449000" />
+      <workItem from="1590158013956" duration="38000" />
+      <workItem from="1590243924197" duration="45000" />
+      <workItem from="1590244018928" duration="422000" />
+      <workItem from="1590264470026" duration="36000" />
+      <workItem from="1590319291784" duration="881000" />
+      <workItem from="1590324782006" duration="855000" />
+      <workItem from="1590327914767" duration="72000" />
+      <workItem from="1590349198318" duration="368000" />
+      <workItem from="1590411236198" duration="1272000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1589037541878">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589037541878" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1589037541878">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589037541878" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1589037541877">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589037541877" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1589037541878">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589037541878" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1589710434744">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1589710434744" />
+  </component>
+</project>

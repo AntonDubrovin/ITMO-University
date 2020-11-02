@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/8_puzzle.dir/src/main.cpp.o CMakeFiles/8_puzzle.dir/src/board.cpp.o CMakeFiles/8_puzzle.dir/src/solver.cpp.o  -o 8_puzzle 

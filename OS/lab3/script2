@@ -1,0 +1,3 @@
+#!/bin/bash
+at now +2 minutes -f ./script1
+tail -n 0 -f ~/report &

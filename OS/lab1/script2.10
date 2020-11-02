@@ -1,0 +1,2 @@
+#!/bin/bash 
+man bash | grep -i -o "[A-Z0-9]\{4,\}" | tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -r -n | head -3

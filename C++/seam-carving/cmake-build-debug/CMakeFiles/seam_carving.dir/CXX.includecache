@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/hdd/github/seam-carving/include/Image.h
+iostream
+-
+vector
+-
+
+/media/hdd/github/seam-carving/include/SeamCarver.h
+Image.h
+/media/hdd/github/seam-carving/include/Image.h
+
+/media/hdd/github/seam-carving/src/Image.cpp
+../include/Image.h
+/media/hdd/github/seam-carving/include/Image.h
+
+/media/hdd/github/seam-carving/src/SeamCarver.cpp
+../include/SeamCarver.h
+/media/hdd/github/seam-carving/include/SeamCarver.h
+algorithm
+-
+cmath
+-
+float.h
+-
+
+/media/hdd/github/seam-carving/src/main.cpp
+iostream
+-
+fstream
+-
+../include/Image.h
+/media/hdd/github/seam-carving/include/Image.h
+../include/SeamCarver.h
+/media/hdd/github/seam-carving/include/SeamCarver.h
+

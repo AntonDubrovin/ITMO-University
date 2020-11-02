@@ -1,0 +1,34 @@
+#!/bin/bash
+res=1
+op="+"
+(tail -f channel) | while true;
+do
+	read line;
+	case $line in
+		"QUIT")
+			echo "The end"
+			kill $(cat pids)
+			exit
+			;;
+		"+")
+			op="+"
+			;;
+		"*")
+		 	op="*"
+	 		;;
+	 		
+	 		
+ 		[0-9]*)
+ 			if [[ $op == "+" ]]
+ 			then
+ 				let res=$res+$line
+			else
+				let res=$res\*$line
+			fi
+			echo $res
+			;;
+		*)
+			echo "Invalid operation" > stderr
+			;;
+	esac
+done

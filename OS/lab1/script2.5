@@ -1,0 +1,3 @@
+#!/bin/bash
+touch info.log
+awk '$6=="<info>"' /var/log/syslog > info.log

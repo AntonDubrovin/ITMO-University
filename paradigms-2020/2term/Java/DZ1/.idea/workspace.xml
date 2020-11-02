@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="efbaffe2-80ac-4470-bd6b-38e1ff043268" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Xitzeh8xdWKRJdsSb8krDAex2V" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Application.ExceptionsPowLogTest">
+    <configuration name="ExceptionsPowLog2Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="expression.exceptions.ExceptionsPowLog2Test" />
+      <module name="DZ13" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="expression.exceptions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExceptionsPowLogTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="expression.exceptions.ExceptionsPowLogTest" />
+      <module name="DZ13" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="expression.exceptions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExceptionsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="expression.exceptions.ExceptionsTest" />
+      <module name="DZ13" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="expression.exceptions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParserAbsSquareTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="expression.parser.ParserAbsSquareTest" />
+      <module name="DZ13" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="expression.parser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParserShiftsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="expression.parser.ParserShiftsTest" />
+      <module name="DZ13" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="expression.parser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ExceptionsPowLog2Test" />
+      <item itemvalue="Application.ExceptionsTest" />
+      <item itemvalue="Application.ExceptionsPowLogTest" />
+      <item itemvalue="Application.ParserAbsSquareTest" />
+      <item itemvalue="Application.ParserShiftsTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ExceptionsPowLogTest" />
+        <item itemvalue="Application.ParserShiftsTest" />
+        <item itemvalue="Application.ParserAbsSquareTest" />
+        <item itemvalue="Application.ExceptionsPowLog2Test" />
+        <item itemvalue="Application.ExceptionsTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="efbaffe2-80ac-4470-bd6b-38e1ff043268" name="Default Changelist" comment="" />
+      <created>1581541006286</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581541006286</updated>
+      <workItem from="1581541008463" duration="4000" />
+      <workItem from="1581541031337" duration="11000" />
+      <workItem from="1581541069959" duration="225000" />
+      <workItem from="1581541333478" duration="6000" />
+      <workItem from="1581541778057" duration="67000" />
+      <workItem from="1581598333917" duration="1028000" />
+      <workItem from="1581599507139" duration="64000" />
+      <workItem from="1581599607589" duration="96000" />
+      <workItem from="1581610226815" duration="17786000" />
+      <workItem from="1581807083772" duration="392000" />
+      <workItem from="1581958031580" duration="46000" />
+      <workItem from="1581975666433" duration="168000" />
+      <workItem from="1582022137680" duration="169000" />
+      <workItem from="1582028025670" duration="2038000" />
+      <workItem from="1582030210464" duration="205000" />
+      <workItem from="1582033076861" duration="1410000" />
+      <workItem from="1582035528735" duration="99000" />
+      <workItem from="1582058440563" duration="157000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581620706642">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1581620706642" />
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1581613261691">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1581613261691" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1582030297837">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582030297837" />
+    <state width="1493" height="655" key="GridCell.Tab.0.bottom" timestamp="1582058596880">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="655" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582058596880" />
+    <state width="1493" height="655" key="GridCell.Tab.0.center" timestamp="1582058596879">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="655" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582058596879" />
+    <state width="1493" height="655" key="GridCell.Tab.0.left" timestamp="1582058596879">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="655" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582058596879" />
+    <state width="1493" height="655" key="GridCell.Tab.0.right" timestamp="1582058596880">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="655" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582058596880" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1581673954246">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581673954246" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1581673954246">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1581673954246" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1581673954246">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1581673954246" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1581673954246">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1581673954246" />
+    <state x="209" y="32" key="new project wizard" timestamp="1581599622019">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="32" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1581599622019" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1582034319012">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1582034319012" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1582035247972">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582035247972" />
+  </component>
+</project>

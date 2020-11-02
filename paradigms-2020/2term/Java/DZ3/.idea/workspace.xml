@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bbf6f200-6144-4724-82fe-b5ac40ce5f14" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YUvZlfCP1XqDXhSu9v1dxYlSvN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Application.ArrayQueueToArrayTest">
+    <configuration name="ArrayQueueTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="queue.ArrayQueueTest" />
+      <module name="DZ3" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayQueueToArrayTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="queue.ArrayQueueToArrayTest" />
+      <module name="DZ3" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="SOCKET" />
+      <setting name="configType" value="SPECIFY" />
+      <setting name="fixLineNumbers" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.ArrayQueueTest" />
+      <item itemvalue="Application.ArrayQueueToArrayTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ArrayQueueToArrayTest" />
+        <item itemvalue="Application.ArrayQueueTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bbf6f200-6144-4724-82fe-b5ac40ce5f14" name="Default Changelist" comment="" />
+      <created>1583010044731</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583010044731</updated>
+      <workItem from="1583010047653" duration="2861000" />
+      <workItem from="1583015088595" duration="2381000" />
+      <workItem from="1583059646620" duration="4669000" />
+      <workItem from="1583080616000" duration="1496000" />
+      <workItem from="1583087736132" duration="16000" />
+      <workItem from="1583089182808" duration="72000" />
+      <workItem from="1583107632910" duration="542000" />
+      <workItem from="1583113335967" duration="65000" />
+      <workItem from="1583114735137" duration="8000" />
+      <workItem from="1583169947638" duration="244000" />
+      <workItem from="1583181862285" duration="4343000" />
+      <workItem from="1583189353747" duration="25000" />
+      <workItem from="1583190360854" duration="19000" />
+      <workItem from="1583190394262" duration="64000" />
+      <workItem from="1583190696991" duration="44000" />
+      <workItem from="1583192259452" duration="106000" />
+      <workItem from="1583192475061" duration="26000" />
+      <workItem from="1583230520951" duration="15000" />
+      <workItem from="1583230704218" duration="22000" />
+      <workItem from="1583238686095" duration="15000" />
+      <workItem from="1583243807627" duration="940000" />
+      <workItem from="1583245322790" duration="1467000" />
+      <workItem from="1583687227341" duration="33000" />
+      <workItem from="1591794182413" duration="43000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583061196033">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1583061196033" />
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1583060131795">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1583060131795" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1583246003298">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583246003298" />
+    <state width="1493" height="269" key="GridCell.Tab.0.bottom" timestamp="1583246790549">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="269" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583246790549" />
+    <state width="1493" height="269" key="GridCell.Tab.0.center" timestamp="1583246790549">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="269" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583246790549" />
+    <state width="1493" height="269" key="GridCell.Tab.0.left" timestamp="1583246790548">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="269" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583246790548" />
+    <state width="1493" height="269" key="GridCell.Tab.0.right" timestamp="1583246790549">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="269" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583246790549" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1583017472728">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583017472728" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1583017472728">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1583017472728" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1583017472727">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1583017472727" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1583017472728">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1583017472728" />
+    <state x="499" y="178" key="extract.method.dialog" timestamp="1583061326545">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="178" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1583061326545" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1583081960520">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1583081960520" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1583012622682">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1583012622682" />
+  </component>
+</project>

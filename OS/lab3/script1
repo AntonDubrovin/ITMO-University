@@ -1,0 +1,10 @@
+#!/bin/bash
+successfulBehavior="catalog test was created successfully"
+messagePingProblem="can't connect to host"
+newDir=~/test
+report=~/report
+rm -r ~/test
+host="www.net_nikogo.ru"
+testfile=$newDir"/"$(date +"%F_%R") 
+mkdir $newDir && { echo $successfulBehavior > $report; touch $testfile; } 
+ping -c 1 www.net_nikogo.ru || echo $messagePingProblem >> $report

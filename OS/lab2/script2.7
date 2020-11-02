@@ -1,0 +1,29 @@
+#!/bin/bash
+for pid in $(ps -A -o pid --no-header) 
+do
+file=/proc/$pid/io
+if [[ -f $file ]]
+	then
+	read_bytes=$(grep read_bytes $file | awk '{print $2}')
+	echo $pid $read_bytes >> temp1
+fi
+done
+sudo rm solve2.7
+cat temp1
+echo "Sleeping for 60 seconds…"
+sleep 60
+echo "Completed"
+while read string 
+do 
+pid=$(echo $string | awk '{print $1}')
+old_read_bytes=$(echo $string | awk '{print $2}')
+file=/proc/$pid/io
+if [[ -f $file ]] 
+	then
+	new_read_bytes=$(grep read_bytes $file |awk '{print $2}')
+	echo $pid $(echo $new_read_bytes $old_read_bytes | awk '{print $1-$2}') >> temp2
+fi
+done < temp1
+sudo sort -n -k2 temp2 | tail -n 3  > solve2.7
+sudo rm temp1
+sudo rm temp2	

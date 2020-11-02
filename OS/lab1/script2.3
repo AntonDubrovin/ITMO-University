@@ -1,0 +1,18 @@
+#!/bin/bash
+echo "1) Start nano"
+echo "2) Start vi"
+echo "3) Start links"
+echo "4) Exit"
+read operation
+case $operation in
+1 )
+	/usr/bin/nano;;
+2 )
+	/usr/bin/vi;;
+3 )
+	/usr/bin/links;;
+4 )
+	exit 0;;
+* )
+	echo "Неверный ввод.";;
+esac

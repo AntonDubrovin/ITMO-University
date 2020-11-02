@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "*/5 * * 11 0 script1" | crontab &

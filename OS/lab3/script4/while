@@ -1,0 +1,20 @@
+#!/bin/bash
+x=1
+MODE="run"
+usr1()
+{
+	MODE="stop"
+}
+trap 'usr1' USR1
+while true;
+do
+	case $MODE in
+		"run")
+			let x=$x*2
+			;;
+		"stop")
+			sudo kill $$
+			;;
+	esac
+	sleep 1
+done

@@ -1,0 +1,3 @@
+/media/hdd/github/8-puzzle/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/media/hdd/github/8-puzzle/cmake-build-debug/CMakeFiles/edit_cache.dir
+/media/hdd/github/8-puzzle/cmake-build-debug/CMakeFiles/8_puzzle.dir

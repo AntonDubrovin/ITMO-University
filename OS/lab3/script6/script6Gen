@@ -1,0 +1,17 @@
+#!/bin/bash
+while true;
+do
+	read line
+	case $line in
+	"TERM")
+		kill -SIGTERM $(cat pids)
+		exit
+		;;
+	"+")
+		kill -USR1 $(cat pids)
+		;;
+	"*")
+		kill -USR2 $(cat pids)
+		;;
+	esac
+done
