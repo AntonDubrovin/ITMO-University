@@ -1,0 +1,8 @@
+/media/anton/windows10/University/Web/lesson5/src/main/java/ru/itmo/wp/web/StaticFilter.java
+/media/anton/windows10/University/Web/lesson5/src/main/java/ru/itmo/wp/web/page/misc/HelpPage.java
+/media/anton/windows10/University/Web/lesson5/src/main/java/ru/itmo/wp/web/page/NotFoundPage.java
+/media/anton/windows10/University/Web/lesson5/src/main/java/ru/itmo/wp/web/exception/NotFoundException.java
+/media/anton/windows10/University/Web/lesson5/src/main/java/ru/itmo/wp/web/page/TicTacToePage.java
+/media/anton/windows10/University/Web/lesson5/src/main/java/ru/itmo/wp/web/FrontServlet.java
+/media/anton/windows10/University/Web/lesson5/src/main/java/ru/itmo/wp/web/page/IndexPage.java
+/media/anton/windows10/University/Web/lesson5/src/main/java/ru/itmo/wp/web/exception/RedirectException.java

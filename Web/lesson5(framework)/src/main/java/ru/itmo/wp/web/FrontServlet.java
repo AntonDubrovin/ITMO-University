@@ -1,6 +1,7 @@
 package ru.itmo.wp.web;
 
 import com.google.common.base.Strings;
+import com.google.common.collect.Sets;
 import freemarker.template.*;
 import ru.itmo.wp.web.exception.NotFoundException;
 import ru.itmo.wp.web.exception.RedirectException;
@@ -17,15 +18,14 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class FrontServlet extends HttpServlet {
     private static final String BASE_PACKAGE = FrontServlet.class.getPackage().getName() + ".page";
     private static final String DEFAULT_ACTION = "action";
+    private static final String LANG = "language";
+    private static final Set<Class<?>> PARAMETER_TYPES = Sets.newHashSet(Map.class, HttpServletRequest.class);
 
     private Configuration sourceConfiguration;
     private Configuration targetConfiguration;
@@ -83,10 +83,16 @@ public class FrontServlet extends HttpServlet {
     }
 
     private void process(Route route, HttpServletRequest request, HttpServletResponse response) throws NotFoundException, ServletException, IOException {
-        // 2 task
-        HttpSession session = request.getSession();
-        session.setAttribute("lang", request.getParameter("lang"));
         Class<?> pageClass;
+        HttpSession session = request.getSession();
+
+        for (Map.Entry<String, String[]> e : request.getParameterMap().entrySet()) {
+            if (e.getKey().equals("lang") && (e.getValue()[0].equals("ru") || e.getValue()[0].equals("en"))) {
+                //fix 2 task: устанавливаем язык в сессию
+                session.setAttribute(LANG, e.getValue()[0]);
+            }
+        }
+
         try {
             pageClass = Class.forName(route.getClassName());
         } catch (ClassNotFoundException e) {
@@ -95,10 +101,20 @@ public class FrontServlet extends HttpServlet {
 
         Method method = null;
         for (Class<?> clazz = pageClass; method == null && clazz != null; clazz = clazz.getSuperclass()) {
-            // 1 task
-            for (Method curMethod : clazz.getDeclaredMethods()) {
-                if (curMethod.getName().equals(Route.newIndexRoute().getAction())) {
+            Method[] methods = clazz.getDeclaredMethods();
+            for (Method curMethod : methods) {
+                if (curMethod.getName().equals(route.getAction())) {
                     method = curMethod;
+                    // fix 1 task: смотрим, совпадают-ли параметры найденного по названию метода с нужным методом
+                    boolean isRealMethod = true;
+                    for (Class<?> parameterType : method.getParameterTypes()) {
+                        if (!PARAMETER_TYPES.contains(parameterType)) {
+                            isRealMethod = false;
+                        }
+                    }
+                    if (isRealMethod) {
+                        break;
+                    }
                 }
             }
         }
@@ -118,14 +134,16 @@ public class FrontServlet extends HttpServlet {
         Map<String, Object> view = new HashMap<>();
         method.setAccessible(true);
         try {
-            // 1 tasks
-            Map<Class<?>, Object> map = Map.of(HttpServlet.class, request, Map.class, view);
-            Object[] parameterCount = new Object[method.getParameterCount()];
             Class<?>[] parameterTypes = method.getParameterTypes();
+            Object[] parameters = new Object[parameterTypes.length];
             for (int i = 0; i < parameterTypes.length; i++) {
-                parameterCount[i] = map.get(parameterTypes[i]);
+                if (parameterTypes[i] == Map.class) {
+                    parameters[i] = view;
+                }
+                if (parameterTypes[i] == HttpServletRequest.class)
+                    parameters[i] = request;
             }
-            method.invoke(page, parameterCount);
+            method.invoke(page, parameters);
         } catch (IllegalAccessException e) {
             throw new ServletException("Can't invoke action method [pageClass=" + pageClass + ", method=" + method + "]");
         } catch (InvocationTargetException e) {
@@ -138,17 +156,20 @@ public class FrontServlet extends HttpServlet {
                 throw new ServletException("Can't invoke action method [pageClass=" + pageClass + ", method=" + method + "]", cause);
             }
         }
-        // 2 task
+
         Template template;
-        if (session.getAttribute("lang") == null) {
+        if (session.getAttribute(LANG) == null)
             template = newTemplate(pageClass.getSimpleName() + ".ftlh");
-        } else {
+        else {
             try {
-                template = newTemplate(pageClass.getSimpleName() + "_" + session.getAttribute("lang") + ".ftlh");
+                // берём язык из сессии
+                String lang = (String) session.getAttribute(LANG);
+                template = newTemplate(pageClass.getSimpleName() + "_" + lang + ".ftlh");
             } catch (ServletException e) {
                 template = newTemplate(pageClass.getSimpleName() + ".ftlh");
             }
         }
+
         response.setContentType("text/html");
         response.setCharacterEncoding(StandardCharsets.UTF_8.name());
         try {
