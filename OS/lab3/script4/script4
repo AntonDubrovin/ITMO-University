@@ -1,11 +1,7 @@
 #!/bin/bash
-nice -n 8 ./while &
-nice -n 0 ./while &
-nice -n 1 ./while &
-touch tmp
-top -u anton -b -n 1 | grep while > tmp
-pid1=$(awk '$4==8 {print $1}' tmp)
-pid3=$(awk '$4==1 {print $1}' tmp)
-rm tmp
-#cpulimit -p $pid1 -l 10 -b
-sudo kill -USR1 $pid3 &
+./while1 &
+./while2 &
+./while3 &
+sleep 5
+kill $(cat pid3) &
+cpulimit -p $(cat pid1) -l 10 -b
