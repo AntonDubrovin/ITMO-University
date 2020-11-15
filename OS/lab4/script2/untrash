@@ -1,0 +1,53 @@
+#!/bin/bash
+
+if [[ $# -ne 1 ]] 
+then  
+	echo "No correct input"
+	exit 1
+fi
+
+currentFile=$1
+trashLog=~/trash.log
+trash=$(cat $trashLog)
+
+for string in $trash
+do
+	if [[ $string =~ $currentFile ]]
+	then 
+		echo "Do you want to restore the $string file?"
+		echo "Type yes/no"
+		read answer
+		
+		if [[ $answer == "yes" ]] 
+		then
+			cd ~/trash
+			fileInTrash="$( echo "$string" | cut -d "=" -f 2 )"
+			echo "fileInTrash:" $fileInTrash
+			mycd="$(echo "$string" | cut -d "=" -f 1 | grep -oP ".*/")"
+			echo "mycd:" $mycd
+			if ! [[ -d $mycd ]]
+			then
+				ln -P $fileInTrash ~/$currentFile
+				rm $fileInTrash
+			else 
+				if ! [[ -f $mycd$currentFile ]] 
+				then
+					ln -P "$fileInTrash" "$mycd$currentFile"
+					rm "$fileInTrash"
+				else 
+					echo "This file already exists."
+					echo "Do you want to rename and restore?"
+					echo "Type yes/no"
+					read answer
+					if [[ $answer == "yes" ]]
+					then 
+						read newName
+						ln -P $fileInTrash $mycd$newName
+						rm $fileInTrash
+					fi	
+				fi	
+			fi	
+		fi		
+	else echo $string >> $trashLog
+	fi
+done

@@ -1,0 +1,31 @@
+#!/bin/bash
+
+if [[ $# -ne 1 ]] 
+then
+	echo "No correct input"
+	exit 1
+fi 		
+
+currentFile=$1
+hiddenDir=~/trash
+
+if ! [[ -d $hiddenDir ]] 
+then
+	mkdir $hiddenDir
+fi 
+
+if ! [[ -f $1 ]] 
+then 
+	echo "Not file"
+	exit 1
+fi
+
+currentLink=$(date +"%F...%T")
+echo $currentLink
+
+ln -P $currentFile "$hiddenDir/$currentLink"
+rm $currentFile	
+
+currentDir=$(pwd) 
+echo $currentDir
+echo "$currentDir/$currentFile=$currentLink" >> ~/trash.log
