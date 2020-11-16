@@ -1,3 +1,4 @@
+<#-- @ftlvariable name="email" type="java.lang.String" -->
 <#-- @ftlvariable name="passwordConfirmation" type="java.lang.String" -->
 <#-- @ftlvariable name="login" type="java.lang.String" -->
 <#-- @ftlvariable name="password" type="java.lang.String" -->
@@ -10,6 +11,14 @@
         <div class="body">
             <form method="post" action="">
                 <input type="hidden" name="action" value="register"/>
+                <div class="field">
+                    <div class="name">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="value">
+                        <input id="email" name="email" type="email" value="${email!}"/>
+                    </div>
+                </div>
                 <div class="field">
                     <div class="name">
                         <label for="login">Login</label>

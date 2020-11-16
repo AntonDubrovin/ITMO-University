@@ -10,12 +10,22 @@ import ru.itmo.wp.model.repository.impl.UserRepositoryImpl;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 
-/** @noinspection UnstableApiUsage*/
+/**
+ * @noinspection UnstableApiUsage
+ */
 public class UserService {
     private final UserRepository userRepository = new UserRepositoryImpl();
     private static final String PASSWORD_SALT = "177d4b5f2e4f4edafa7404533973c04c513ac619";
 
     public void validateRegistration(User user, String password, String passwordConfirmation) throws ValidationException {
+        if (!user.getEmail().contains("@")) {
+            throw new ValidationException("Please enter correct email");
+        }
+
+        if (userRepository.findByEmail(user.getEmail()) != null) {
+            throw new ValidationException("Email is already in use");
+        }
+
         if (Strings.isNullOrEmpty(user.getLogin())) {
             throw new ValidationException("Login is required");
         }
@@ -57,8 +67,8 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    public void validateEnter(String login, String password) throws ValidationException {
-        User user = userRepository.findByLoginAndPasswordSha(login, getPasswordSha(password));
+    public void validateEnter(String loginOrEmail, String password) throws ValidationException {
+        User user = userRepository.findByLoginAndPasswordSha(loginOrEmail, getPasswordSha(password));
         if (user == null) {
             throw new ValidationException("Invalid login or password");
         }

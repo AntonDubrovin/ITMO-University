@@ -1,4 +1,4 @@
-<#-- @ftlvariable name="login" type="java.lang.String" -->
+<#-- @ftlvariable name="loginOrEmail" type="java.lang.String" -->
 <#-- @ftlvariable name="password" type="java.lang.String" -->
 <#-- @ftlvariable name="error" type="java.lang.String" -->
 <#import "commons.ftlh" as c>
@@ -11,10 +11,10 @@
                 <input type="hidden" name="action" value="enter"/>
                 <div class="field">
                     <div class="name">
-                        <label for="login">Login</label>
+                        <label for="loginOrEmail">Login/Email</label>
                     </div>
                     <div class="value">
-                        <input id="login" name="login" value="${login!}"/>
+                        <input id="loginOrEmail" name="loginOrEmail" value="${loginOrEmail!}"/>
                     </div>
                 </div>
                 <div class="field">

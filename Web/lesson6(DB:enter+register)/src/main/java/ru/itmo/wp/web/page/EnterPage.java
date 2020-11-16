@@ -17,11 +17,11 @@ public class EnterPage {
     }
 
     private void enter(HttpServletRequest request, Map<String, Object> view) throws ValidationException {
-        String login = request.getParameter("login");
+        String loginOrEmail = request.getParameter("loginOrEmail");
         String password = request.getParameter("password");
 
-        userService.validateEnter(login, password);
-        User user = userService.findByLoginAndPassword(login, password);
+        userService.validateEnter(loginOrEmail, password);
+        User user = userService.findByLoginAndPassword(loginOrEmail, password);
         request.getSession().setAttribute("user", user);
         request.getSession().setAttribute("message", "Hello, " + user.getLogin());
 

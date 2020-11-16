@@ -19,6 +19,7 @@ public class RegisterPage {
     private void register(HttpServletRequest request, Map<String, Object> view) throws ValidationException {
         User user = new User();
         user.setLogin(request.getParameter("login"));
+        user.setEmail(request.getParameter("email"));
         String password = request.getParameter("password");
         String passwordConfirmation = request.getParameter("passwordConfirmation");
 
