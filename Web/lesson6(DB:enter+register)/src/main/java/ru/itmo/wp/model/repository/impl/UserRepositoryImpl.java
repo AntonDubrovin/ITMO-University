@@ -12,7 +12,7 @@ import java.util.List;
 
 public class UserRepositoryImpl implements UserRepository {
     private final DataSource DATA_SOURCE = DatabaseUtils.getDataSource();
-
+    
     @Override
     public User find(long id) {
         try (Connection connection = DATA_SOURCE.getConnection()) {
