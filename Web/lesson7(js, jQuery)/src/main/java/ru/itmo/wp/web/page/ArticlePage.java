@@ -13,7 +13,9 @@ public class ArticlePage {
     private final ArticleService articleService = new ArticleService();
 
     private void action(HttpServletRequest request, Map<String, Object> view) {
-        // No operations.
+        if (request.getSession().getAttribute("user") == null) {
+            throw new RedirectException("/index");
+        }
     }
 
     private void createArticle(HttpServletRequest request, Map<String, Object> view) throws ValidationException {
