@@ -48,7 +48,16 @@
                     user
                 }
 
-                ajax(data, $(this));
+                const $error = $(this).find(".error");
+                const success = function (response) {
+                    if (response["error"]) {
+                        $error.text(response["error"]);
+                    } else {
+                        location.href = response["redirect"];
+                    }
+                }
+
+                ajax(data, success);
 
                 return false;
             });

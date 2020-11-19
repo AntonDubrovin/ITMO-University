@@ -138,3 +138,50 @@ aside section .footer a:after {
     background-color: var(--message-background-color);
     text-align: center;
 }
+
+
+main article .title {
+    font-weight: bold;
+    color: darkblue;
+    font-size: 1.5rem;
+}
+
+main article .information {
+    font-size: 0.9rem;
+    color: grey;
+}
+
+main article .body {
+    border-left: 4px solid lightgrey;
+    padding-left: 5px;
+}
+main article .footer {
+    font-size: 1rem;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    display: flow-root;
+    padding: 5px 10px 5px 5px;
+}
+
+main article .footer .right {
+    float: right;.
+}
+
+main article .footer .left {
+    float: left;
+}
+
+main article .footer .left img {
+    vertical-align: middle;
+}
+
+main article .attachment li {
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+    color: grey;
+    padding-left: 20px;
+    margin-left: -40px;
+    background-image: url(../img/paperclip-16x16.png);
+    background-repeat: no-repeat;
+    list-style: none;
+}
