@@ -1,3 +1,5 @@
+<#-- @ftlvariable name="passwordConfirmation" type="java.lang.String" -->
+<#-- @ftlvariable name="email" type="java.lang.String" -->
 <#-- @ftlvariable name="login" type="java.lang.String" -->
 <#-- @ftlvariable name="password" type="java.lang.String" -->
 <#-- @ftlvariable name="error" type="java.lang.String" -->
@@ -38,7 +40,8 @@
                         <label for="passwordConfirmation">passwordConfirmation</label>
                     </div>
                     <div class="value">
-                        <input id="passwordConfirmation" name="passwordConfirmation" type="password" value="${passwordConfirmation!}"/>
+                        <input id="passwordConfirmation" name="passwordConfirmation" type="password"
+                               value="${passwordConfirmation!}"/>
                     </div>
                 </div>
                 <div class="error">
@@ -58,27 +61,15 @@
                 const login = $(this).find("input[name='login']").val();
                 const password = $(this).find("input[name='password']").val();
                 const passwordConfirmation = $(this).find("input[name='passwordConfirmation']").val();
-                const $error = $(this).find(".error");
+                const data = {
+                    action: "register",
+                    email,
+                    login,
+                    password,
+                    passwordConfirmation
+                }
 
-                $.ajax({
-                    type: "POST",
-                    url: "",
-                    dataType: "json",
-                    data: {
-                        action: "register",
-                        email: email,
-                        login: login,
-                        password: password,
-                        passwordConfirmation: passwordConfirmation
-                    },
-                    success: function (response) {
-                        if (response["error"]) {
-                            $error.text(response["error"]);
-                        } else {
-                            location.href = response["redirect"];
-                        }
-                    }
-                });
+                ajax(data, $(this));
 
                 return false;
             });

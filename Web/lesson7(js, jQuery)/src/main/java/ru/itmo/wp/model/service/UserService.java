@@ -29,12 +29,15 @@ public class UserService {
         if (Strings.isNullOrEmpty(user.getLogin())) {
             throw new ValidationException("Login is required");
         }
+
         if (!user.getLogin().matches("[a-z]+")) {
             throw new ValidationException("Login can contain only lowercase Latin letters");
         }
+
         if (user.getLogin().length() > 8) {
             throw new ValidationException("Login can't be longer than 8 letters");
         }
+
         if (userRepository.findByLogin(user.getLogin()) != null) {
             throw new ValidationException("Login is already in use");
         }
@@ -46,6 +49,7 @@ public class UserService {
         if (password.length() < 4) {
             throw new ValidationException("Password can't be shorter than 4 characters");
         }
+
         if (password.length() > 12) {
             throw new ValidationException("Password can't be longer than 12 characters");
         }

@@ -4,3 +4,22 @@ window.notify = function (message) {
         className: "success"
     });
 }
+
+ajax = function (data, $form) {
+    const $error = $form.find(".error");
+
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        data,
+        success: function (response) {
+            if (response["error"]) {
+                $error.text(response["error"]);
+            } else {
+                location.href = response["redirect"];
+            }
+        }
+    })
+
+}
+
