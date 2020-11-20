@@ -19,16 +19,17 @@ public class ArticlePage {
     }
 
     private void createArticle(HttpServletRequest request, Map<String, Object> view) throws ValidationException {
-        Article article = new Article();
         User user = (User) request.getSession().getAttribute("user");
         String title = request.getParameter("title");
         String text = request.getParameter("text");
+
+        Article article = new Article();
         article.setUserId(user.getId());
         article.setTitle(title);
         article.setText(text);
+
         articleService.validateCreationArticle(article);
         articleService.createArticle(article);
-
 
         throw new RedirectException("/index");
     }

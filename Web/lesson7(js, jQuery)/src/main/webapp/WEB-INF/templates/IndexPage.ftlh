@@ -36,6 +36,7 @@
             const data = {
                 action: "findAll"
             };
+
             const success = function (response) {
                 response["articles"].forEach(function (article) {
                     $noData.hide();
@@ -46,6 +47,7 @@
                     $(".articles").append($tr);
                 });
             }
+
             ajax(data, success);
         })
     </script>
