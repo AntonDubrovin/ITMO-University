@@ -1,0 +1,21 @@
+#!/bin/bash
+touch k
+echo 2 >> k
+while true;
+do
+	read line
+	case $line in
+	"TERM")
+		kill -SIGTERM $(cat pids)
+		exit
+		;;
+	"+")
+		kill -USR1 $(cat pids)
+		;;
+	"*")
+		kill -USR2 $(cat pids)
+		;;
+	[0-9]*)
+		echo $line > k
+	esac
+done
