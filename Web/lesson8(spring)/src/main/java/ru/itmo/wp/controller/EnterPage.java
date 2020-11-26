@@ -47,6 +47,6 @@ public class EnterPage extends Page {
         setUser(httpSession, userService.findByLoginAndPassword(enterForm.getLogin(), enterForm.getPassword()));
         putMessage(httpSession, "Hello, " + getUser(httpSession).getLogin());
 
-        return "redirect:";
+        return "redirect:/";
     }
 }

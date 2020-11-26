@@ -18,7 +18,6 @@
                 </div>
                 <@c.error "noticeForm.noticeContent"/>
             </div>
-
             <div class="button-field">
                 <input type="submit" value="Create">
             </div>

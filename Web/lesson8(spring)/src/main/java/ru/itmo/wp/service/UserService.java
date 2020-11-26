@@ -2,6 +2,7 @@ package ru.itmo.wp.service;
 
 import org.springframework.stereotype.Service;
 import ru.itmo.wp.domain.User;
+import ru.itmo.wp.form.ToggleDisabledForm;
 import ru.itmo.wp.form.UserCredentials;
 import ru.itmo.wp.repository.UserRepository;
 
@@ -37,5 +38,10 @@ public class UserService {
 
     public List<User> findAll() {
         return userRepository.findAllByOrderByIdDesc();
+    }
+
+    public void toggleDisabled(ToggleDisabledForm toggleDisabledForm) {
+        userRepository.updateDisabled(toggleDisabledForm.getId(),
+                !toggleDisabledForm.getCurrentValue().equals("Enable"));
     }
 }

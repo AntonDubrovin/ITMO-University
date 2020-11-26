@@ -1,4 +1,5 @@
 <#-- @ftlvariable name="users" type="ru.itmo.wp.domain.User[]" -->
+<#-- @ftlvariable name="toggleDisabledForm" type="ru.itmo.wp.form.ToggleDisabledForm" -->
 <#import "commons.ftlh" as c>
 
 <@c.page>
@@ -10,6 +11,9 @@
                 <th>Id</th>
                 <th>Login</th>
                 <th>Created</th>
+                <#if user??>
+                    <th>Disable</th>
+                </#if>
             </tr>
             </thead>
             <tbody>
@@ -20,12 +24,31 @@
                     </td>
                 </tr>
             <#else>
-                <#list users as user>
-                <tr>
-                    <td class="id"><a href="/user/${user.id}" style="color: #1E88E5; text-decoration: none">${user.id}</a></td>
-                    <td class="login">${user.login}</td>
-                    <td class="creationTime">${user.creationTime}</td>
-                </tr>
+                <#list users as u>
+                    <tr>
+                        <td class="id">${u.id}</td>
+                        <td class="login">${u.login}</td>
+                        <td class="creationTime">${u.creationTime}</td>
+                        <#if user??>
+                            <td class="disabled">
+                                <#if u != user!>
+                                    <form method="post" action="">
+                                        <input type="hidden" name="action" value="toggleDisabled"/>
+                                        <input type="hidden" name="id" value="${u.id}"/>
+                                        <#if u.disabled>
+                                            <#assign val="Enable"/>
+                                        <#else>
+                                            <#assign val="Disable"/>
+                                        </#if>
+
+                                        <input type="hidden" name="currentValue"
+                                               value="${val}"/>
+                                        <input type="submit" value="${val}">
+                                    </form>
+                                </#if>
+                            </td>
+                        </#if>
+                    </tr>
                 </#list>
             </#if>
             </tbody>
