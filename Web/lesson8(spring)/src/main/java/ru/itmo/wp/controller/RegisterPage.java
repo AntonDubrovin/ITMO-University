@@ -31,7 +31,7 @@ public class RegisterPage extends Page {
     }
 
     @GetMapping("/register")
-    public String registerGet(Model model) {
+    public String registerGet(Model model, HttpSession httpSession) {
         model.addAttribute("registerForm", new UserCredentials());
         return "RegisterPage";
     }
@@ -47,6 +47,6 @@ public class RegisterPage extends Page {
         setUser(httpSession, userService.register(registerForm));
         putMessage(httpSession, "Congrats, you have been registered!");
 
-        return "redirect:";
+        return "redirect:/";
     }
 }

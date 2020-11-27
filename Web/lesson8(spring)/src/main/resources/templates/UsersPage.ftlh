@@ -27,7 +27,7 @@
                 <#list users as u>
                     <tr>
                         <td class="id">${u.id}</td>
-                        <td class="login">${u.login}</td>
+                        <td class="login"><@c.userlink user=u/></td>
                         <td class="creationTime">${u.creationTime}</td>
                         <#if user??>
                             <td class="disabled">

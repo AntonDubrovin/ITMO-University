@@ -1,6 +1,7 @@
 package ru.itmo.wp.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import ru.itmo.wp.domain.Notice;
 import ru.itmo.wp.domain.User;

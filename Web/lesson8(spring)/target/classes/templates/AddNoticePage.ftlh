@@ -1,6 +1,6 @@
-<#-- @ftlvariable name="noticeForm" type="ru.itmo.wp.form.NoticeCredentials" -->
 <#import "commons.ftlh" as c>
 <#import "/spring.ftl" as spring>
+<#-- @ftlvariable name="noticeForm" type="ru.itmo.wp.form.NoticeForm" -->
 
 <@c.page>
     <div class="notice form-box">
@@ -18,6 +18,7 @@
                 </div>
                 <@c.error "noticeForm.noticeContent"/>
             </div>
+
             <div class="button-field">
                 <input type="submit" value="Create">
             </div>

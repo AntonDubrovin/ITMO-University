@@ -1,14 +1,21 @@
-<#import "/spring.ftl" as spring>
 <#import "commons.ftlh" as c>
 
 <@c.page>
-    <div class="userPage">
-        <#if user??>
-            Id: ${user.id}
-            <br>Login: ${user.login}
-            <br>CreationTime: ${user.creationTime}
+    <div class="user-page">
+        <#if viewedUser??>
+            <div class="user-profile">
+                <div class="container-left">
+                    <@c.userlink user=viewedUser/>
+
+                    <ul>
+                        <li>id: ${viewedUser.id} </li>
+                        <li>login: ${viewedUser.login} </li>
+                        <li>created: ${viewedUser.creationTime} </li>
+                    </ul>
+                </div>
+            </div>
         <#else>
-            No such user
+            <h1> No such user </h1>
         </#if>
     </div>
 </@c.page>

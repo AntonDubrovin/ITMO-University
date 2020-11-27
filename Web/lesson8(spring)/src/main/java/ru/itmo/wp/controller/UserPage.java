@@ -15,12 +15,17 @@ public class UserPage extends Page {
         this.userService = userService;
     }
 
+    @GetMapping("/user/{id}")
+    public String userInfo(@PathVariable String id, Model model) {
+        long userId;
+        try {
+            userId = Long.parseLong(id);
+        } catch (NumberFormatException e) {
+            return "UserPage";
+        }
 
-    @GetMapping("user/{id}")
-    public String user(@PathVariable Long id,
-                       Model model) {
-        User user = userService.findById(id);
-        model.addAttribute("user", user);
+        User user = userService.findById(userId);
+        model.addAttribute("viewedUser", user);
         return "UserPage";
     }
 }

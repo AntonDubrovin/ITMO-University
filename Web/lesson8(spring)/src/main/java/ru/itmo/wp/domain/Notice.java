@@ -3,8 +3,6 @@ package ru.itmo.wp.domain;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 @Entity
@@ -16,8 +14,6 @@ public class Notice {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @NotNull
-    @NotEmpty
     @Lob
     private String content;
 

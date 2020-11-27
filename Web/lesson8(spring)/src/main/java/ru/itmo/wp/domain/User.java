@@ -7,7 +7,6 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
 
-@SuppressWarnings("unused")
 @Entity
 @Table(
         indexes = @Index(columnList = "creationTime"),

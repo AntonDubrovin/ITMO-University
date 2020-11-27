@@ -23,12 +23,13 @@ public class UsersPage extends Page {
 
     @GetMapping("/users")
     public String users(Model model) {
+        model.addAttribute("toggleDisabledForm", new ToggleDisabledForm());
         model.addAttribute("users", userService.findAll());
         return "UsersPage";
     }
 
     @PostMapping("/users")
-    public String toggleDisabled(@Valid @ModelAttribute("toggleDisabledForm") ToggleDisabledForm toggleDisabledForm,
+    public String toggleDisabled(@Valid @ModelAttribute("toggleDisabledForm")ToggleDisabledForm toggleDisabledForm,
                                  BindingResult bindingResult,
                                  HttpSession httpSession) {
 

@@ -1,4 +1,3 @@
-<#-- @ftlvariable name="notices" type="ru.itmo.wp.domain.Notice[]" -->
 <#-- @ftlvariable name="user" type="ru.itmo.wp.domain.User" -->
 <#-- @ftlvariable name="message" type="java.lang.String" -->
 <#import "/spring.ftl" as spring/>
@@ -38,7 +37,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/users">Users</a></li>
                 <#if user??>
-                    <li><a href="/addNotice">Add notice</a></li>
+                    <li><a href="/addNotice">Add Notice</a></li>
                 </#if>
             </ul>
         </nav>
@@ -51,7 +50,11 @@
                         Notice ${notice.id}
                     </div>
                     <div class="body">
-                        ${notice.content}
+                        <#if (notice.content?length > 27)>
+                            ${notice.content?substring(0, 27)}...
+                        <#else>
+                            ${notice.content}
+                        </#if>
                     </div>
                     <div class="footer">
                         <a href="#">View all</a>
@@ -83,3 +86,9 @@
         <div class="error">${spring.status.errorMessage}</div>
     </#if>
 </#macro>
+
+<#macro userlink user>
+    <a class="userlink${user.id}" href="/user/${user.id}"
+       style="text-decoration: none; color: #1E88E5">${user.login}</a>
+</#macro>
+

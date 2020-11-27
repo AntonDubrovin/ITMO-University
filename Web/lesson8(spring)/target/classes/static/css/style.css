@@ -95,7 +95,6 @@ footer {
 }
 
 aside section {
-    margin-bottom: 1rem;
     border: 1px solid var(--border-color);
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
@@ -131,6 +130,10 @@ aside section .footer a:after {
     content: " →";
 }
 
+aside section {
+    margin-bottom: 1.5rem;
+}
+
 .message {
     margin: 1rem 0;
     padding: 0.5rem;
@@ -140,14 +143,29 @@ aside section .footer a:after {
     text-align: center;
 }
 
-.userPage {
-    font-size: 1.5rem;
-    text-align: center;
-    padding-top: 2rem;
+.user-page {
+    display: flex;
+    flex-direction: column;
 }
 
-.error {
-    font-size: 1.5rem;
-    text-align: center;
-    padding-top: 1rem;
+.user-profile .container-left a {
+    font-size: larger;
+}
+
+.user-profile {
+    padding-right: 2px;
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: row;
+    float: left;
+    justify-content: space-between
+}
+
+.user-profile .container-left {
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
 }

@@ -6,7 +6,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import ru.itmo.wp.form.NoticeCredentials;
+import ru.itmo.wp.form.NoticeForm;
 import ru.itmo.wp.service.NoticeService;
 
 import javax.servlet.http.HttpSession;
@@ -21,9 +21,8 @@ public class AddNoticePage extends Page {
     }
 
     @PostMapping("/addNotice")
-    public String addNotice(@Valid @ModelAttribute("noticeForm") NoticeCredentials noticeForm,
-                                BindingResult bindingResult,
-                                Model model) {
+    public String addNoticePost(@Valid @ModelAttribute("noticeForm") NoticeForm noticeForm,
+                                BindingResult bindingResult, Model model) {
         if (bindingResult.hasErrors()) {
             return "AddNoticePage";
         }
@@ -35,12 +34,12 @@ public class AddNoticePage extends Page {
     }
 
     @GetMapping("/addNotice")
-    public String addNotice(Model model, HttpSession httpSession) {
+    public String addNoticeGet(Model model, HttpSession httpSession) {
         if (getUser(httpSession) == null) {
             return "redirect:/enter";
         }
 
-        model.addAttribute("noticeForm", new NoticeCredentials());
+        model.addAttribute("noticeForm", new NoticeForm());
         return "AddNoticePage";
     }
 }
