@@ -22,11 +22,11 @@ public class AddNoticePage extends Page {
 
     @PostMapping("/addNotice")
     public String addNoticePost(@Valid @ModelAttribute("noticeForm") NoticeCredentials noticeForm,
-                                BindingResult bindingResult, Model model) {
+                                BindingResult bindingResult, HttpSession httpSession) {
         if (bindingResult.hasErrors()) {
             return "AddNoticePage";
         }
-        if (model.getAttribute("user") == null) {
+        if (getUser(httpSession) == null) {
             return "redirect:/";
         }
         noticeService.addNotice(noticeForm);
