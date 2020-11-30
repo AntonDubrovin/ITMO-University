@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "" > report2.log
+array=()
+count=1
+while true
+do
+	array+=(1 2 3 4 5 6 7 8 9 10)
+	if [[ $count -eq 100000 ]]
+	then
+		count=0
+		echo ${#array[*]} >> report2.log
+	fi
+	let count=$count+1
+done

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+maxSize=$1
+size=0
+array=()
+count=1
+while [[ $size -lt $maxSize ]]
+do
+	array+=(1 2 3 4 5 6 7 8 9 10)
+	let count=$count+1
+	let size=$size+10
+done

@@ -1,0 +1,127 @@
+МиБ Mem :   7769,8 total,   5218,4 free,   1355,4 used,   1196,1 buff/cache
+МиБ Swap:   2048,0 total,    319,0 free,   1729,0 used.   5785,4 avail Mem 
+  18363 anton     20   0   18476  12204   2976 R  93,8   0,2   0:00.15 mem
+МиБ Mem :   7769,8 total,   4996,4 free,   1564,3 used,   1209,2 buff/cache
+МиБ Swap:   2048,0 total,    319,9 free,   1728,1 used.   5563,7 avail Mem 
+  18363 anton     20   0  232052 225516   2976 R 100,0   2,8   0:03.48 mem
+МиБ Mem :   7769,8 total,   4790,1 free,   1789,7 used,   1190,0 buff/cache
+МиБ Swap:   2048,0 total,    319,9 free,   1728,1 used.   5358,4 avail Mem 
+  18363 anton     20   0  461468 455196   2976 R 100,0   5,7   0:06.82 mem
+МиБ Mem :   7769,8 total,   4560,3 free,   2014,7 used,   1194,8 buff/cache
+МиБ Swap:   2048,0 total,    322,9 free,   1725,1 used.   5128,7 avail Mem 
+  18363 anton     20   0  691544 685140   2976 R 100,0   8,6   0:10.15 mem
+МиБ Mem :   7769,8 total,   4311,8 free,   2263,5 used,   1194,5 buff/cache
+МиБ Swap:   2048,0 total,    323,0 free,   1725,0 used.   4880,3 avail Mem 
+  18363 anton     20   0  933764 927228   2976 R 100,0  11,7   0:13.49 mem
+МиБ Mem :   7769,8 total,   4097,8 free,   2477,6 used,   1194,5 buff/cache
+МиБ Swap:   2048,0 total,    323,2 free,   1724,8 used.   4666,4 avail Mem 
+  18363 anton     20   0 1161596   1,1g   2976 R 100,0  14,5   0:16.83 mem
+МиБ Mem :   7769,8 total,   3891,5 free,   2687,0 used,   1191,4 buff/cache
+МиБ Swap:   2048,0 total,    323,3 free,   1724,7 used.   4460,1 avail Mem 
+  18363 anton     20   0 1374776   1,3g   2976 R  93,8  17,2   0:20.16 mem
+МиБ Mem :   7769,8 total,   3667,0 free,   2906,8 used,   1196,0 buff/cache
+МиБ Swap:   2048,0 total,    323,4 free,   1724,5 used.   4235,7 avail Mem 
+  18363 anton     20   0 1588616   1,5g   2976 R 100,0  19,9   0:23.50 mem
+МиБ Mem :   7769,8 total,   3449,9 free,   3125,1 used,   1194,9 buff/cache
+МиБ Swap:   2048,0 total,    323,5 free,   1724,5 used.   4018,6 avail Mem 
+  18363 anton     20   0 1822784   1,7g   2976 R  93,8  22,8   0:26.83 mem
+МиБ Mem :   7769,8 total,   3224,2 free,   3350,1 used,   1195,5 buff/cache
+МиБ Swap:   2048,0 total,    323,7 free,   1724,3 used.   3792,2 avail Mem 
+  18363 anton     20   0 2054180   2,0g   2976 R 100,0  25,7   0:30.17 mem
+МиБ Mem :   7769,8 total,   2981,7 free,   3593,5 used,   1194,6 buff/cache
+МиБ Swap:   2048,0 total,    323,8 free,   1724,2 used.   3549,7 avail Mem 
+  18363 anton     20   0 2303000   2,2g   2976 R 100,0  28,9   0:33.50 mem
+МиБ Mem :   7769,8 total,   2737,0 free,   3837,5 used,   1195,3 buff/cache
+МиБ Swap:   2048,0 total,    323,8 free,   1724,2 used.   3305,0 avail Mem 
+  18363 anton     20   0 2553800   2,4g   2976 R 100,0  32,0   0:36.83 mem
+МиБ Mem :   7769,8 total,   2490,7 free,   4087,4 used,   1191,8 buff/cache
+МиБ Swap:   2048,0 total,    325,0 free,   1723,0 used.   3058,8 avail Mem 
+  18363 anton     20   0 2807504   2,7g   2976 R  93,8  35,2   0:40.16 mem
+МиБ Mem :   7769,8 total,   2244,5 free,   4334,0 used,   1191,3 buff/cache
+МиБ Swap:   2048,0 total,    325,1 free,   1722,9 used.   2812,7 avail Mem 
+  18363 anton     20   0 3060548   2,9g   2976 R 100,0  38,4   0:43.50 mem
+МиБ Mem :   7769,8 total,   2033,9 free,   4539,8 used,   1196,2 buff/cache
+МиБ Swap:   2048,0 total,    325,3 free,   1722,7 used.   2602,1 avail Mem 
+  18363 anton     20   0 3269108   3,1g   2976 R 100,0  41,0   0:46.84 mem
+МиБ Mem :   7769,8 total,   1833,8 free,   4739,2 used,   1196,9 buff/cache
+МиБ Swap:   2048,0 total,    325,7 free,   1722,3 used.   2402,0 avail Mem 
+  18363 anton     20   0 3473840   3,3g   2976 R 100,0  43,6   0:50.16 mem
+МиБ Mem :   7769,8 total,   1610,0 free,   4959,9 used,   1199,9 buff/cache
+МиБ Swap:   2048,0 total,    326,0 free,   1722,0 used.   2182,3 avail Mem 
+  18363 anton     20   0 3694940   3,5g   2976 R 100,0  46,4   0:53.48 mem
+МиБ Mem :   7769,8 total,   1397,1 free,   5175,8 used,   1196,9 buff/cache
+МиБ Swap:   2048,0 total,    326,1 free,   1721,9 used.   1969,9 avail Mem 
+  18363 anton     20   0 3914456   3,7g   2976 R 100,0  49,1   0:56.80 mem
+МиБ Mem :   7769,8 total,   1153,3 free,   5416,4 used,   1200,2 buff/cache
+МиБ Swap:   2048,0 total,    326,1 free,   1721,9 used.   1726,1 avail Mem 
+  18363 anton     20   0 4144796   3,9g   2976 R 100,0  52,0   1:00.15 mem
+МиБ Mem :   7769,8 total,    947,8 free,   5619,3 used,   1202,7 buff/cache
+МиБ Swap:   2048,0 total,    326,8 free,   1721,2 used.   1520,8 avail Mem 
+  18363 anton     20   0 4362596   4,2g   2976 R 100,0  54,8   1:03.48 mem
+МиБ Mem :   7769,8 total,    731,3 free,   5826,5 used,   1212,0 buff/cache
+МиБ Swap:   2048,0 total,    332,9 free,   1715,1 used.   1305,5 avail Mem 
+  18363 anton     20   0 4567988   4,4g   2976 R  93,8  57,3   1:06.82 mem
+МиБ Mem :   7769,8 total,    503,8 free,   6045,8 used,   1220,3 buff/cache
+МиБ Swap:   2048,0 total,    333,2 free,   1714,8 used.   1078,0 avail Mem 
+  18363 anton     20   0 4786052   4,6g   2976 R 100,0  60,1   1:10.16 mem
+МиБ Mem :   7769,8 total,    231,3 free,   6269,2 used,   1269,4 buff/cache
+МиБ Swap:   2048,0 total,    337,8 free,   1710,2 used.    855,2 avail Mem 
+  18363 anton     20   0 4986164   4,7g   2976 R 100,0  62,6   1:13.50 mem
+МиБ Mem :   7769,8 total,    134,2 free,   6475,9 used,   1159,7 buff/cache
+МиБ Swap:   2048,0 total,    342,6 free,   1705,4 used.    665,8 avail Mem 
+  18363 anton     20   0 5236172   5,0g   2976 R  93,8  65,7   1:16.83 mem
+МиБ Mem :   7769,8 total,    132,5 free,   6705,0 used,    932,4 buff/cache
+МиБ Swap:   2048,0 total,    326,6 free,   1721,4 used.    460,0 avail Mem 
+  18363 anton     20   0 5495816   5,2g   2976 R 100,0  69,0   1:20.16 mem
+МиБ Mem :   7769,8 total,    132,5 free,   6963,8 used,    673,6 buff/cache
+МиБ Swap:   2048,0 total,    312,7 free,   1735,3 used.    217,8 avail Mem 
+  18363 anton     20   0 5765360   5,5g   2796 R 100,0  72,4   1:23.50 mem
+МиБ Mem :   7769,8 total,    122,9 free,   7197,9 used,    449,1 buff/cache
+МиБ Swap:   2048,0 total,    243,7 free,   1804,3 used.     83,0 avail Mem 
+  18363 anton     20   0 6023420   5,7g   1364 R 100,0  75,6   1:26.93 mem
+МиБ Mem :   7769,8 total,    120,1 free,   7252,3 used,    397,5 buff/cache
+МиБ Swap:   2048,0 total,      0,0 free,   2048,0 used.     73,1 avail Mem 
+  18363 anton     20   0 6256268   6,0g    920 R 100,0  78,5   1:30.31 mem
+МиБ Mem :   7769,8 total,    106,4 free,   7339,1 used,    324,4 buff/cache
+МиБ Swap:   2048,0 total,      0,0 free,   2048,0 used.     22,6 avail Mem 
+  18363 anton     20   0 6346292   6,0g      0 D   0,0  79,6   1:33.43 mem
+МиБ Mem :   7769,8 total,   5950,0 free,   1169,2 used,    650,7 buff/cache
+МиБ Swap:   2048,0 total,      5,7 free,   2042,3 used.   6109,3 avail Mem 
+МиБ Mem :   7769,8 total,   5966,5 free,   1150,0 used,    653,4 buff/cache
+МиБ Swap:   2048,0 total,      5,9 free,   2042,1 used.   6129,0 avail Mem 
+МиБ Mem :   7769,8 total,   5961,1 free,   1150,8 used,    658,0 buff/cache
+МиБ Swap:   2048,0 total,      6,2 free,   2041,7 used.   6128,0 avail Mem 
+МиБ Mem :   7769,8 total,   5958,6 free,   1151,2 used,    660,1 buff/cache
+МиБ Swap:   2048,0 total,      6,6 free,   2041,4 used.   6127,7 avail Mem 
+МиБ Mem :   7769,8 total,   5941,6 free,   1162,9 used,    665,4 buff/cache
+МиБ Swap:   2048,0 total,      6,8 free,   2041,2 used.   6116,0 avail Mem 
+МиБ Mem :   7769,8 total,   5885,5 free,   1156,1 used,    728,2 buff/cache
+МиБ Swap:   2048,0 total,     48,1 free,   1999,9 used.   6086,3 avail Mem 
+МиБ Mem :   7769,8 total,   5884,0 free,   1160,4 used,    725,4 buff/cache
+МиБ Swap:   2048,0 total,     49,6 free,   1998,4 used.   6086,3 avail Mem 
+МиБ Mem :   7769,8 total,   5882,4 free,   1161,8 used,    725,7 buff/cache
+МиБ Swap:   2048,0 total,     49,8 free,   1998,2 used.   6085,0 avail Mem 
+МиБ Mem :   7769,8 total,   5847,3 free,   1190,1 used,    732,5 buff/cache
+МиБ Swap:   2048,0 total,     80,3 free,   1967,7 used.   6056,7 avail Mem 
+МиБ Mem :   7769,8 total,   5842,3 free,   1194,2 used,    733,4 buff/cache
+МиБ Swap:   2048,0 total,     80,4 free,   1967,6 used.   6052,6 avail Mem 
+МиБ Mem :   7769,8 total,   5840,5 free,   1195,0 used,    734,4 buff/cache
+МиБ Swap:   2048,0 total,     80,5 free,   1967,5 used.   6051,7 avail Mem 
+МиБ Mem :   7769,8 total,   5838,2 free,   1194,2 used,    737,4 buff/cache
+МиБ Swap:   2048,0 total,     80,7 free,   1967,3 used.   6053,5 avail Mem 
+МиБ Mem :   7769,8 total,   5835,4 free,   1195,4 used,    739,1 buff/cache
+МиБ Swap:   2048,0 total,     80,8 free,   1967,2 used.   6052,3 avail Mem 
+МиБ Mem :   7769,8 total,   5834,3 free,   1196,2 used,    739,4 buff/cache
+МиБ Swap:   2048,0 total,     81,0 free,   1967,0 used.   6051,5 avail Mem 
+МиБ Mem :   7769,8 total,   5834,5 free,   1196,0 used,    739,4 buff/cache
+МиБ Swap:   2048,0 total,     81,1 free,   1966,9 used.   6051,8 avail Mem 
+МиБ Mem :   7769,8 total,   5833,4 free,   1196,9 used,    739,6 buff/cache
+МиБ Swap:   2048,0 total,     81,2 free,   1966,8 used.   6049,8 avail Mem 
+МиБ Mem :   7769,8 total,   5832,2 free,   1198,2 used,    739,5 buff/cache
+МиБ Swap:   2048,0 total,     85,3 free,   1962,7 used.   6048,6 avail Mem 
+МиБ Mem :   7769,8 total,   5823,4 free,   1206,4 used,    740,1 buff/cache
+МиБ Swap:   2048,0 total,     85,4 free,   1962,6 used.   6040,3 avail Mem 
+МиБ Mem :   7769,8 total,   5829,7 free,   1199,9 used,    740,3 buff/cache
+МиБ Swap:   2048,0 total,     85,7 free,   1962,3 used.   6046,9 avail Mem 
+МиБ Mem :   7769,8 total,   5828,7 free,   1200,6 used,    740,6 buff/cache
+МиБ Swap:   2048,0 total,     85,7 free,   1962,3 used.   6046,1 avail Mem 

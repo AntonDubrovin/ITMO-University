@@ -1,0 +1,8 @@
+#!/bin/bash
+
+count=$1
+for (( i=0;i<$count;i++ ))
+do
+	./newmem 8000000 &
+	sleep 1
+done

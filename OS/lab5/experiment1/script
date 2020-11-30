@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "" > top
+while true
+do
+	top -b -n 1 | grep МиБ >> top
+	top -b -n 1 | grep mem >> top
+	#top -b -n 1 | grep mem2 >> top
+	sleep 3
+done
