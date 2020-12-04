@@ -47,7 +47,9 @@ public class UsersPage extends Page {
             return "redirect:/";
         }
 
-        userService.toggleDisabled(toggleDisabledForm);
+        if (getUser(httpSession).getId() !=  toggleDisabledForm.getId()) {
+            userService.toggleDisabled(toggleDisabledForm);
+        }
         return "redirect:/users";
     }
 }

@@ -1,6 +1,5 @@
 <#import "commons.ftlh" as c>
 <#import "/spring.ftl" as spring>
-<#-- @ftlvariable name="noticeForm" type="ru.itmo.wp.form.NoticeForm" -->
 
 <@c.page>
     <div class="notice form-box">
