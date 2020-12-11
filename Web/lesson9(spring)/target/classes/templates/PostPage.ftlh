@@ -1,4 +1,4 @@
-<#-- @ftlvariable name="comment" type="ru.itmo.wp.domain.Comment" -->
+<#-- @ftlvariable name="commentForm" type="ru.itmo.wp.form.CommentForm" -->
 <#import "commons.ftlh" as c>
 
 <@c.page>
@@ -21,6 +21,7 @@
                         <div class="value">
                             <textarea id="text" name="text"></textarea>
                         </div>
+                        <@c.error "commentForm.text"/>
                     </div>
                     <div class="button-field">
                         <input type="submit" value="Add Comment"/>

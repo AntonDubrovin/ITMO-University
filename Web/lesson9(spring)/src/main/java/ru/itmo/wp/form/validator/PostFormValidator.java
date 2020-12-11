@@ -28,11 +28,15 @@ public class PostFormValidator implements Validator {
                     .collect(Collectors.toList());
 
             List<Tag> invalidTags = tags.stream()
-                                    .filter(t -> (!t.getName().matches("[a-zA-Z]*") || t.getName().length() > 16))
-                                    .collect(Collectors.toList());
+                    .filter(t -> (!t.getName().matches("[a-zA-Z]{1,16}")))
+                    .collect(Collectors.toList());
 
             if (!invalidTags.isEmpty()) {
                 errors.rejectValue("tags", "tags.invalid-tags", "wrong tag: " + invalidTags.get(0).getName());
+            }
+
+            if (((PostForm) target).getTags().matches("[ ]*")) {
+                errors.rejectValue("text", "text.invalid-text", "tag can't contains only whitespaces");
             }
         }
     }
