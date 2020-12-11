@@ -71,7 +71,7 @@ public class UserService {
             post.setTags(new ArrayList<>());
         } else {
             post.setTags(
-                    Arrays.stream(postForm.getTags().split("\\s+"))
+                    Arrays.stream(postForm.getTags().trim().split("\\s+"))
                             .distinct()
                             .map(this::getTag)
                             .collect(Collectors.toList())
