@@ -1,3 +1,5 @@
+package info.kgeorgiy.ja.dubrovin.walk;
+
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
@@ -29,7 +31,7 @@ public class RecursiveWalk {
                         try {
                             Files.walkFileTree(currentFilePath, new Visitor(outputWriter));
                         } catch (IOException e) {
-                            outputWriter.write("0000000000000000 " + currentFilePath);
+                            outputWriter.write("0000000000000000 " + currentFile);
                             outputWriter.newLine();
                         }
                     } catch (InvalidPathException e) {
