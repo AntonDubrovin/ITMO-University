@@ -4,6 +4,8 @@ import java.io.*;
 import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
 
+import static info.kgeorgiy.ja.dubrovin.walk.RecursiveWalk.write;
+
 public class Visitor extends SimpleFileVisitor<Path> {
     BufferedWriter outputWriter;
 
@@ -22,25 +24,23 @@ public class Visitor extends SimpleFileVisitor<Path> {
     }
 
     @Override
-    public FileVisitResult visitFile(Path currentFilePath, BasicFileAttributes attrs) throws IOException {
+    public FileVisitResult visitFile(Path currentFilePath, BasicFileAttributes attrs) {
         try (BufferedInputStream currentFileReader = new BufferedInputStream(Files.newInputStream(currentFilePath))) {
             int symbol;
             long hash = 0;
             while ((symbol = currentFileReader.read()) >= 0) {
                 hash = PJW(hash, symbol);
             }
-            outputWriter.write(String.format("%016x", hash) + " " + currentFilePath);
+            write(outputWriter, hash, currentFilePath);
         } catch (IOException e) {
-            outputWriter.write(RecursiveWalk.ERROR_HASH + " " + currentFilePath);
+            write(outputWriter, 0, currentFilePath);
         }
-        outputWriter.newLine();
         return FileVisitResult.CONTINUE;
     }
 
     @Override
-    public FileVisitResult visitFileFailed(Path currentFilePath, IOException e) throws IOException {
-        outputWriter.write(RecursiveWalk.ERROR_HASH + " " + currentFilePath);
-        outputWriter.newLine();
+    public FileVisitResult visitFileFailed(Path currentFilePath, IOException e) {
+        write(outputWriter, 0, currentFilePath);
         return FileVisitResult.CONTINUE;
     }
 }
