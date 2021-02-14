@@ -5,7 +5,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
 
 public class RecursiveWalk {
-    public static final String ERROR_HASH = String.format("%016x", 0) ;
+    public static final String ERROR_HASH = String.format("%016x", 0);
 
     public static void main(String[] args) {
         Path inputFile;
