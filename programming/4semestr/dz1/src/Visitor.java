@@ -1,7 +1,6 @@
 package info.kgeorgiy.ja.dubrovin.walk;
 
 import java.io.*;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
 
@@ -12,10 +11,10 @@ public class Visitor extends SimpleFileVisitor<Path> {
         this.outputWriter = outputWriter;
     }
 
-    private long PJW(char[] chars, long hash) {
+    private long PJW(byte[] bytes, long hash, long size) {
         long high;
-        for (char currentChar : chars) {
-            hash = (hash << 8) + currentChar;
+        for (int i = 0; i < size; i++) {
+            hash = (hash << 8) + bytes[i];
             if ((high = hash & 0xFF00000000000000L) != 0) {
                 hash ^= high >> 48;
             }
@@ -26,17 +25,17 @@ public class Visitor extends SimpleFileVisitor<Path> {
 
     @Override
     public FileVisitResult visitFile(Path currentFilePath, BasicFileAttributes attrs) throws IOException {
-        try (BufferedReader currentFileReader = Files.newBufferedReader(currentFilePath, StandardCharsets.UTF_8)) {
-            char[] chars = new char[1024];
+        try (InputStream currentFileReader = Files.newInputStream(currentFilePath)) {
+            byte[] bytes = new byte[1024];
+            int size;
             long hash = 0;
-            while (currentFileReader.read(chars) >= 0) {
-                hash = PJW(chars, hash);
+            while ((size = currentFileReader.read(bytes)) >= 0) {
+                hash = PJW(bytes, hash, size);
             }
             outputWriter.write(String.format("%016x", hash) + " " + currentFilePath);
             outputWriter.newLine();
         } catch (IOException e) {
-            System.out.println(currentFilePath);
-            outputWriter.write("0000000000000000 " + currentFilePath.toString());
+            outputWriter.write(RecursiveWalk.ERROR_HASH + " " + currentFilePath.toString());
             outputWriter.newLine();
         }
         return FileVisitResult.CONTINUE;
@@ -44,9 +43,9 @@ public class Visitor extends SimpleFileVisitor<Path> {
 
     @Override
     public FileVisitResult visitFileFailed(Path currentFilePath, IOException e) throws IOException {
-        System.err.println(e);
-        outputWriter.write("0000000000000000 " + currentFilePath.toString());
+        outputWriter.write(RecursiveWalk.ERROR_HASH + " " + currentFilePath.toString());
         outputWriter.newLine();
         return FileVisitResult.CONTINUE;
     }
 }
+

@@ -5,6 +5,8 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
 
 public class RecursiveWalk {
+    public static final String ERROR_HASH = String.format("%016x", 0) ;
+
     public static void main(String[] args) {
         Path inputFile;
         try {
@@ -31,12 +33,11 @@ public class RecursiveWalk {
                         try {
                             Files.walkFileTree(currentFilePath, new Visitor(outputWriter));
                         } catch (IOException e) {
-                            outputWriter.write("0000000000000000 " + currentFile);
+                            outputWriter.write(ERROR_HASH + " " + currentFilePath);
                             outputWriter.newLine();
                         }
                     } catch (InvalidPathException e) {
-                        outputWriter.write("0000000000000000 " + currentFile);
-                        outputWriter.newLine();
+                        outputWriter.write(ERROR_HASH + " " + currentFile);
                     }
                 }
             } catch (IOException e) {
