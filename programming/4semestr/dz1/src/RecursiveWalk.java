@@ -11,7 +11,7 @@ public class RecursiveWalk {
             return;
         }
 
-        Path inputFile;
+        final Path inputFile;
         try {
             inputFile = Paths.get(args[0]);
         } catch (InvalidPathException e) {
@@ -19,7 +19,7 @@ public class RecursiveWalk {
             return;
         }
 
-        Path outputFile;
+        final Path outputFile;
         try {
             outputFile = Paths.get(args[1]);
         } catch (InvalidPathException e) {
@@ -40,14 +40,9 @@ public class RecursiveWalk {
                 String currentFile;
                 while ((currentFile = inputFileReader.readLine()) != null) {
                     try {
-                        Path currentFilePath = Paths.get(currentFile);
-                        try {
-                            Files.walkFileTree(currentFilePath, new Visitor(outputWriter));
-                        } catch (IOException e) {
-                            write(outputWriter, 0, currentFilePath);
-                        }
-                    } catch (InvalidPathException e) {
-                        write(outputWriter, 0, Path.of(currentFile));
+                        Files.walkFileTree(Paths.get(currentFile), new Visitor(outputWriter));
+                    } catch (IOException | InvalidPathException e) {
+                        write(outputWriter, 0, currentFile);
                     }
                 }
             } catch (IOException e) {
@@ -58,7 +53,7 @@ public class RecursiveWalk {
         }
     }
 
-    public static void write(BufferedWriter outputWriter, long outputString, Path currentFilePath) {
+    public static void write(BufferedWriter outputWriter, long outputString, String currentFilePath) {
         try {
             outputWriter.write(String.format("%016x", outputString) + " " + currentFilePath);
             outputWriter.newLine();

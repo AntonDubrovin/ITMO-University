@@ -7,41 +7,43 @@ import java.nio.file.attribute.BasicFileAttributes;
 import static info.kgeorgiy.ja.dubrovin.walk.RecursiveWalk.write;
 
 public class Visitor extends SimpleFileVisitor<Path> {
-    BufferedWriter outputWriter;
+    final BufferedWriter outputWriter;
 
     public Visitor(BufferedWriter outputWriter) {
         this.outputWriter = outputWriter;
     }
 
-    private long PJW(long hash, int symbol) {
+    private long PJW(byte[] bytes, long hash, int size) {
         long high;
-        hash = (hash << 8) + symbol;
-        if ((high = hash & 0xFF00000000000000L) != 0) {
-            hash ^= high >> 48;
+        for (int i = 0; i < size; i++) {
+            hash = (hash << 8) + (bytes[i] & 0xFF);
+            if ((high = hash & 0xFF00000000000000L) != 0) {
+                hash ^= high >> 48;
+            }
+            hash &= ~high;
         }
-        hash &= ~high;
         return hash;
     }
 
     @Override
     public FileVisitResult visitFile(Path currentFilePath, BasicFileAttributes attrs) {
-        try (BufferedInputStream currentFileReader = new BufferedInputStream(Files.newInputStream(currentFilePath))) {
-            int symbol;
+        try (InputStream currentFileReader = Files.newInputStream(currentFilePath)) {
+            byte[] bytes = new byte[2048];
+            int size;
             long hash = 0;
-            while ((symbol = currentFileReader.read()) >= 0) {
-                hash = PJW(hash, symbol);
+            while ((size = currentFileReader.read(bytes)) >= 0) {
+                hash = PJW(bytes, hash, size);
             }
-            write(outputWriter, hash, currentFilePath);
+            write(outputWriter, hash, currentFilePath.toString());
         } catch (IOException e) {
-            write(outputWriter, 0, currentFilePath);
+            write(outputWriter, 0, currentFilePath.toString());
         }
         return FileVisitResult.CONTINUE;
     }
 
     @Override
     public FileVisitResult visitFileFailed(Path currentFilePath, IOException e) {
-        write(outputWriter, 0, currentFilePath);
+        write(outputWriter, 0, currentFilePath.toString());
         return FileVisitResult.CONTINUE;
     }
 }
-
