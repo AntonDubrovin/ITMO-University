@@ -3,17 +3,19 @@ package info.kgeorgiy.ja.dubrovin.arrayset;
 import java.util.*;
 
 public class ArraySet<T> extends AbstractSet<T> implements NavigableSet<T> {
+    // :NOTE: should be final
     private final List<T> elements;
     private final Comparator<? super T> comparator;
+    private boolean reverse = false;
 
+    // :NOTE: call this()
     public ArraySet() {
-        elements = Collections.emptyList();
-        comparator = null;
+        this(Collections.emptyList(), null);
     }
 
+    // :NOTE: memory overhead
     public ArraySet(Collection<? extends T> collection) {
-        elements = new ArrayList<>(new TreeSet<>(collection));
-        comparator = null;
+        this(collection, null);
     }
 
     public ArraySet(Collection<? extends T> collection, Comparator<? super T> comparator) {
@@ -70,10 +72,12 @@ public class ArraySet<T> extends AbstractSet<T> implements NavigableSet<T> {
         return Collections.unmodifiableList(elements).iterator();
     }
 
+    // :NOTE: descendingSet on reversed collection?
+    // :NOTE: changed reverse
     @Override
     public NavigableSet<T> descendingSet() {
-        DescendingList<T> descendingList = new DescendingList<>(elements);
-        descendingList.reverse();
+        DescendingList<T> descendingList = new DescendingList<>(elements, reverse);
+        reverse = descendingList.reverse();
         return new ArraySet<>(descendingList, Collections.reverseOrder(comparator));
     }
 
@@ -84,8 +88,13 @@ public class ArraySet<T> extends AbstractSet<T> implements NavigableSet<T> {
 
     @Override
     public NavigableSet<T> subSet(T fromElement, boolean fromInclusive, T toElement, boolean toInclusive) {
-        if (comparator.compare(fromElement, toElement) > 0) {
+        // :NOTE: NPE?
+        if (comparator != null && comparator.compare(fromElement, toElement) > 0) {
             throw new IllegalArgumentException();
+        } else if (comparator == null && fromElement instanceof Comparable && toElement instanceof Comparable) {
+            if (((Comparable<T>) fromElement).compareTo(toElement) > 0) {
+                throw new IllegalArgumentException();
+            }
         }
         int indexFrom = findIndex(fromElement, true, fromInclusive);
         int indexTo = findIndex(toElement, false, toInclusive) + 1;

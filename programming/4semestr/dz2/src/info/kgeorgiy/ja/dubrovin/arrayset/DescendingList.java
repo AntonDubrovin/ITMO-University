@@ -8,13 +8,13 @@ public class DescendingList<T> extends AbstractList<T> implements RandomAccess {
     private final List<T> elements;
     private boolean reverse;
 
-    public DescendingList(List<T> list) {
+    public DescendingList(List<T> list, boolean reverse) {
         elements = list;
-        reverse = false;
+        this.reverse = reverse;
     }
 
-    public void reverse() {
-        reverse = !reverse;
+    public boolean reverse() {
+        return reverse = !reverse;
     }
 
     @Override
@@ -27,3 +27,4 @@ public class DescendingList<T> extends AbstractList<T> implements RandomAccess {
         return elements.size();
     }
 }
+
