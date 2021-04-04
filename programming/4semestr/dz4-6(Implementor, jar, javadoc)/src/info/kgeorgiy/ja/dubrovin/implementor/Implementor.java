@@ -24,9 +24,9 @@ import java.util.zip.ZipEntry;
 
 /**
  * Implementation of {@link JarImpler}.
- * Generates <code>.java</code> and <code>.jar</code> files, which implement given class ot interface.
+ * Generates <var>.java</var> and <var>.jar</var> files, which implement given class or interface.
  *
- * @author Anton Dubrovin
+ * @author <font color=aqua>Anton Dubrovin</font>.
  */
 public class Implementor implements JarImpler {
     /**
@@ -34,49 +34,58 @@ public class Implementor implements JarImpler {
      */
     private final String SPACE = " ";
     /**
-     * Constant equal to one open figure bracket, used to generate class code to open body of methods, functions etc.
+     * Constant equal to one open figure bracket.
+     * Used to generate class code to open body of methods, functions etc.
      */
     private final String LEFT_FIGURE_BRACKET = "{";
     /**
-     * Constant equal to one close figure bracket, used to generate class code to close body of methods, functions etc.
+     * Constant equal to one close figure bracket.
+     * Used to generate class code to close body of methods, functions etc.
      */
     private final String RIGHT_FIGURE_BRACKET = "}";
     /**
-     * Constant equal to one line separator, used to generate class code to wrap a new line.
+     * Constant equal to one line separator.
+     * Used to generate class code to wrap a new line.
      */
     private final String NEW_LINE = System.lineSeparator();
     /**
-     * Constant equal to one semicolon, used to generate class code for the end of each line.
+     * Constant equal to one semicolon.
+     * Used to generate class code for the end of each line.
      */
     private final String SEMICOLON = ";";
     /**
-     * Constant equal to one comma, used to generate class code to separate parameters.
+     * Constant equal to one comma.
+     * Used to generate class code to separate parameters.
      */
     private final String COMMA = ",";
     /**
-     * Constant equal to one open round bracket, used to generate class code to open parameters enumeration.
+     * Constant equal to one open round bracket.
+     * Used to generate class code to open parameters enumeration.
      */
     private final String LEFT_ROUND_BRACKET = "(";
     /**
-     * Constant equal to one close round bracket, used to generate class code to close parameters enumeration.
+     * Constant equal to one close round bracket.
+     * Used to generate class code to close parameters enumeration.
      */
     private final String RIGHT_ROUND_BRACKET = ")";
     /**
-     * Constant equal to <code>.class</code>, used to end files with the extension <code>.class</code>.
+     * Constant equal to <var>.class</var>.
+     * Used to end files with the extension <var>.class</var>.
      */
-    private final String CLASS_ENDING = ".class";
+    private final String CLASS_EXTENSION = ".class";
     /**
-     * Constant equal to <code>.java</code>, used to end files with the extension <code>.java</code>.
+     * Constant equal to <var>.java</var>.
+     * Used to end files with the extension <var>.java</var>.
      */
-    private final String JAVA_ENDING = ".java";
+    private final String JAVA_EXTENSION = ".java";
 
     /**
      * Gets arguments from console, checks arguments, and then calls needed implementation.
      * <ul>
-     *     <li>2 arguments - <code>className</code> and <code>rootPath</code>
-     *     creates <code>.java</code> file by invoke {@link #implement}</li>
-     *     <li>3 arguments - <code>-jar</code>, <code>className</code> and <code>jarPath</code>
-     *     creates <code>.jar</code> file by invoke {@link #implementJar}</li>
+     *     <li>2 arguments - <strong>className</strong> and <strong>rootPath</strong> -
+     *     creates <var>.java</var> file by invoke {@link #implement}</li>
+     *     <li>3 arguments - <var>-jar</var>, <strong>className</strong> and <strong>jarPath</strong> -
+     *     creates <var>.jar</var> file by invoke {@link #implementJar}</li>
      * </ul>
      *
      * @param args arguments received by the code.
@@ -97,13 +106,14 @@ public class Implementor implements JarImpler {
 
     /**
      * Checks the correctness of the received arguments.
+     * Checks if there is a null argument, if the number of arguments is 2 or 3 and if 3, checks first argument.
      *
      * @param args arguments received by the code.
      * @throws ImplerException if
      *                         <ul>
      *                             <li>no arguments, or their number is incorrect.</li>
      *                             <li>one of the arguments is null.</li>
-     *                             <li>3 arguments, and the first one is not "-jar".</li>
+     *                             <li>3 arguments, and the first one is not <var>-jar"</var>.</li>
      *                         </ul>
      */
     private static void checkArguments(String[] args) throws ImplerException {
@@ -119,10 +129,11 @@ public class Implementor implements JarImpler {
     }
 
     /**
+     * Returns an instance of this class with received <strong>className</strong>.
      * Invoke {@link Class#forName} for received class.
      *
      * @param className received class name.
-     * @return {@code Class} for received class.
+     * @return An instance of {@code Class} for received class name.
      * @throws ImplerException if class can't be found.
      */
     private static Class<?> createClass(String className) throws ImplerException {
@@ -134,6 +145,7 @@ public class Implementor implements JarImpler {
     }
 
     /**
+     * Returns a <strong>Path</strong> by converting a string.
      * Invoke {@link Path#of} for received path and more sequence of strings.
      *
      * @param path received path name.
@@ -149,20 +161,20 @@ public class Implementor implements JarImpler {
     }
 
     /**
-     * Creates <code>.java</code> file, which implement received <code>token</code>.
-     * Places result file if <code>root</code> directory.
-     * Result file name is <code>token</code> name + <code>Impl</code>.
+     * Creates <var>.java</var> file, which implement received <code>token</code>.
+     * Places result file in <strong>root</strong> directory.
+     * Result file name is <strong>token</strong> name + <strong>Impl</strong>.
      *
      * @param token type token to create implementation for.
      * @param root  root directory.
      * @throws ImplerException if implementation failed, because
      *                         <ul>
-     *                             <li>One of variables become <code>null</code>.</li>
+     *                             <li>One of variables become <strong>null</strong>.</li>
      *                             <li>Can't create path directory.</li>
-     *                             <li>Received <code>class</code> equals to <code>array.</code>,
-     *                             <code>enum</code>or <code>primitive</code> type.</li>
-     *                             <li>Received <code>class</code> is final or private.</li>
-     *                             <li>No constructors found in <code>token</code>.</li>
+     *                             <li>Received <strong>class</strong> equals to <strong>array</strong>,
+     *                             <strong>enum</strong> or <strong>primitive</strong> type.</li>
+     *                             <li>Received <strong>class</strong> is final or private.</li>
+     *                             <li>No constructors found in <strong>token</strong>.</li>
      *                             <li>Something will go wrong with output file.</li>
      *                         </ul>
      */
@@ -176,7 +188,7 @@ public class Implementor implements JarImpler {
         }
 
         Path path = root.resolve(Paths.get(token.getPackageName().replace('.', File.separatorChar),
-                simpleClassName(token) + JAVA_ENDING));
+                simpleClassName(token) + JAVA_EXTENSION));
         createParentDirectories(path);
         try (BufferedWriter writer = Files.newBufferedWriter(path)) {
             writer.write(createClass(token));
@@ -186,7 +198,7 @@ public class Implementor implements JarImpler {
     }
 
     /**
-     * Creates <code>.jar</code> file, which implement received <code>token</code>.
+     * Creates <var>.jar</var> file, which implement received <strong>token</strong>.
      * Invokes {@link #implement}, {@link #buildJar}.
      * Creates temporary directory during the generation, then deletes it.
      *
@@ -194,7 +206,7 @@ public class Implementor implements JarImpler {
      * @param jarFile target <var>.jar</var> file.
      * @throws ImplerException if implementation failed, because
      *                         <ul>
-     *                             <li>One of variables become <code>null</code>.</li>
+     *                             <li>One of variables become <strong>null</strong>.</li>
      *                              <li>Can't create path directory.</li>
      *                              <li>If tmp path is invalid</li>
      *                              <li>Something will go wrong with jar output file.</li>
@@ -215,7 +227,7 @@ public class Implementor implements JarImpler {
     }
 
     /**
-     * Cleans directory of created tmp files.
+     * Cleans directory of created temporary files.
      *
      * @param directory to delete.
      * @throws ImplerException if something will went wrong while cleaning directory.
@@ -248,7 +260,7 @@ public class Implementor implements JarImpler {
     /**
      * Creates manifest with manifest version and author.
      *
-     * @return complete {@code Manifest}
+     * @return complete {@code Manifest}.
      */
     private Manifest createManifest() {
         Manifest manifest = new Manifest();
@@ -259,24 +271,24 @@ public class Implementor implements JarImpler {
     }
 
     /**
-     * Creates <code>.jar</code> file by <code>token</code>, creates manifest.
+     * Creates <var>.jar</var> file by <strong>token</strong>, and creates manifest.
      *
      * @param token   received token to create implementation for.
-     * @param tmpDir  directory, which contains all <code>.class</code> files.
-     * @param jarFile {@code Path} for result <code>.jar</code> file.
+     * @param tmpDir  directory, which contains all <var>.class</var> files.
+     * @param jarFile {@code Path} for result <var>.jar</var> file.
      * @throws ImplerException if something will go wrong with jar output file.
      */
     private void buildJar(Class<?> token, Path tmpDir, Path jarFile) throws ImplerException {
         try (JarOutputStream writer = new JarOutputStream(Files.newOutputStream(jarFile), createManifest())) {
             writer.putNextEntry(new ZipEntry(getImplFilePath(token)));
-            Files.copy(getFile(tmpDir, token, CLASS_ENDING), writer);
+            Files.copy(getFile(tmpDir, token, CLASS_EXTENSION), writer);
         } catch (IOException e) {
             throw new ImplerException("Something went wrong with jar output file.", e);
         }
     }
 
     /**
-     * Compiles <code>.java</code> files, which implement received <code>token</code>, place them in received directory.
+     * Compiles <var>.java</var> files, which implement received <strong>token</strong>.
      *
      * @param token     received token to create implementation for.
      * @param directory where compiled classes will be located.
@@ -293,7 +305,7 @@ public class Implementor implements JarImpler {
         } catch (URISyntaxException e) {
             throw new ImplerException("Can't convert URL to URI.", e);
         }
-        String filePath = getFile(directory, token, JAVA_ENDING).toString();
+        String filePath = getFile(directory, token, JAVA_EXTENSION).toString();
         String[] args = {"-cp", classPath, filePath};
         JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
         if (compiler.run(null, null, null, args) != 0) {
@@ -302,8 +314,8 @@ public class Implementor implements JarImpler {
     }
 
     /**
-     * Returns file path containing the implementation of received <code>token</code>.
-     * Converting <code>token</code> package to path and add file extension.
+     * Returns file path containing the implementation of received <strong>token</strong>.
+     * Takes full class name with {@link File#separator} instead of '.' and added the extension.
      *
      * @param directory parent path to resolve.
      * @param token     received token to create implementation for.
@@ -315,26 +327,27 @@ public class Implementor implements JarImpler {
     }
 
     /**
-     * Returns file path with received token class name and <code>.class</code> extension.
+     * Returns file path with received token class name and <var>.class</var> extension.
+     * Takes full class name with '/' instead of '.', resolves path, added class extension.
+     * Replaces '\' to '/' for windows.
      *
      * @param token received token to create implementation for.
      * @return result {@code String} path.
      */
     private String getImplFilePath(Class<?> token) {
-        return Paths.get(token.getName()
-                .replace('.', '/') + "Impl.class")
-                .getParent()
-                .resolve(token.getSimpleName() + "Impl.class")
-                .toString()
-                .replace('\\', '/');
+        return Paths.get(
+                fullClassName(token).replace('.', '/'))
+                .getParent().resolve(simpleClassName(token) + CLASS_EXTENSION)
+                .toString().replace('\\', '/');
     }
 
     /**
-     * Checks if <code>token</code> and <code>path</code> exists.
+     * Checks if <strong>token</strong> and <strong>path</strong> exists.
+     * Checks if some argument is null.
      *
      * @param token received token to create implementation for.
-     * @param path  jar ot root directory.
-     * @throws ImplerException if <code>token</code> or <code>path</code> doesn't exist.
+     * @param path  to directory.
+     * @throws ImplerException if <strong>token</strong> or <strong>path</strong> doesn't exist.
      */
     private void checkTokenAndPath(Class<?> token, Path path) throws ImplerException {
         if (token == null || path == null) {
@@ -343,7 +356,8 @@ public class Implementor implements JarImpler {
     }
 
     /**
-     * Returns name of created file.
+     * Returns simple name of file, which implements <strong>token</strong>.
+     * Consisting of simple token name + Impl.
      *
      * @param token received token to create implementation for.
      * @return resulting {@code String} file name.
@@ -352,15 +366,23 @@ public class Implementor implements JarImpler {
         return token.getSimpleName() + "Impl";
     }
 
+    /**
+     * Returns full name of file, which implements <strong>token</strong>.
+     * Consisting of package and simple name.
+     *
+     * @param token received token to create implementation for.
+     * @return resulting {@code String} file name.
+     */
     private String fullClassName(Class<?> token) {
         return token.getPackageName() + "." + simpleClassName(token);
     }
 
     /**
-     * Invoke {@link Files#createDirectories} and create parent directories.
+     * Creates parent directories.
+     * Invoke {@link Files#createDirectories}.
      *
      * @param path to which need to create parent directories.
-     * @throws ImplerException if IOException occurs.
+     * @throws ImplerException if {@link IOException} occurs.
      */
     private void createParentDirectories(Path path) throws ImplerException {
         try {
@@ -371,11 +393,14 @@ public class Implementor implements JarImpler {
     }
 
     /**
-     * Create result java code, which implement <code>token</code>.
+     * Creates result java class, which implement <strong>token</strong>.
+     * Creates package, class header, constructors and methods by invoking
+     * {@link #createPackage}, {@link #createClassHeader}, {@link #createConstructor},
+     * and {@link #createMethod}.
      *
      * @param token received token to create implementation for.
      * @return {@code String}  representation of result java code.
-     * @throws ImplerException if no constructors found in <code>token</code>.
+     * @throws ImplerException if no constructors found in <strong>token</strong>.
      */
     private String createClass(Class<?> token) throws ImplerException {
         return createPackage(token) +
@@ -386,8 +411,8 @@ public class Implementor implements JarImpler {
     }
 
     /**
-     * Creates package declaration for <code>.java</code> file, if package <code>token</code>is not empty,
-     * otherwise returns empty string.
+     * Creates package declaration for <var>.java</var> file.
+     * Creates if package <strong>token</strong> is not empty, otherwise returns empty string.
      *
      * @param token received token to create implementation for.
      * @return result {@code String} with right package.
@@ -402,7 +427,8 @@ public class Implementor implements JarImpler {
     }
 
     /**
-     * Creates class declaration for <code>.java</code> file.
+     * Creates class declaration for <var>.java</var> file.
+     * If <strong>token</strong> is interface, then implements its, otherwise extends.
      *
      * @param token received token to create implementation for.
      * @return result {@code String} with right class declaration.
@@ -413,11 +439,12 @@ public class Implementor implements JarImpler {
     }
 
     /**
-     * Creates constructors for <code>.java</code> file, takes only non-private constructors.
+     * Creates constructors for <var>.java</var> file.
+     * Takes only non-private constructors. Invokes {@link #createConstructor}.
      *
      * @param token received token to create implementation for.
      * @return result {@code String} with all constructors.
-     * @throws ImplerException if no constructors found in <code>token</code>.
+     * @throws ImplerException if no constructors found in <strong>token</strong>.
      */
     private String createConstructors(Class<?> token) throws ImplerException {
         StringBuilder constructors = new StringBuilder();
@@ -436,7 +463,7 @@ public class Implementor implements JarImpler {
     }
 
     /**
-     * Create implementation of received {@code Constructor}.
+     * Create implementation of received <strong>constructor</strong>.
      * Invokes {@link #createBody} with constructor, empty return type, method name and body.
      *
      * @param constructor constructor token to generate implementation for.
@@ -449,7 +476,7 @@ public class Implementor implements JarImpler {
     }
 
     /**
-     * Return list of declared parameters of {@code Executable}, mapped by {@link Function}.
+     * Return list of declared parameters of {@link Executable}, mapped by {@link Function}.
      * Separates parameters with comma and space, wrapping in round brackets.
      *
      * @param method {@code Executable} object that represents all the parameters.
@@ -462,7 +489,9 @@ public class Implementor implements JarImpler {
     }
 
     /**
-     * Creates methods for <code>.java</code> file, takes only abstract methods.
+     * Creates methods for <var>.java</var> file, takes only abstract methods.
+     * Collects the necessary methods in {@link TreeSet}, which can't contains equals methods.
+     * Invokes {@link #createMethod}.
      *
      * @param token received token to create implementation for.
      * @return result {@code String} of methods.
@@ -483,7 +512,8 @@ public class Implementor implements JarImpler {
     }
 
     /**
-     * Collect tokens of methods from array to {@code TreeSet}.
+     * Collect tokens of methods from array to {@link TreeSet}.
+     * Takes only abstract methods.
      *
      * @param methods array of methods.
      * @param storage {@code TreeSet} storage to store result.
@@ -494,7 +524,7 @@ public class Implementor implements JarImpler {
     }
 
     /**
-     * Create implementation of received {@code Method}.
+     * Create implementation of received <strong>Method</strong>.
      * Invokes {@link #createBody} with method, correct return type, method name and body.
      *
      * @param method received token to generate implementation for.
@@ -508,9 +538,9 @@ public class Implementor implements JarImpler {
     }
 
     /**
-     * Create code for default value by received <code>token</code>.
+     * Create code for default value by received <strong>token</strong>.
      * <ul>
-     *     <li>for primitive default value is "0"</li>
+     *     <li>for primitive default value is 0</li>
      *     <li>for void default value is empty string</li>
      *     <li>for boolean default value is true</li>
      *     <li>otherwise return null</li>
@@ -532,11 +562,13 @@ public class Implementor implements JarImpler {
 
     /**
      * Create implementation of received method or constructor.
+     * Creates <strong>StringBuilder</strong>, and appends modifiers(if needed), return name(if needed),
+     * name, parameters, body of method/constructor.
      *
      * @param method     received token of method or constructor.
-     * @param returnName {@code String} representation of {@code Executable} return value.
-     * @param name       {@code String} representation of {@code Executable} name.
-     * @param body       {@code String} representation of {@code Executable} body.
+     * @param returnName {@code String} representation of {@link Executable} return value.
+     * @param name       {@code String} representation of {@link Executable} name.
+     * @param body       {@code String} representation of {@link Executable} body.
      * @return result {@code String} code of method or constructor.
      */
     private String createBody(Executable method, String returnName, String name, String body) {
@@ -558,11 +590,12 @@ public class Implementor implements JarImpler {
     }
 
     /**
-     * Returns list of declared exceptions to be thrown by {@link Executable}, if the executable declares exceptions,
+     * Returns list of declared exceptions to be thrown by {@link Executable}.
+     * Returns exceptions if the executable declares exceptions,
      * and separates parameters with comma and space, wrapping in round brackets.
      * Otherwise returns empty string.
      *
-     * @param method {@code Executable} object that represents all the parameters.
+     * @param method {@link Executable} object to find exceptions for.
      * @return {@code String} of all exceptions.
      */
     private String findExceptions(Executable method) {
