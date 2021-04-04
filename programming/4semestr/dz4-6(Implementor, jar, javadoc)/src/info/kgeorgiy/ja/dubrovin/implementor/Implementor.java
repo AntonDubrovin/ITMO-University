@@ -268,7 +268,7 @@ public class Implementor implements JarImpler {
      */
     private void buildJar(Class<?> token, Path tmpDir, Path jarFile) throws ImplerException {
         try (JarOutputStream writer = new JarOutputStream(Files.newOutputStream(jarFile), createManifest())) {
-            writer.putNextEntry(new ZipEntry(getImplFilePath(token).toString()));
+            writer.putNextEntry(new ZipEntry(getImplFilePath(token)));
             Files.copy(getFile(tmpDir, token, CLASS_ENDING), writer);
         } catch (IOException e) {
             throw new ImplerException("Something went wrong with jar output file.", e);
@@ -320,9 +320,13 @@ public class Implementor implements JarImpler {
      * @param token received token to create implementation for.
      * @return result {@code String} path.
      */
-    private Path getImplFilePath(Class<?> token) {
-        return Paths.get(fullClassName(token).replace('.', '/'))
-                .getParent().resolve(simpleClassName(token) + CLASS_ENDING);
+    private String getImplFilePath(Class<?> token) {
+        return Paths.get(token.getName()
+                .replace('.', '/') + "Impl.class")
+                .getParent()
+                .resolve(token.getSimpleName() + "Impl.class")
+                .toString()
+                .replace('\\', '/');
     }
 
     /**
