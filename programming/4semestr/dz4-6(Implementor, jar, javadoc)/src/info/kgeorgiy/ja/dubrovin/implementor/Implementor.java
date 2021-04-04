@@ -176,7 +176,7 @@ public class Implementor implements JarImpler {
         }
 
         Path path = root.resolve(Paths.get(token.getPackageName().replace('.', File.separatorChar),
-                className(token) + ".java"));
+                simpleClassName(token) + JAVA_ENDING));
         createParentDirectories(path);
         try (BufferedWriter writer = Files.newBufferedWriter(path)) {
             writer.write(createClass(token));
@@ -198,6 +198,7 @@ public class Implementor implements JarImpler {
      *                              <li>Can't create path directory.</li>
      *                              <li>If tmp path is invalid</li>
      *                              <li>Something will go wrong with jar output file.</li>
+     *                              <li>Something will go wrong with clean tmp directory</li>
      *                         </ul>
      */
     @Override
@@ -205,12 +206,44 @@ public class Implementor implements JarImpler {
         checkTokenAndPath(token, jarFile);
         createParentDirectories(jarFile);
 
-        Path tmpDir = createPath(jarFile.toAbsolutePath().getParent().toString() + "Implementor" + "Tmp");
+        Path tmpDir = createPath(jarFile.toAbsolutePath().getParent().toString() + "ImplementorTmp");
 
         implement(token, tmpDir);
-        buildJar(token, tmpDir, jarFile);
         compileClass(token, tmpDir);
+        buildJar(token, tmpDir, jarFile);
+        cleanDir(tmpDir);
     }
+
+    /**
+     * Cleans directory of created tmp files.
+     *
+     * @param directory to delete.
+     * @throws ImplerException if something will went wrong while cleaning directory.
+     */
+    private void cleanDir(Path directory) throws ImplerException {
+        try {
+            Files.walkFileTree(directory, CLEANER);
+        } catch (IOException e) {
+            throw new ImplerException("Unable to clean tmp directory.", e);
+        }
+    }
+
+    /**
+     * Instance of {@link SimpleFileVisitor}, deletes files and directories.
+     */
+    private static final FileVisitor<Path> CLEANER = new SimpleFileVisitor<>() {
+        @Override
+        public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
+            Files.delete(file);
+            return FileVisitResult.CONTINUE;
+        }
+
+        @Override
+        public FileVisitResult postVisitDirectory(Path dir, IOException exc) throws IOException {
+            Files.delete(dir);
+            return FileVisitResult.CONTINUE;
+        }
+    };
 
     /**
      * Creates manifest with manifest version and author.
@@ -235,9 +268,8 @@ public class Implementor implements JarImpler {
      */
     private void buildJar(Class<?> token, Path tmpDir, Path jarFile) throws ImplerException {
         try (JarOutputStream writer = new JarOutputStream(Files.newOutputStream(jarFile), createManifest())) {
-            String entry = getImplFilePath(token, CLASS_ENDING);
-            writer.putNextEntry(new ZipEntry(entry));
-            Files.copy(resolveImplFilePath(tmpDir, token, CLASS_ENDING), writer);
+            writer.putNextEntry(new ZipEntry(getImplFilePath(token).toString()));
+            Files.copy(getFile(tmpDir, token, CLASS_ENDING), writer);
         } catch (IOException e) {
             throw new ImplerException("Something went wrong with jar output file.", e);
         }
@@ -261,7 +293,7 @@ public class Implementor implements JarImpler {
         } catch (URISyntaxException e) {
             throw new ImplerException("Can't convert URL to URI.", e);
         }
-        String filePath = resolveImplFilePath(directory, token, JAVA_ENDING).toString();
+        String filePath = getFile(directory, token, JAVA_ENDING).toString();
         String[] args = {"-cp", classPath, filePath};
         JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
         if (compiler.run(null, null, null, args) != 0) {
@@ -272,15 +304,14 @@ public class Implementor implements JarImpler {
     /**
      * Returns file path containing the implementation of received <code>token</code>.
      * Converting <code>token</code> package to path and add file extension.
-     * Invokes {@link #getImplFilePath}.
      *
      * @param directory parent path to resolve.
      * @param token     received token to create implementation for.
      * @param extension of file.
      * @return result {@code Path}
      */
-    private Path resolveImplFilePath(Path directory, Class<?> token, String extension) {
-        return directory.resolve(Paths.get(getImplFilePath(token, extension)));
+    public Path getFile(Path directory, final Class<?> token, String extension) {
+        return directory.resolve(fullClassName(token).replace(".", File.separator) + extension).toAbsolutePath();
     }
 
     /**
@@ -289,9 +320,9 @@ public class Implementor implements JarImpler {
      * @param token received token to create implementation for.
      * @return result {@code String} path.
      */
-    private String getImplFilePath(Class<?> token, String extension) {
-        return String.join(File.separator, token.getPackageName().split("\\.")) +
-                File.separator + className(token) + extension;
+    private Path getImplFilePath(Class<?> token) {
+        return Paths.get(fullClassName(token).replace('.', '/'))
+                .getParent().resolve(simpleClassName(token) + CLASS_ENDING);
     }
 
     /**
@@ -313,8 +344,12 @@ public class Implementor implements JarImpler {
      * @param token received token to create implementation for.
      * @return resulting {@code String} file name.
      */
-    private String className(Class<?> token) {
+    private String simpleClassName(Class<?> token) {
         return token.getSimpleName() + "Impl";
+    }
+
+    private String fullClassName(Class<?> token) {
+        return token.getPackageName() + "." + simpleClassName(token);
     }
 
     /**
@@ -369,10 +404,9 @@ public class Implementor implements JarImpler {
      * @return result {@code String} with right class declaration.
      */
     private String createClassHeader(Class<?> token) {
-        return "public" + SPACE + "class" + SPACE + className(token) + SPACE +
+        return "public" + SPACE + "class" + SPACE + simpleClassName(token) + SPACE +
                 (token.isInterface() ? "implements" : "extends") + SPACE + token.getCanonicalName();
     }
-
 
     /**
      * Creates constructors for <code>.java</code> file, takes only non-private constructors.
@@ -386,7 +420,7 @@ public class Implementor implements JarImpler {
         if (!token.isInterface()) {
             for (Constructor<?> constructor : token.getDeclaredConstructors()) {
                 if (!Modifier.isPrivate(constructor.getModifiers())) {
-                    constructors.append(createConstructor(constructor, className(token))).append(NEW_LINE);
+                    constructors.append(createConstructor(constructor, simpleClassName(token))).append(NEW_LINE);
                 }
             }
 
