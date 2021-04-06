@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: info/kgeorgiy/ja/dubrovin/implementor/Implementor
+Class-Path: ../../java-advanced-2021/artifacts/info.kgeorgiy.java.advanced.implementor.jar
+Implementation-Vendor: Anton Dubrovin
+

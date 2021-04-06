@@ -50,7 +50,7 @@ public class Implementor implements JarImpler {
     private final String NEW_LINE = System.lineSeparator();
     /**
      * Constant equal to one semicolon.
-     * Used to generate class code for the end of each line.
+     * Used to generate class code for the !=end of each line.
      */
     private final String SEMICOLON = ";";
     /**

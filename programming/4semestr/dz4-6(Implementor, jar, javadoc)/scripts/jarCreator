@@ -1,0 +1,13 @@
+#!/bin/bash
+
+javac -d jar \
+	--module-path ../../java-advanced-2021/lib:../../java-advanced-2021/artifacts \
+	module-info.java \
+	info/kgeorgiy/ja/dubrovin/implementor/Implementor.java
+
+cd jar
+
+jar -cfm ../Implementor.jar \
+	../MANIFEST.MF \
+	info/kgeorgiy/ja/dubrovin/implementor/*.class \
+	module-info.class
