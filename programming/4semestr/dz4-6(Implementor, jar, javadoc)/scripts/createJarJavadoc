@@ -1,0 +1,5 @@
+#!/bin/bash
+
+./jarCreator
+./javadocCreator
+java -jar Implementor.jar
