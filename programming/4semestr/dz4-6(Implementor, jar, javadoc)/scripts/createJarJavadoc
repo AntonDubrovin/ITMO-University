@@ -2,4 +2,4 @@
 
 ./jarCreator
 ./javadocCreator
-java -jar Implementor.jar
+java -jar Implementor.jar java.lang.Number implementNumber
