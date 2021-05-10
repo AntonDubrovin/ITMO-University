@@ -3,6 +3,7 @@ package info.kgeorgiy.ja.dubrovin.crawler;
 import info.kgeorgiy.java.advanced.crawler.*;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.util.*;
 import java.util.concurrent.*;
 
@@ -71,7 +72,7 @@ public class WebCrawler implements Crawler {
                         hostQueue.nextTask();
                     }
                 });
-            } catch (final IOException e) {
+            } catch (final MalformedURLException e) {
                 errors.put(url, e);
             }
         }
