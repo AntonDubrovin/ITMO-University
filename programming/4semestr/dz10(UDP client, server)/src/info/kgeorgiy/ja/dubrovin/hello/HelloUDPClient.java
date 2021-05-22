@@ -5,6 +5,7 @@ import info.kgeorgiy.java.advanced.hello.HelloClient;
 import java.io.IOException;
 import java.net.*;
 import java.nio.charset.StandardCharsets;
+import java.rmi.ServerError;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -28,7 +29,7 @@ public class HelloUDPClient implements HelloClient {
                     for (int requestID = 0; requestID < requests; requestID++) {
                         final String requestString = prefix + threadID + "_" + requestID;
                         final DatagramPacket request = new DatagramPacket(
-                                (requestString).getBytes(StandardCharsets.UTF_8),
+                                requestString.getBytes(StandardCharsets.UTF_8),
                                 requestString.length(),
                                 socketAddress
                         );
@@ -37,17 +38,22 @@ public class HelloUDPClient implements HelloClient {
                             try {
                                 socket.send(request);
                                 socket.receive(response);
+
                                 String answer = new String(
                                         response.getData(), response.getOffset(),
                                         response.getLength(), StandardCharsets.UTF_8
                                 );
-                                System.out.println(answer);
-                                break;
-                            } catch (final IOException ignored) {
+                                if (answer.contains(requestString)) {
+                                    System.out.println(answer);
+                                    break;
+                                }
+                            } catch (final IOException e) {
+                                System.err.println("Error while socket send or receive: " + e.getMessage());
                             }
                         }
                     }
-                } catch (final SocketException ignored) {
+                } catch (final SocketException e) {
+                    System.err.println("Failed socket: " + e.getMessage());
                 }
             }));
         }

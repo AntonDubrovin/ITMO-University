@@ -34,7 +34,7 @@ public class HelloUDPServer implements HelloServer {
                         senders.submit(() -> {
                             try {
                                 final String answer = new String(
-                                        request.getData(), 0,
+                                        request.getData(), request.getOffset(),
                                         request.getLength(), StandardCharsets.UTF_8
                                 );
                                 final String helloAnswer = "Hello, " + answer;
@@ -44,14 +44,17 @@ public class HelloUDPServer implements HelloServer {
                                         request.getSocketAddress()
                                 );
                                 socket.send(response);
-                            } catch (final IOException ignored) {
+                            } catch (final IOException e) {
+                                System.err.println("Error while socket send: " + e.getMessage());
                             }
                         });
-                    } catch (final IOException ignored) {
+                    } catch (final IOException e) {
+                        System.err.println("Error while socket receive: " + e.getMessage());
                     }
                 }
             });
-        } catch (SocketException ignored) {
+        } catch (final SocketException e) {
+            System.err.println("Failed socket: " + e.getMessage());
         }
     }
 
