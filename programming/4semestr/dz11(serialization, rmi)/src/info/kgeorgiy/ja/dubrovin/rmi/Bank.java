@@ -2,6 +2,7 @@ package info.kgeorgiy.ja.dubrovin.rmi;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
+import java.util.Set;
 
 public interface Bank extends Remote {
     /**
@@ -10,7 +11,7 @@ public interface Bank extends Remote {
      * @param id account id
      * @return created or existing account.
      */
-    Account createAccount(String id, String passport) throws RemoteException;
+    Account createAccount(String id, String passport, Person person) throws RemoteException;
 
     /**
      * Returns account by identifier.
@@ -18,11 +19,15 @@ public interface Bank extends Remote {
      * @param id account id
      * @return account with specified identifier or {@code null} if such account does not exists.
      */
-    Account getAccount(String id, String passport) throws RemoteException;
+    Account getAccount(String id, String passport, Person person) throws RemoteException;
 
     Person getLocalPerson(String passport) throws RemoteException;
 
     Person getRemotePerson(String passport) throws RemoteException;
 
-    RemotePerson createPerson(String name, String surname, String passport) throws RemoteException;
+    boolean createPerson(String name, String surname, String passport) throws RemoteException;
+
+    boolean searchPerson(String name, String surname, String passport) throws RemoteException;
+
+    Set<String> getPersonAccounts(Person person) throws RemoteException;
 }

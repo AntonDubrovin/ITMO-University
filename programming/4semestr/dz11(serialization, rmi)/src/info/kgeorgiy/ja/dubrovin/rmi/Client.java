@@ -23,9 +23,10 @@ public final class Client {
             final String passport = args[2];
             final String accountId = args[3];
             final int amountChange = Integer.parseInt(args[4]);
+            Person remotePerson = new RemotePerson(name, surname, passport);
 
             final Bank bank = (Bank) Naming.lookup("//localhost/bank");
-            final Account account = bank.getAccount(accountId, passport);
+            final Account account = bank.getAccount(accountId, passport, remotePerson);
             if (account != null) {
                 final int currentAmount = account.getAmount();
                 System.out.println("Old balance: " + currentAmount);

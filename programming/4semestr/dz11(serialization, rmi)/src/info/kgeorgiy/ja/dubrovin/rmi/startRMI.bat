@@ -1,0 +1,2 @@
+set classpath=..
+start rmiregistry

@@ -39,6 +39,10 @@ public class LocalPerson implements Person, Externalizable {
         return accounts.get(account);
     }
 
+    Account getAccountById(String id) {
+        return accounts.get(id);
+    }
+
     @Override
     public void writeExternal(ObjectOutput out) throws IOException {
         out.writeObject(accounts.size());
