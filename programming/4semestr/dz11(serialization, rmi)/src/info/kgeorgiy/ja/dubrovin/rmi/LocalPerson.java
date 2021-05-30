@@ -1,7 +1,6 @@
 package info.kgeorgiy.ja.dubrovin.rmi;
 
 import java.io.*;
-import java.rmi.RemoteException;
 import java.util.Map;
 import java.util.Set;
 
@@ -9,11 +8,16 @@ public class LocalPerson implements Person, Externalizable {
     private String name, surname, passport;
     private final Map<String, LocalAccount> accounts;
 
-    public LocalPerson(String name, String surname, String passport, Map<String, LocalAccount> accounts) {
+    public LocalPerson(final String name, final String surname,
+                       final String passport, final Map<String, LocalAccount> accounts) {
         this.name = name;
         this.surname = surname;
         this.passport = passport;
         this.accounts = accounts;
+    }
+
+    public LocalPerson() {
+        this(null, null, null, null);
     }
 
     @Override
@@ -35,18 +39,19 @@ public class LocalPerson implements Person, Externalizable {
         return accounts.keySet();
     }
 
-    public Account getAccount(String account) {
-        return accounts.get(account);
+    public void addAccount(final String id, final int amount) {
+        final LocalAccount account = new LocalAccount(id, amount);
+        accounts.put(id, account);
     }
 
-    Account getAccountById(String id) {
+    public Account getAccount(final String id) {
         return accounts.get(id);
     }
 
     @Override
-    public void writeExternal(ObjectOutput out) throws IOException {
+    public void writeExternal(final ObjectOutput out) throws IOException {
         out.writeObject(accounts.size());
-        for (Map.Entry<String, LocalAccount> pair : accounts.entrySet()) {
+        for (final Map.Entry<String, LocalAccount> pair : accounts.entrySet()) {
             out.writeObject(pair.getKey());
             out.writeObject(pair.getValue());
         }
@@ -57,11 +62,11 @@ public class LocalPerson implements Person, Externalizable {
     }
 
     @Override
-    public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
-        int size = (int) in.readObject();
+    public void readExternal(final ObjectInput in) throws IOException, ClassNotFoundException {
+        final int size = (int) in.readObject();
         for (int i = 0; i < size; i++) {
-            String key = (String) in.readObject();
-            LocalAccount value = (LocalAccount) in.readObject();
+            final String key = (String) in.readObject();
+            final LocalAccount value = (LocalAccount) in.readObject();
             accounts.put(key, value);
         }
 

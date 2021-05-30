@@ -3,7 +3,7 @@ package info.kgeorgiy.ja.dubrovin.rmi;
 public class RemotePerson implements Person {
     private final String name, surname, passport;
 
-    public RemotePerson(String name, String surname, String passport) {
+    public RemotePerson(final String name, final String surname, final String passport) {
         this.name = name;
         this.surname = surname;
         this.passport = passport;

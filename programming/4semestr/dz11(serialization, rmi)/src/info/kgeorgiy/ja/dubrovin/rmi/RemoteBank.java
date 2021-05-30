@@ -2,6 +2,8 @@ package info.kgeorgiy.ja.dubrovin.rmi;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
@@ -11,64 +13,82 @@ public class RemoteBank implements Bank {
     private final int port;
     private final ConcurrentMap<String, Person> persons = new ConcurrentHashMap<>();
     private final ConcurrentMap<String, Account> accounts = new ConcurrentHashMap<>();
-    private ConcurrentMap<String, Set<String>> accountsByPassport = new ConcurrentHashMap<>();
+    private final ConcurrentMap<String, Set<String>> accountsByPassport = new ConcurrentHashMap<>();
 
     public RemoteBank(final int port) {
         this.port = port;
     }
 
     @Override
-    public Account createAccount(final String id, final String passport, Person person) throws RemoteException {
+    public synchronized boolean createAccount(final String id, final Person person) throws RemoteException {
+        final String passport = person.getPassport();
+        if (accounts.containsKey(passport + ":" + id)) {
+            return false;
+        }
+
         System.out.println("Creating account with id " + id + " and passport " + passport);
         final Account account = new RemoteAccount(id);
-        if (accounts.putIfAbsent(passport + ":" + id, account) == null) {
-            UnicastRemoteObject.exportObject(account, port);
-            accountsByPassport.get(person.getPassport()).add((passport + ":" + id));
-            return account;
-        } else {
-            return getAccount(id, passport, person);
-        }
+        UnicastRemoteObject.exportObject(account, port);
+
+        accounts.put(passport + ":" + id, account);
+        if (accountsByPassport.get(person.getPassport()) == null)
+            accountsByPassport.put(person.getPassport(), new ConcurrentSkipListSet<>());
+        accountsByPassport.get(person.getPassport()).add(id);
+
+        return true;
     }
 
     @Override
-    public Account getAccount(final String id, final String passport, Person person) {
+    public synchronized Account getAccount(final String id, final Person person) throws RemoteException {
+        final String passport = person.getPassport();
         if (accounts.get(passport + ":" + id) == null) {
-            System.out.println("No account with id " + id + " and passport " + passport);
             return null;
         }
+        final Account account = accounts.get(passport + ":" + id);
 
         System.out.println("Retrieving account with id " + id + " and passport " + passport);
+
         if (person instanceof LocalPerson) {
-            return ((LocalPerson) person).getAccountById(passport + ":" + id);
-        } else {
-            return accounts.get(passport + ":" + id);
+            return ((LocalPerson) person).getAccount(id);
         }
+        return account;
+    }
+
+    public Map<String, LocalAccount> getLocalAccountsMap(final Person person) throws RemoteException {
+        final Map<String, LocalAccount> localAccounts = new HashMap<>();
+        for (final String curAccount : getPersonAccounts(person)) {
+            final Account account = getAccount(curAccount, person);
+            localAccounts.put(curAccount, new LocalAccount(account.getId(), account.getAmount()));
+        }
+        return localAccounts;
     }
 
     @Override
-    public Person getLocalPerson(String passport) {
-        if (passport == null) {
+    public synchronized Person getLocalPerson(final String passport) throws RemoteException {
+        if (passport == null || persons.get(passport) == null) {
             return null;
         }
 
         System.out.println("Retrieving person with passport " + passport);
 
-        return persons.get(passport);
+        final Person person = persons.get(passport);
+        final Map<String, LocalAccount> localAccounts = getLocalAccountsMap(person);
+        return new LocalPerson(person.getName(), person.getSurname(), person.getPassport(), localAccounts);
     }
 
     @Override
-    public Person getRemotePerson(String passport) {
+    public synchronized Person getRemotePerson(final String passport) {
         if (passport == null) {
             return null;
         }
 
         System.out.println("Retrieving person with passport " + passport);
-
         return persons.get(passport);
     }
 
     @Override
-    public boolean createPerson(String name, String surname, String passport) throws RemoteException {
+    public synchronized boolean createPerson(final String name, final String surname,
+                                             final String passport) throws RemoteException {
         if (name == null || surname == null || passport == null || persons.get(passport) != null) {
             System.out.println("Something went wrong with creating person with name " + name +
                     ", surname " + surname + " and passport " + passport);
@@ -77,7 +97,7 @@ public class RemoteBank implements Bank {
 
         System.out.println("Creating person with name " + name + ", surname " + surname + " and passport " + passport);
 
-        RemotePerson person = new RemotePerson(name, surname, passport);
+        final RemotePerson person = new RemotePerson(name, surname, passport);
         persons.put(passport, person);
         accountsByPassport.put(passport, new ConcurrentSkipListSet<>());
         UnicastRemoteObject.exportObject(person, port);
@@ -85,17 +105,17 @@ public class RemoteBank implements Bank {
     }
 
     @Override
-    public boolean searchPerson(String name, String surname, String passport) throws RemoteException {
+    public synchronized boolean searchPerson(final String name, final String surname, final String passport) throws RemoteException {
         if (name == null || surname == null || passport == null) {
             return false;
         }
 
-        Person person = persons.get(passport);
+        final Person person = persons.get(passport);
         return person != null && person.getName().equals(name) && person.getSurname().equals(surname);
     }
 
     @Override
-    public Set<String> getPersonAccounts(Person person) throws RemoteException {
+    public synchronized Set<String> getPersonAccounts(final Person person) throws RemoteException {
         if (person != null) {
             if (person instanceof LocalPerson) {
                 return ((LocalPerson) person).getAccounts();
