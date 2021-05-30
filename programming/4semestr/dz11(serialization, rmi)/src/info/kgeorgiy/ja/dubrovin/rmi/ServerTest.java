@@ -3,30 +3,30 @@ package info.kgeorgiy.ja.dubrovin.rmi;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.ExportException;
+import java.rmi.server.UnicastRemoteObject;
 import java.util.Random;
 import java.util.Set;
 
+@RunWith(JUnit4.class)
 public class ServerTest {
     private static Bank bank;
     private static final String HOST = "//localhost/bank";
     private static final int COUNT_OF_PEOPLE = 10;
     private static final int COUNT_OF_ACCOUNTS = 5;
+    private static final int PORT = 8888;
 
     @BeforeClass
     public static void beforeClass() throws Exception {
-        Registry registry;
-        try {
-            registry = LocateRegistry.createRegistry(Registry.REGISTRY_PORT);
-        } catch (final ExportException ignored) {
-            registry = LocateRegistry.getRegistry(Registry.REGISTRY_PORT);
-        }
-        registry.rebind(HOST, new RemoteBank(Registry.REGISTRY_PORT));
-        bank = (Bank) registry.lookup(HOST);
+        bank = new RemoteBank(PORT);
+        LocateRegistry.createRegistry(PORT);
+        UnicastRemoteObject.exportObject(bank, PORT);
     }
 
     @Test

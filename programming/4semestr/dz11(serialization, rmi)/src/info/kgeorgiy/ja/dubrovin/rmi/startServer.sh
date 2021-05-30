@@ -1,3 +1,2 @@
 #!/bin/bash
-cd classes
-java info.kgeorgiy.ja.dubrovin.rmi.Server
+java -cp classes info.kgeorgiy.ja.dubrovin.rmi.Server 1101

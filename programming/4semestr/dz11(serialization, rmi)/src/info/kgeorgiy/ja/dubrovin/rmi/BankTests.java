@@ -8,18 +8,18 @@ public class BankTests {
     public static void main(final String[] args) {
         final Result serverTestsResult = JUnitCore.runClasses(ServerTest.class);
         if (serverTestsResult.wasSuccessful()) {
-            System.out.println("Server tests passed");
+            System.out.println("SERVER TESTS PASSED");
         } else {
-            System.out.println("Server tests failed");
+            System.out.println("SERVER TESTS FAILED");
             System.exit(1);
         }
 
         final Result clientTestsResult = JUnitCore.runClasses(ClientTest.class);
         if (clientTestsResult.wasSuccessful()) {
-            System.out.println("Client tests passed");
+            System.out.println("CLIENT TESTS PASSED");
             System.exit(0);
         } else {
-            System.out.println("Client tests failed");
+            System.out.println("CLIENT TESTS FAILED");
             System.exit(1);
         }
     }
