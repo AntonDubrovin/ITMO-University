@@ -65,19 +65,19 @@ public class HelloUDPServer implements HelloServer {
         senders.shutdownNow();
     }
 
-    private static void checkArguments(String[] args) {
+    private static void checkArguments(final String[] args) {
         if (args == null || args.length != 2) {
             throw new IllegalArgumentException("Wrong number of arguments");
         }
 
-        for (String arg : args) {
+        for (final String arg : args) {
             if (arg == null) {
                 throw new IllegalArgumentException("One of argument is null");
             }
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         checkArguments(args);
 
         final int port = Integer.parseInt(args[0]);
