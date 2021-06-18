@@ -25,15 +25,15 @@ Paradigms-2020
 Java-advanced
 ----
 
- * ДЗ 1. [Обход файлов](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz1(walk))
- * ДЗ 2. [ArraySortedSet](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz2(arrayset))
- * ДЗ 3. [Студенты](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz3(student))
- * ДЗ 4-6. [Implementor, JarImplementor, Javadoc](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz4-6(Implementor%2C%20jar%2C%20javadoc))
- * ДЗ 7-8. [Итеративный параллелизм, Параллельный запуск](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz78(parallelism))
- * ДЗ 9. [Web Crawler](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz9(webCrawler))
- * ДЗ 10, 12. [Hello UDP, HelloNonblockingUDP](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz10%2C12(UDP%20client%2C%20server))
- * ДЗ 11. [Физические лица](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz11(serialization%2C%20rmi))
- * ДЗ 13. [Статистика текста](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz13(textStatistics))
+ * ДЗ 1. [Ввод-вывод. Обход файлов](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz1(walk))
+ * ДЗ 2. [Collections Framework. ArraySortedSet](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz2(arrayset))
+ * ДЗ 3. [Лямбда-выражения и потоки. Студенты](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz3(student))
+ * ДЗ 4-6. [Reflection. Implementor, JarImplementor, Javadoc](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz4-6(Implementor%2C%20jar%2C%20javadoc))
+ * ДЗ 7-8. [Введение в многопоточное программирование. Итеративный параллелизм, Параллельный запуск](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz78(parallelism))
+ * ДЗ 9. [Многопоточное программирование на Java. Web Crawler](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz9(webCrawler))
+ * ДЗ 10, 12. [Работа с сетью, Неблокирующий и асинхронный ввод-вывод. Hello UDP, HelloNonblockingUDP](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz10%2C12(UDP%20client%2C%20server))
+ * ДЗ 11. [Сериализация и RMI. Физические лица](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz11(serialization%2C%20rmi))
+ * ДЗ 13. [Интернационализация и локализация. Статистика текста](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz13(textStatistics))
 
 Web-программирование
 ----
