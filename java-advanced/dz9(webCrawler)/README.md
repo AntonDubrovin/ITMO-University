@@ -1,7 +1,7 @@
 Домашнее задание 9. Web Crawler
 ----
 1. Напишите потокобезопасный класс WebCrawler, который будет рекурсивно обходить сайты.
-  1.1. Класс WebCrawler должен иметь конструктор
+ * Класс WebCrawler должен иметь конструктор
   ```public WebCrawler(Downloader downloader, int downloaders, int extractors, int perHost)```
    * downloader позволяет скачивать страницы и извлекать из них ссылки;
    * downloaders — максимальное число одновременно загружаемых страниц;
