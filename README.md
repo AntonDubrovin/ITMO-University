@@ -70,7 +70,7 @@ C++ lite
 Методы оптимизации
 ----
 
- * Lab1. [Методы дихотомии, золотого сечения, Фибоначчи, парабол, Брэнта](https://github.com/AntonDubrovin/OptimizationMethods/tree/master/src/info/metopt/approx/oneDimensional)
- * Lab2. [Методы градиентного спуска, наискорейшего спуска, сопряженных градиентов](https://github.com/AntonDubrovin/OptimizationMethods/tree/master/src/info/metopt/approx/gradient)
- * Lab3. [Решения СЛАУ с помощью LU разложения, метода Гаусса](https://github.com/AntonDubrovin/Gauss)
- * Lab4. [Алгоритм Ньютона и его модификаций, квазиньютоновские методы](https://github.com/AntonDubrovin/Newton)
+ * Lab1. [Методы дихотомии, золотого сечения, Фибоначчи, парабол, Брэнта](https://github.com/AntonDubrovin/OptimizationMethods/tree/master/src/info/metopt/approx/oneDimensional) [Отчёт](https://github.com/AntonDubrovin/ITMO-University/blob/master/OptimizationMethodsReports/%D0%9E%D1%82%D1%87%D1%91%D1%821%D0%BB%D0%B0%D0%B1%D0%B0.pdf)
+ * Lab2. [Методы градиентного спуска, наискорейшего спуска, сопряженных градиентов](https://github.com/AntonDubrovin/OptimizationMethods/tree/master/src/info/metopt/approx/gradient) [Отчёт](https://github.com/AntonDubrovin/ITMO-University/blob/master/OptimizationMethodsReports/%D0%9E%D1%82%D1%87%D1%91%D1%822%D0%BB%D0%B0%D0%B1%D0%B0.pdf)
+ * Lab3. [Решения СЛАУ с помощью LU разложения, метода Гаусса](https://github.com/AntonDubrovin/Gauss) [Отчёт](https://github.com/AntonDubrovin/ITMO-University/blob/master/OptimizationMethodsReports/%D0%9E%D1%82%D1%87%D1%91%D1%823%D0%BB%D0%B0%D0%B1%D0%B0.pdf)
+ * Lab4. [Алгоритм Ньютона и его модификаций, квазиньютоновские методы](https://github.com/AntonDubrovin/Newton) [Отчёт](https://github.com/AntonDubrovin/ITMO-University/blob/master/OptimizationMethodsReports/%D0%9E%D1%82%D1%87%D1%91%D1%824%D0%BB%D0%B0%D0%B1%D0%B0.pdf)
