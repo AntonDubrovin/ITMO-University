@@ -19,7 +19,8 @@ Java-advanced
    * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz10,12(UDP%20client,%20server)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz10%2C12(UDP%20client%2C%20server)/src/info/kgeorgiy/ja/dubrovin/hello)
  * ДЗ 11 Сериализация и RMI. Физические лица
    * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz11(serialization,%20rmi)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz11(serialization%2C%20rmi)/src/info/kgeorgiy/ja/dubrovin/rmi)
- * ДЗ 13 Интернационализация и локализация. [Статистика текста](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz13(textStatistics))
+ * ДЗ 13 Интернационализация и локализация. Статистика текста
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz13(textStatistics)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz13(textStatistics)/src/info/kgeorgiy/ja/dubrovin/statistics)
 
 Методы оптимизации
 ----
