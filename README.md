@@ -41,7 +41,7 @@ Web-программирование
  * ДЗ 1. [Введение в HTTP](https://github.com/AntonDubrovin/ITMO-University/tree/master/Web/HTTP-Server)
  * ДЗ 2. [Введение в HTML/CSS](https://github.com/AntonDubrovin/ITMO-University/tree/master/Web/lesson2(css))
  * ДЗ 3. [Static Servlet](https://github.com/AntonDubrovin/ITMO-University/tree/master/Web/lesson3(static%20servlet)/wp3)
- * ДЗ 4 [Freemarker](https://github.com/AntonDubrovin/ITMO-University/tree/master/Web/lesson4(freemarker))
+ * ДЗ 4. [Freemarker](https://github.com/AntonDubrovin/ITMO-University/tree/master/Web/lesson4(freemarker))
  * ДЗ 5. [Framework](https://github.com/AntonDubrovin/ITMO-University/tree/master/Web/lesson5(framework))
  * ДЗ 6. [Framework + DataBase](https://github.com/AntonDubrovin/ITMO-University/tree/master/Web/lesson6(DB%2Center%2Cregister))
  * ДЗ 7. [JavaScript, JQuery](https://github.com/AntonDubrovin/ITMO-University/tree/master/Web/lesson7(js%2C%20jQuery))
