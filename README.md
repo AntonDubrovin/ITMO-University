@@ -80,12 +80,18 @@ Web-программирование
 OS lite
 ----
 
- * Lab1. [Основы использования консольного интерфейса ОС Linux и интерпретатора bash](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab1)
- * Lab2. [Мониторинг процессов и ресурсов в ОС Linux](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab2)
- * Lab3. [Управление процессами в ОС Linux](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab3)
- * Lab4. [Работа с файлово-каталожной системой в ОС Linux](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab4)
- * Lab5. [Управление памятью в ОС Linux](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab5)
- * Lab6. [Консольный интерфейс ОС WINDOWS](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab6)
+ * Lab1. Основы использования консольного интерфейса ОС Linux и интерпретатора bash
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/OS/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F1.pdf) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab1)
+ * Lab2. Мониторинг процессов и ресурсов в ОС Linux
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/OS/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F2.pdf) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab2)
+ * Lab3. Управление процессами в ОС Linux
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/OS/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F3.pdf) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab3)
+ * Lab4. Работа с файлово-каталожной системой в ОС Linux
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/OS/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F4.pdf) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab4)
+ * Lab5. Управление памятью в ОС Linux
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/OS/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F5.pdf) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab5)
+ * Lab6. Консольный интерфейс ОС WINDOWS
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/OS/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F6.pdf) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab6)
 
 C++ lite
 ----
