@@ -59,3 +59,10 @@ OS-lite
  * Lab4. [Работа с файлово-каталожной системой в ОС Linux](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab4)
  * Lab5. [Управление памятью в ОС Linux](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab5)
  * Lab6. [Консольный интерфейс ОС WINDOWS](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab6)
+
+C++ lite
+----
+
+ * [8-puzzle](https://github.com/AntonDubrovin/ITMO-University/tree/master/C%2B%2B/8-puzzle)
+ * [Percolation](https://github.com/AntonDubrovin/ITMO-University/tree/master/C%2B%2B/percolation)
+ * [Seam carving](https://github.com/AntonDubrovin/ITMO-University/tree/master/C%2B%2B/seam-carving)
