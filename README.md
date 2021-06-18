@@ -66,3 +66,11 @@ C++ lite
  * [8-puzzle](https://github.com/AntonDubrovin/ITMO-University/tree/master/C%2B%2B/8-puzzle)
  * [Percolation](https://github.com/AntonDubrovin/ITMO-University/tree/master/C%2B%2B/percolation)
  * [Seam carving](https://github.com/AntonDubrovin/ITMO-University/tree/master/C%2B%2B/seam-carving)
+
+Методы оптимизации
+----
+
+ * Lab1. [Методы дихотомии, золотого сечения, Фибоначчи, парабол, Брэнта](https://github.com/AntonDubrovin/OptimizationMethods/tree/master/src/info/metopt/approx/oneDimensional)
+ * Lab2. [Методы градиентного спуска, наискорейшего спуска, сопряженных градиентов](https://github.com/AntonDubrovin/OptimizationMethods/tree/master/src/info/metopt/approx/gradient)
+ * Lab3. [Решения СЛАУ с помощью LU разложения, метода Гаусса](https://github.com/AntonDubrovin/Gauss)
+ * Lab4. [Алгоритм Ньютона и его модификаций, квазиньютоновские методы](https://github.com/AntonDubrovin/Newton)
