@@ -19,8 +19,8 @@ Paradigms-2020
    * ДЗ 11 Объекты. [Объектные выражения на Clojure](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/2semestr/clojure/dz11)
    * ДЗ 12 [Комбинаторные парсеры](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/2semestr/clojure/dz12)
  * Prolog
-   * ДЗ 13. [Простые числа на Prolog](https://github.com/AntonDubrovin/ITMO-University/blob/master/programming/2semestr/Prolog/primes.pl)
-   * ДЗ 14. [Дерево поиска на Prolog](https://github.com/AntonDubrovin/ITMO-University/blob/master/programming/2semestr/Prolog/tree-map.pl)
+   * ДЗ 13 Факты, правила и вычисления. [Простые числа на Prolog](https://github.com/AntonDubrovin/ITMO-University/blob/master/programming/2semestr/Prolog/primes.pl)
+   * ДЗ 14 Задачи, унификация и объекты. [Дерево поиска на Prolog](https://github.com/AntonDubrovin/ITMO-University/blob/master/programming/2semestr/Prolog/tree-map.pl)
 
 Java-advanced
 ----
