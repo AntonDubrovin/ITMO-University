@@ -16,13 +16,13 @@ Java-advanced
 Методы оптимизации
 ----
 
- * Lab1. Методы дихотомии, золотого сечения, Фибоначчи, парабол, Брента 
+ * Лабораторая работа 1. Методы дихотомии, золотого сечения, Фибоначчи, парабол, Брента 
    * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/OptimizationMethods/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F1.pdf) | [Решение](https://github.com/AntonDubrovin/OptimizationMethods/tree/master/src/info/metopt/approx/oneDimensional) | [Отчёт](https://github.com/AntonDubrovin/ITMO-University/blob/master/OptimizationMethods/%D0%9E%D1%82%D1%87%D1%91%D1%82%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F1.pdf)
- * Lab2. Методы градиентного спуска, наискорейшего спуска, сопряженных градиентов
+ * Лабораторая работа 2. Методы градиентного спуска, наискорейшего спуска, сопряженных градиентов
    * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/OptimizationMethods/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F2.pdf) | [Решение](https://github.com/AntonDubrovin/OptimizationMethods/tree/master/src/info/metopt/approx/gradient) | [Отчёт](https://github.com/AntonDubrovin/ITMO-University/blob/master/OptimizationMethods/%D0%9E%D1%82%D1%87%D1%91%D1%82%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F2.pdf)
- * Lab3. Решения СЛАУ с помощью LU разложения, метода Гаусса
+ * Лабораторая работа 3. Решения СЛАУ с помощью LU разложения, метода Гаусса
    * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/OptimizationMethods/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F3.pdf) | [Решение](https://github.com/AntonDubrovin/Gauss/tree/master/src/com/approx/third) | [Отчёт](https://github.com/AntonDubrovin/ITMO-University/blob/master/OptimizationMethods/%D0%9E%D1%82%D1%87%D1%91%D1%82%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F3.pdf)
- * Lab4. Метод Ньютона и его модификации, квазиньютоновские методы
+ * Лабораторая работа 4. Метод Ньютона и его модификации, квазиньютоновские методы
    * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/OptimizationMethods/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F4.pdf) | [Решение](https://github.com/AntonDubrovin/Newton/tree/master/src/com/approx/newton) | [Отчёт](https://github.com/AntonDubrovin/ITMO-University/blob/master/OptimizationMethods/%D0%9E%D1%82%D1%87%D1%91%D1%82%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F4.pdf)
 
 ДМ лабораторная работа по машине Тьюринга
@@ -80,17 +80,17 @@ Web-программирование
 OS lite
 ----
 
- * Lab1. Основы использования консольного интерфейса ОС Linux и интерпретатора bash
+ * Лабораторая работа 1. Основы использования консольного интерфейса ОС Linux и интерпретатора bash
    * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/OS/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F1.pdf) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab1)
- * Lab2. Мониторинг процессов и ресурсов в ОС Linux
+ * Лабораторая работа 2. Мониторинг процессов и ресурсов в ОС Linux
    * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/OS/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F2.pdf) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab2)
- * Lab3. Управление процессами в ОС Linux
+ * Лабораторая работа 3. Управление процессами в ОС Linux
    * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/OS/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F3.pdf) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab3)
- * Lab4. Работа с файлово-каталожной системой в ОС Linux
+ * Лабораторая работа 4. Работа с файлово-каталожной системой в ОС Linux
    * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/OS/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F4.pdf) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab4)
- * Lab5. Управление памятью в ОС Linux
+ * Лабораторая работа 5. Управление памятью в ОС Linux
    * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/OS/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F5.pdf) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab5)
- * Lab6. Консольный интерфейс ОС WINDOWS
+ * Лабораторая работа 6. Консольный интерфейс ОС WINDOWS
    * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/OS/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F6.pdf) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab6)
 
 C++ lite
