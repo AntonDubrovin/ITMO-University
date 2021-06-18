@@ -6,21 +6,21 @@ Java-advanced
  * ДЗ 1 Ввод-вывод. Обход файлов
    * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz1(walk)/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz1(walk)/src)
  * ДЗ 2 Collections Framework. ArraySortedSet
-   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz2(arrayset)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz2(arrayset)/src/info/kgeorgiy/ja/dubrovin/arrayset)
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz2(arrayset)/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz2(arrayset)/src/info/kgeorgiy/ja/dubrovin/arrayset)
  * ДЗ 3 Лямбда-выражения и потоки. Студенты
-   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz3(student)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz3(student)/src/info/kgeorgiy/ja/dubrovin/student)
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz3(student)/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz3(student)/src/info/kgeorgiy/ja/dubrovin/student)
  * ДЗ 4-6 Reflection. Implementor, JarImplementor, Javadoc
-   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz4-6(Implementor%2C%20jar%2C%20javadoc)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz4-6(Implementor%2C%20jar%2C%20javadoc)/src/info/kgeorgiy/ja/dubrovin/implementor)
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz4-6(Implementor%2C%20jar%2C%20javadoc)/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz4-6(Implementor%2C%20jar%2C%20javadoc)/src/info/kgeorgiy/ja/dubrovin/implementor)
  * ДЗ 7-8 Введение в многопоточное программирование. Итеративный параллелизм, Параллельный запуск
-   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz78(parallelism)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz78(parallelism)/src/info/kgeorgiy/ja/dubrovin/concurrent)
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz78(parallelism)/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz78(parallelism)/src/info/kgeorgiy/ja/dubrovin/concurrent)
  * ДЗ 9 Многопоточное программирование на Java. Web Crawler
-   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz9(webCrawler)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz9(webCrawler)/src/info/kgeorgiy/ja/dubrovin/crawler)
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz9(webCrawler)/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz9(webCrawler)/src/info/kgeorgiy/ja/dubrovin/crawler)
  * ДЗ 10, 12 Работа с сетью, Неблокирующий и асинхронный ввод-вывод. Hello UDP, HelloNonblockingUDP
-   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz10,12(UDP%20client,%20server)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz10%2C12(UDP%20client%2C%20server)/src/info/kgeorgiy/ja/dubrovin/hello)
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz10,12(UDP%20client,%20server)/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz10%2C12(UDP%20client%2C%20server)/src/info/kgeorgiy/ja/dubrovin/hello)
  * ДЗ 11 Сериализация и RMI. Физические лица
-   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz11(serialization,%20rmi)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz11(serialization%2C%20rmi)/src/info/kgeorgiy/ja/dubrovin/rmi)
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz11(serialization,%20rmi)/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz11(serialization%2C%20rmi)/src/info/kgeorgiy/ja/dubrovin/rmi)
  * ДЗ 13 Интернационализация и локализация. Статистика текста
-   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz13(textStatistics)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz13(textStatistics)/src/info/kgeorgiy/ja/dubrovin/statistics)
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz13(textStatistics)/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz13(textStatistics)/src/info/kgeorgiy/ja/dubrovin/statistics)
 
 Методы оптимизации
 ----
