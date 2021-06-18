@@ -7,9 +7,12 @@ Java-advanced
    * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz1(walk)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz1(walk)/src)
  * ДЗ 2 Collections Framework. ArraySortedSet
    * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz2(arrayset)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz2(arrayset)/src/info/kgeorgiy/ja/dubrovin/arrayset)
- * ДЗ 3 Лямбда-выражения и потоки. [Студенты](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz3(student))
- * ДЗ 4-6 Reflection. [Implementor, JarImplementor, Javadoc](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz4-6(Implementor%2C%20jar%2C%20javadoc))
- * ДЗ 7-8 Введение в многопоточное программирование. [Итеративный параллелизм, Параллельный запуск](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz78(parallelism))
+ * ДЗ 3 Лямбда-выражения и потоки. Студенты
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz3(student)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz3(student)/src/info/kgeorgiy/ja/dubrovin/student)
+ * ДЗ 4-6 Reflection. Implementor, JarImplementor, Javadoc
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/java-advanced/dz4-6(Implementor,%20jar,%20javadoc)/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz4-6(Implementor%2C%20jar%2C%20javadoc)/src/info/kgeorgiy/ja/dubrovin/implementor)
+ * ДЗ 7-8 Введение в многопоточное программирование. Итеративный параллелизм, Параллельный запуск
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz78(parallelism)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz78(parallelism)/src/info/kgeorgiy/ja/dubrovin/concurrent)
  * ДЗ 9 Многопоточное программирование на Java. [Web Crawler](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz9(webCrawler))
  * ДЗ 10, 12 Работа с сетью, Неблокирующий и асинхронный ввод-вывод. [Hello UDP, HelloNonblockingUDP](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz10%2C12(UDP%20client%2C%20server))
  * ДЗ 11 Сериализация и RMI. [Физические лица](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz11(serialization%2C%20rmi))
