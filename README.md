@@ -4,7 +4,7 @@ Java-advanced
 ----
 
  * ДЗ 1 Ввод-вывод. Обход файлов
-   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz1(walk)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz1(walk)/src)
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz1(walk)/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz1(walk)/src)
  * ДЗ 2 Collections Framework. ArraySortedSet
    * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz2(arrayset)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz2(arrayset)/src/info/kgeorgiy/ja/dubrovin/arrayset)
  * ДЗ 3 Лямбда-выражения и потоки. Студенты
