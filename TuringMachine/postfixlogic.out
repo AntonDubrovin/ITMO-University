@@ -1,0 +1,23 @@
+1
+S 1 -> checkSecondWithFirst1 _ >
+S 0 -> checkSecondWithFirst0 _ >
+ 
+checkSecondWithFirst1 1 -> checkOpWith11 _ >
+checkSecondWithFirst1 0 -> checkOpWith10 _ >
+checkSecondWithFirst1 _ -> AC 1 ^
+ 
+checkOpWith11 a -> checkSecondWithFirst1 _ >
+checkOpWith11 o -> checkSecondWithFirst1 _ >
+ 
+checkOpWith10 a -> checkSecondWithFirst0 _ >
+checkOpWith10 o -> checkSecondWithFirst1 _ >
+ 
+checkSecondWithFirst0 1 -> checkOpWith01 _ >
+checkSecondWithFirst0 0 -> checkOpWith00 _ >
+checkSecondWithFirst0 _ -> AC 0 ^
+ 
+checkOpWith01 a -> checkSecondWithFirst0 _ >
+checkOpWith01 o -> checkSecondWithFirst1 _ >
+ 
+checkOpWith00 a -> checkSecondWithFirst0 _ >
+checkOpWith00 o -> checkSecondWithFirst0 _ >

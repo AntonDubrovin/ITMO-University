@@ -1,0 +1,40 @@
+start: goLeft
+accept: accepted
+reject: rejected
+blank: _
+
+goLeft 1 -> setXMarker 1 <
+goLeft 2 -> setXMarker 2 <
+
+setXMarker _ -> goToEnd x >
+
+goToEnd 0 -> goToEnd 0 >
+goToEnd 1 -> goToEnd 1 >
+goToEnd 2 -> goToEnd 2 >
+goToEnd x -> goToEnd x >
+goToEnd _ -> minusOne _ <
+
+minusOne 0 -> minusOne 2 <
+minusOne 1 -> goToXMarker 0 <
+minusOne 2 -> goToXMarker 1 <
+minusOne x -> clear _ >
+
+goToXMarker 0 -> goToXMarker 0 <
+goToXMarker 1 -> goToXMarker 1 <
+goToXMarker 2 -> goToXMarker 2 <
+goToXMarker x -> plusOne x <
+
+plusOne 0 -> goToEnd 1 >
+plusOne 1 -> plusOne 0 <
+plusOne _ -> goToEnd 1 >
+
+clear 2 -> clear _ >
+clear _ -> goToNumberEnd _ <
+
+goToNumberEnd 0 -> goToNumberStart 0 <
+goToNumberEnd 1 -> goToNumberStart 1 <
+goToNumberEnd _ -> goToNumberEnd _ <
+
+goToNumberStart 0 -> goToNumberStart 0 <
+goToNumberStart 1 -> goToNumberStart 1 <
+goToNumberStart _ -> accepted _ >

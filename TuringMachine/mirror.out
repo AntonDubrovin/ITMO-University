@@ -1,0 +1,25 @@
+start: setZO
+accept: accepted
+reject: rejected
+blank: _
+
+setZO 1 -> setZO o >
+setZO 0 -> setZO z >
+setZO _ -> ZorO _ <
+
+ZorO z -> set0ToEnd 0 >
+ZorO o -> set1ToEnd 1 >
+
+set0ToEnd 1 -> set0ToEnd 1 >
+set0ToEnd 0 -> set0ToEnd 0 >
+set0ToEnd _ -> backToZO 0 <
+
+set1ToEnd 1 -> set1ToEnd 1 >
+set1ToEnd 0 -> set1ToEnd 0 >
+set1ToEnd _ -> backToZO 1 <
+
+backToZO 1 -> backToZO 1 <
+backToZO 0 -> backToZO 0 <
+backToZO z -> ZorO z ^
+backToZO o -> ZorO o ^
+backToZO _ -> accepted _ >

@@ -1,0 +1,62 @@
+start: setOZ
+accept: accepted
+reject: rejected
+blank: _
+
+setOZ 1 -> goToEnd o >
+setOZ 0 -> goToEnd z >
+setOZ o -> findAndResetO O <
+setOZ z -> findAndResetZ Z <
+
+goToEnd 1 -> goToEnd 1 >
+goToEnd 0 -> goToEnd 0 >
+goToEnd o -> setOZ2 o <
+goToEnd z -> setOZ2 z <
+goToEnd _ -> setOZ2 _ <
+
+setOZ2 1 -> goToStart o <
+setOZ2 0 -> goToStart z <
+
+goToStart 1 -> goToStart 1 <
+goToStart 0 -> goToStart 0 <
+goToStart o -> setOZ o >
+goToStart z -> setOZ z >
+
+findAndResetO o -> findAndResetO o <
+findAndResetO z -> findAndResetO z <
+findAndResetO O -> isO O >
+findAndResetO Z -> isO Z >
+findAndResetO _ -> isO _ >
+
+isO o -> goToEnd2 O >
+isO z -> rejected z ^
+
+findAndResetZ o -> findAndResetZ o <
+findAndResetZ z -> findAndResetZ z <
+findAndResetZ O -> isZ O >
+findAndResetZ Z -> isZ Z >
+findAndResetZ _ -> isZ _ >
+
+isZ o -> rejected o ^
+isZ z -> goToEnd2 Z >
+
+goToEnd2 o -> goToEnd2 o >
+goToEnd2 z -> goToEnd2 z >
+goToEnd2 O -> setOZ3 O >
+goToEnd2 Z -> setOZ3 Z >
+
+setOZ3 o -> findAndResetO2 O <
+setOZ3 z -> findAndResetZ2 Z <
+setOZ3 O -> setOZ3 O >
+setOZ3 Z -> setOZ3 Z >
+setOZ3 _ -> accepted _ ^
+
+findAndResetO2 o -> findAndResetO o <
+findAndResetO2 z -> findAndResetO z <
+findAndResetO2 O -> findAndResetO2 O <
+findAndResetO2 Z -> findAndResetO2 Z <
+
+findAndResetZ2 o -> findAndResetZ o <
+findAndResetZ2 z -> findAndResetZ z <
+findAndResetZ2 O -> findAndResetZ2 O <
+findAndResetZ2 Z -> findAndResetZ2 Z <

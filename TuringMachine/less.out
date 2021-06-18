@@ -1,0 +1,75 @@
+start: checkFirstLength
+accept: accepted
+reject: rejected
+blank: _
+
+checkFirstLength 1 -> goToSecondLength O >
+checkFirstLength 0 -> goToSecondLength Z >
+checkFirstLength < -> ifEqualsLength < >
+
+goToSecondLength 1 -> goToSecondLength 1 >
+goToSecondLength 0 -> goToSecondLength 0 >
+goToSecondLength < -> checkSecondLength < >
+
+checkSecondLength 1 -> goBackToEqLength O <
+checkSecondLength 0 -> goBackToEqLength Z <
+checkSecondLength O -> checkSecondLength O >
+checkSecondLength Z -> checkSecondLength Z >
+checkSecondLength _ -> rejected _ ^
+
+goBackToEqLength O -> goBackToEqLength O <
+goBackToEqLength Z -> goBackToEqLength Z <
+goBackToEqLength < -> goBackToFirstLength < <
+
+goBackToFirstLength 1 -> goBackToFirstLength 1 <
+goBackToFirstLength 0 -> goBackToFirstLength 0 <
+goBackToFirstLength O -> checkFirstLength O >
+goBackToFirstLength Z -> checkFirstLength Z >
+
+setOZFirst 1 -> goToEq1 o >
+setOZFirst 0 -> goToEq0 z >
+setOZFirst < -> check < >
+
+goToEq1 1 -> goToEq1 1 >
+goToEq1 0 -> goToEq1 0 >
+goToEq1 < -> setOZSecond < >
+
+setOZSecond 1 -> goBackToEq o <
+setOZSecond 0 -> reject 0 ^
+setOZSecond o -> setOZSecond o >
+setOZSecond z -> setOZSecond z >
+
+goBackToEq < -> goToStartFirst < <
+goBackToEq o -> goBackToEq o <
+goBackToEq z -> goBackToEq z <
+
+goToStartFirst 1 -> goToStartFirst 1 <
+goToStartFirst 0 -> goToStartFirst 0 <
+goToStartFirst o -> setOZFirst o >
+goToStartFirst z -> setOZFirst z >
+
+goToEq0 1 -> goToEq0 1 >
+goToEq0 0 -> goToEq0 0 >
+goToEq0 < -> setOZSecond2 < >
+
+setOZSecond2 1 -> accepted 1 ^
+setOZSecond2 0 -> goBackToEq z <
+setOZSecond2 o -> setOZSecond2 o >
+setOZSecond2 z -> setOZSecond2 z >
+
+check o -> check o >
+check z -> check z >
+check 1 -> accepted 1 ^
+check 0 -> accepted 0 ^
+check _ -> rejected _ ^
+
+ifEqualsLength 1 -> accepted 1 ^
+ifEqualsLength 0 -> accepted 0 ^
+ifEqualsLength O -> ifEqualsLength O >
+ifEqualsLength Z -> ifEqualsLength Z >
+ifEqualsLength _ -> goBackToEqualTask _ <
+
+goBackToEqualTask O -> goBackToEqualTask 1 <
+goBackToEqualTask Z -> goBackToEqualTask 0 <
+goBackToEqualTask < -> goBackToEqualTask < <
+goBackToEqualTask _ -> setOZFirst _ >

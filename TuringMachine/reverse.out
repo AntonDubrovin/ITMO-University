@@ -1,0 +1,46 @@
+start: goLeft
+accept: accepted
+reject: rejected
+blank: _
+
+goLeft 1 -> setEndMarker 1 <
+goLeft 0 -> setEndMarker 0 <
+
+setEndMarker _ -> goToEndAndSetXMarker e >
+
+goToEndAndSetXMarker 1 -> goToEndAndSetXMarker 1 >
+goToEndAndSetXMarker 0 -> goToEndAndSetXMarker 0 >
+goToEndAndSetXMarker _ -> oneOrZero x <
+
+oneOrZero 1 -> goTo1X o >
+oneOrZero 0 -> goTo0X z >
+
+goTo1X z -> goTo1X z >
+goTo1X o -> goTo1X o >
+goTo1X x -> set1 x >
+
+set1 1 -> set1 1 >
+set1 0 -> set1 0 >
+set1 _ -> goBackToX 1 <
+
+goTo0X z -> goTo0X z >
+goTo0X o -> goTo0X o >
+goTo0X x -> set0 x >
+
+set0 1 -> set0 1 >
+set0 0 -> set0 0 >
+set0 _ -> goBackToX 0 <
+
+goBackToX 1 -> goBackToX 1 <
+goBackToX 0 -> goBackToX 0 <
+goBackToX x -> oneOrZero2 x <
+
+oneOrZero2 1 -> goTo1X o >
+oneOrZero2 0 -> goTo0X z >
+oneOrZero2 z -> oneOrZero2 z <
+oneOrZero2 o -> oneOrZero2 o <
+oneOrZero2 e -> clear _ >
+
+clear z -> clear _ >
+clear o -> clear _ >
+clear x -> accepted _ >

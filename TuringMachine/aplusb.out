@@ -1,0 +1,33 @@
+start: endSecond
+accept: accepted
+reject: rejected
+blank: _
+
+endSecond 1 -> endSecond 1 >
+endSecond 0 -> endSecond 0 >
+endSecond + -> endSecond + >
+endSecond _ -> secondMinusOne _ <
+
+secondMinusOne 1 -> endFirst 0 <
+secondMinusOne 0 -> secondMinusOne 1 <
+secondMinusOne + -> clear _ >
+
+endFirst 1 -> endFirst 1 <
+endFirst 0 -> endFirst 0 <
+endFirst + -> firstPlusOne + <
+
+firstPlusOne 1 -> firstPlusOne 0 <
+firstPlusOne 0 -> endSecond 1 >
+firstPlusOne _ -> endSecond 1 >
+
+clear 1 -> clear _ >
+clear 0 -> clear _ >
+clear _ -> endFirst2 _ <
+
+endFirst2 1 -> startFirst 1 <
+endFirst2 0 -> startFirst 0  <
+endFirst2 _ -> endFirst2 _ <
+
+startFirst 1 -> startFirst 1 <
+startFirst 0 -> startFirst 0 <
+startFirst _ -> accepted _ >

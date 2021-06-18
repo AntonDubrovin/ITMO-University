@@ -1,0 +1,19 @@
+start: checkOpenBracket
+accept: accepted
+reject: rejected
+blank: _
+
+checkOpenBracket ( -> findCloseBracket o >
+checkOpenBracket ) -> rejected ) ^
+checkOpenBracket c -> checkOpenBracket _ >
+checkOpenBracket _ -> accepted _ ^
+
+findCloseBracket ( -> findCloseBracket ( >
+findCloseBracket ) -> backToStart c <
+findCloseBracket c -> findCloseBracket c >
+findCloseBracket _ -> rejected _ ^
+
+backToStart ( -> backToStart ( <
+backToStart ) -> backToStart ) <
+backToStart o -> checkOpenBracket _ >
+backToStart c -> backToStart c <

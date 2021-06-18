@@ -1,0 +1,115 @@
+start: setXMarker
+accept: accepted
+reject: rejected
+blank: _
+
+setXMarker 1 -> setXMarker 1 <
+setXMarker 0 -> zeroAnswer 0 >
+setXMarker _ -> goToSecondEnd x >
+
+goToSecondEnd 1 -> goToSecondEnd 1 >
+goToSecondEnd 0 -> goToSecondEnd 0 >
+goToSecondEnd * -> goToSecondEnd * >
+goToSecondEnd _ -> doMinusOneOrRightShift _ <
+
+doMinusOneOrRightShift 1 -> goToFirst 0 <
+doMinusOneOrRightShift 0 -> doRightShift _ <
+doMinusOneOrRightShift * -> clearAll _ <
+
+goToFirst 1 -> goToFirst 1 <
+goToFirst 0 -> goToFirst 0 <
+goToFirst * -> multiplyFirstAndAnswer * <
+
+multiplyFirstAndAnswer 1 -> goToAnswerOne o <
+multiplyFirstAndAnswer 0 -> goToAnswerZero z <
+multiplyFirstAndAnswer x -> clearAfterMultiply x <
+
+goToAnswerOne 1 -> goToAnswerOne 1 <
+goToAnswerOne 0 -> goToAnswerOne 0 <
+goToAnswerOne x -> multiplyOne x <
+
+multiplyOne 1 -> multiplyOneDoPlus1 z <
+multiplyOne 0 -> goBackToFirst o >
+multiplyOne o -> multiplyOne o <
+multiplyOne z -> multiplyOne z <
+multiplyOne _ -> goBackToFirst o >
+
+multiplyOneDoPlus1 1 -> multiplyOneDoPlus1 0 <
+multiplyOneDoPlus1 0 -> goBackToFirst 1 >
+multiplyOneDoPlus1 _ -> goBackToFirst 1 >
+
+goBackToFirst 1 -> goBackToFirst 1 >
+goBackToFirst 0 -> goBackToFirst 0 >
+goBackToFirst x -> goToFirstLast10 x >
+goBackToFirst o -> goBackToFirst o >
+goBackToFirst z -> goBackToFirst z >
+
+goToFirstLast10 1 -> goToFirstLast10 1 >
+goToFirstLast10 0 -> goToFirstLast10 0 >
+goToFirstLast10 o -> multiplyFirstAndAnswer o <
+goToFirstLast10 z -> multiplyFirstAndAnswer z <
+
+goToAnswerZero 1 -> goToAnswerZero 1 <
+goToAnswerZero 0 -> goToAnswerZero 0 <
+goToAnswerZero x -> doPlus0 x <
+
+doPlus0 1 -> goBackToFirst o >
+doPlus0 0 -> goBackToFirst z >
+doPlus0 o -> doPlus0 o <
+doPlus0 z -> doPlus0 z <
+doPlus0 _ -> goBackToFirst z >
+
+clearAfterMultiply 1 -> goBackToClearFirst 1 >
+clearAfterMultiply o -> clearAfterMultiply 1 <
+clearAfterMultiply z -> clearAfterMultiply 0 <
+clearAfterMultiply _ -> goBackToClearFirst _ >
+
+goBackToClearFirst 1 -> goBackToClearFirst 1 >
+goBackToClearFirst 0 -> goBackToClearFirst 0 >
+goBackToClearFirst x -> clearFirst x >
+
+clearFirst * -> goBackToSecondAfterMultiply * >
+clearFirst o -> clearFirst 1 >
+clearFirst z -> clearFirst 0 >
+
+goBackToSecondAfterMultiply 1 -> goBackToSecondAfterMultiply 1 >
+goBackToSecondAfterMultiply 0 -> goBackToSecondAfterMultiply 0 >
+goBackToSecondAfterMultiply _ -> doMinusOneOrRightShift _ <
+
+doRightShift 1 -> rightShiftOne _ >
+doRightShift 0 -> rightShiftZero _ >
+doRightShift * -> rightShiftMul _ >
+doRightShift _ -> doRightShift _ <
+
+rightShiftOne _ -> doRightShift 1 <
+
+rightShiftZero _ -> doRightShift 0 <
+
+rightShiftMul _ -> set0toFirstLast * <
+
+set0toFirstLast _ -> goBackToSecondAfterRightShift 0 >
+
+goBackToSecondAfterRightShift 1 -> goBackToSecondAfterRightShift 1 >
+goBackToSecondAfterRightShift 0 -> goBackToSecondAfterRightShift 0 >
+goBackToSecondAfterRightShift * -> goBackToSecondAfterRightShift * >
+goBackToSecondAfterRightShift _ -> doMinusOneOrRightShift _ <
+
+clearAll 1 -> clearAll _ <
+clearAll 0 -> clearAll _ <
+clearAll x -> goToStartAnswer _ <
+
+goToStartAnswer 1 -> goToStartAnswerNotZero 1 <
+goToStartAnswer 0 -> goToStartAnswerNotZero 0 <
+goToStartAnswer _ -> accepted 0 ^
+
+goToStartAnswerNotZero 1 -> goToStartAnswerNotZero 1 <
+goToStartAnswerNotZero 0 -> goToStartAnswerNotZero 0 <
+goToStartAnswerNotZero _ -> accepted _ >
+
+zeroAnswer 1 -> zeroAnswer _ >
+zeroAnswer 0 -> zeroAnswer _ >
+zeroAnswer * -> zeroAnswer _ >
+zeroAnswer _ -> goToZero _ <
+
+goToZero 0 -> accepted 0 ^
+goToZero _ -> goToZero _ <

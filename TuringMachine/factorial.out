@@ -1,0 +1,227 @@
+start: set|Marker
+accept: accepted
+reject: rejected
+blank: _
+ 
+set|Marker 1 -> set|Marker 1 <
+set|Marker _ -> setEndMarker | >
+ 
+setEndMarker 1 -> setEndMarker 1 >
+setEndMarker 0 -> setEndMarker 0 >
+setEndMarker _ -> copyStart e <
+
+copyStart 1 -> copyStartOne o <
+copyStart 0 -> copyStartZero z <
+copyStart | -> setMult | <
+
+setMult 1 -> setMult 1 <
+setMult 0 -> setMult 0 <
+setMult _ -> clearOZ * >
+
+clearOZ 1 -> clearOZ 1 >
+clearOZ 0 -> clearOZ 0 >
+clearOZ o -> clearOZ 1 >
+clearOZ z -> clearOZ 0 >
+clearOZ | -> clearOZ | >
+clearOZ e -> minusOne e <
+
+minusOne 1 -> goBackToEndAndCopy 0 >
+minusOne 0 -> minusOne 1 <
+
+goBackToEndAndCopy 0 -> goBackToEndAndCopy 0 >
+goBackToEndAndCopy 1 -> goBackToEndAndCopy 1 >
+goBackToEndAndCopy e -> copy e <
+
+copy 1 -> copyOne o <
+copy 0 -> copyZero z <
+copy | -> goToMult | <
+
+goToMult 1 -> goToMult 1 <
+goToMult 0 -> goToMult 0 <
+goToMult * -> goToMult * <
+goToMult _ -> setXMarker _ >
+
+copyOne 1 -> copyOne 1 <
+copyOne 0 -> copyOne 0 <
+copyOne | -> copyOne | <
+copyOne * -> copyOne * <
+copyOne _ -> goBackToNumber 1 >
+
+copyZero 1 -> copyZero 1 <
+copyZero 0 -> copyZero 0 <
+copyZero | -> copyZero | <
+copyZero * -> copyZero * <
+copyZero _ -> goBackToNumber 0 >
+
+goBackToNumber 1 -> goBackToNumber 1 >
+goBackToNumber 0 -> goBackToNumber 0 >
+goBackToNumber * -> goBackToNumber * >
+goBackToNumber o -> copy o <
+goBackToNumber z -> copy z <
+goBackToNumber | -> goBackToNumber | >
+
+copyStartOne 1 -> copyStartOne 1 <
+copyStartOne 0 -> copyStartOne 0 <
+copyStartOne | -> copyStartOne | <
+copyStartOne _ -> goBackToNumberStart 1 >
+
+copyStartZero 1 -> copyStartZero 1 <
+copyStartZero 0 -> copyStartZero 0 <
+copyStartZero | -> copyStartZero | <
+copyStartZero _ -> goBackToNumberStart 0 >
+
+goBackToNumberStart 1 -> goBackToNumberStart 1 >
+goBackToNumberStart 0 -> goBackToNumberStart 0 >
+goBackToNumberStart | -> goBackToNumberStart | >
+goBackToNumberStart o -> copyStart o <
+goBackToNumberStart z -> copyStart z <
+
+setXMarker 1 -> setXMarker 1 <
+setXMarker 0 -> clearLeadingZeroes _ >
+setXMarker _  -> goToSecondEnd x >
+
+clearLeadingZeroes 0 -> clearLeadingZeroes _ >
+clearLeadingZeroes 1 -> setXMarker 1 <
+clearLeadingZeroes * -> clearAllAll _ >
+
+clearAllAll 1 -> clearAllAll 1 >
+clearAllAll 0 -> clearAllAll 0 >
+clearAllAll | -> clearAllNoNeeded _ >
+
+clearAllNoNeeded z -> clearAllNoNeeded _ >
+clearAllNoNeeded o -> clearAllNoNeeded _ >
+clearAllNoNeeded e -> goBackToFirstIndex _ <
+
+goBackToFirstIndex 1 -> goForAnswerToFirstIndex 1 <
+goBackToFirstIndex 0 -> goForAnswerToFirstIndex 0 <
+goBackToFirstIndex _ -> goBackToFirstIndex _ <
+
+goForAnswerToFirstIndex 1 -> goForAnswerToFirstIndex 1 <
+goForAnswerToFirstIndex 0 -> goForAnswerToFirstIndex 0 <
+goForAnswerToFirstIndex _ -> accepted _ >
+ 
+goToSecondEnd 1 -> goToSecondEnd 1 >
+goToSecondEnd 0 -> goToSecondEnd 0 >
+goToSecondEnd * -> goToSecondEnd * >
+goToSecondEnd | -> doMinusOneOrRightShift _ <
+goToSecondEnd _ -> doMinusOneOrRightShift _ <
+ 
+doMinusOneOrRightShift 1 -> goToFirst 0 <
+doMinusOneOrRightShift 0 -> doRightShift _ <
+doMinusOneOrRightShift * -> clearAll _ <
+ 
+goToFirst 1 -> goToFirst 1 <
+goToFirst 0 -> goToFirst 0 <
+goToFirst * -> multiplyFirstAndAnswer * <
+ 
+multiplyFirstAndAnswer 1 -> goToAnswerOne o <
+multiplyFirstAndAnswer 0 -> goToAnswerZero z <
+multiplyFirstAndAnswer x -> clearAfterMultiply x <
+ 
+goToAnswerOne 1 -> goToAnswerOne 1 <
+goToAnswerOne 0 -> goToAnswerOne 0 <
+goToAnswerOne x -> multiplyOne x <
+ 
+multiplyOne 1 -> multiplyOneDoPlus1 z <
+multiplyOne 0 -> goBackToFirst o >
+multiplyOne o -> multiplyOne o <
+multiplyOne z -> multiplyOne z <
+multiplyOne _ -> goBackToFirst o >
+ 
+multiplyOneDoPlus1 1 -> multiplyOneDoPlus1 0 <
+multiplyOneDoPlus1 0 -> goBackToFirst 1 >
+multiplyOneDoPlus1 _ -> goBackToFirst 1 >
+ 
+goBackToFirst 1 -> goBackToFirst 1 >
+goBackToFirst 0 -> goBackToFirst 0 >
+goBackToFirst x -> goToFirstLast10 x >
+goBackToFirst o -> goBackToFirst o >
+goBackToFirst z -> goBackToFirst z >
+ 
+goToFirstLast10 1 -> goToFirstLast10 1 >
+goToFirstLast10 0 -> goToFirstLast10 0 >
+goToFirstLast10 o -> multiplyFirstAndAnswer o <
+goToFirstLast10 z -> multiplyFirstAndAnswer z <
+ 
+goToAnswerZero 1 -> goToAnswerZero 1 <
+goToAnswerZero 0 -> goToAnswerZero 0 <
+goToAnswerZero x -> doPlus0 x <
+ 
+doPlus0 1 -> goBackToFirst o >
+doPlus0 0 -> goBackToFirst z >
+doPlus0 o -> doPlus0 o <
+doPlus0 z -> doPlus0 z <
+doPlus0 _ -> goBackToFirst z >
+ 
+clearAfterMultiply 1 -> goBackToClearFirst 1 >
+clearAfterMultiply o -> clearAfterMultiply 1 <
+clearAfterMultiply z -> clearAfterMultiply 0 <
+clearAfterMultiply _ -> goBackToClearFirst _ >
+ 
+goBackToClearFirst 1 -> goBackToClearFirst 1 >
+goBackToClearFirst 0 -> goBackToClearFirst 0 >
+goBackToClearFirst x -> clearFirst x >
+ 
+clearFirst * -> goBackToSecondAfterMultiply * >
+clearFirst o -> clearFirst 1 >
+clearFirst z -> clearFirst 0 >
+ 
+goBackToSecondAfterMultiply 1 -> goBackToSecondAfterMultiply 1 >
+goBackToSecondAfterMultiply 0 -> goBackToSecondAfterMultiply 0 >
+goBackToSecondAfterMultiply _ -> doMinusOneOrRightShift _ <
+ 
+doRightShift 1 -> rightShiftOne _ >
+doRightShift 0 -> rightShiftZero _ >
+doRightShift * -> rightShiftMul _ >
+doRightShift _ -> doRightShift _ <
+ 
+rightShiftOne _ -> doRightShift 1 <
+ 
+rightShiftZero _ -> doRightShift 0 <
+ 
+rightShiftMul _ -> set0toFirstLast * <
+ 
+set0toFirstLast _ -> goBackToSecondAfterRightShift 0 >
+ 
+goBackToSecondAfterRightShift 1 -> goBackToSecondAfterRightShift 1 >
+goBackToSecondAfterRightShift 0 -> goBackToSecondAfterRightShift 0 >
+goBackToSecondAfterRightShift * -> goBackToSecondAfterRightShift * >
+goBackToSecondAfterRightShift _ -> doMinusOneOrRightShift _ <
+ 
+clearAll 1 -> clearAll _ <
+clearAll 0 -> clearAll _ <
+clearAll x -> setMultiplyAndMarkerAfter _ <
+ 
+setMultiplyAndMarkerAfter 1 -> setMultiplyAndMarkerAfter 1 <
+setMultiplyAndMarkerAfter 0 -> setMultiplyAndMarkerAfter 0 <
+setMultiplyAndMarkerAfter _ -> goToSetMarker * >
+
+goToSetMarker 0 -> goToSetMarker 0 >
+goToSetMarker 1 -> goToSetMarker 1 >
+goToSetMarker _ -> goToLeftShift | >
+
+goToLeftShift _ -> goToLeftShift _ >
+goToLeftShift o -> goToSetOneAfterMarker _ <
+goToLeftShift z -> goToSetZeroAfterMarker _ <
+goToLeftShift e -> goToSetEMarkerAfterMarker _ <
+
+goToSetOneAfterMarker 1 -> setOneAfterMarker 1 >
+goToSetOneAfterMarker 0 -> setOneAfterMarker 0 >
+goToSetOneAfterMarker _ -> goToSetOneAfterMarker _ <
+goToSetOneAfterMarker | -> setOneAfterMarker | >
+
+setOneAfterMarker _ -> goToLeftShift 1 >
+
+goToSetZeroAfterMarker 1 -> setZeroAfterMarker 1 >
+goToSetZeroAfterMarker 0 -> setZeroAfterMarker 0 >
+goToSetZeroAfterMarker _ -> goToSetZeroAfterMarker _ <
+goToSetZeroAfterMarker | -> setZeroAfterMarker | >
+
+setZeroAfterMarker _ -> goToLeftShift 0 >
+
+goToSetEMarkerAfterMarker 1 -> setEAfterMarker 1 >
+goToSetEMarkerAfterMarker 0 -> setEAfterMarker 0 >
+goToSetEMarkerAfterMarker _ -> goToSetEMarkerAfterMarker _ <
+goToSetEMarkerAfterMarker | -> setEAfterMarker | >
+
+setEAfterMarker _ -> minusOne e <
