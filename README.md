@@ -46,6 +46,7 @@ Java-advanced
 ДМ лабораторная работа по машине Тьюринга
 ---
 
+[Условия](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F.pdf)
  * B. [Сложение двух чисел](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/aplusb.out)
  * C. [Зеркальное отображение](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/mirror.out)
  * D. [Тандемный повтор](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/tandem.out)
