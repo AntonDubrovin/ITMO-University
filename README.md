@@ -35,6 +35,28 @@ Java-advanced
  * ДЗ 11 Сериализация и RMI. [Физические лица](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz11(serialization%2C%20rmi))
  * ДЗ 13 Интернационализация и локализация. [Статистика текста](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz13(textStatistics))
 
+Методы оптимизации
+----
+
+ * Lab1. [Методы дихотомии, золотого сечения, Фибоначчи, парабол, Брэнта](https://github.com/AntonDubrovin/OptimizationMethods/tree/master/src/info/metopt/approx/oneDimensional) | [Отчёт](https://github.com/AntonDubrovin/ITMO-University/blob/master/OptimizationMethodsReports/%D0%9E%D1%82%D1%87%D1%91%D1%821%D0%BB%D0%B0%D0%B1%D0%B0.pdf)
+ * Lab2. [Методы градиентного спуска, наискорейшего спуска, сопряженных градиентов](https://github.com/AntonDubrovin/OptimizationMethods/tree/master/src/info/metopt/approx/gradient) | [Отчёт](https://github.com/AntonDubrovin/ITMO-University/blob/master/OptimizationMethodsReports/%D0%9E%D1%82%D1%87%D1%91%D1%822%D0%BB%D0%B0%D0%B1%D0%B0.pdf)
+ * Lab3. [Решения СЛАУ с помощью LU разложения, метода Гаусса](https://github.com/AntonDubrovin/Gauss) | [Отчёт](https://github.com/AntonDubrovin/ITMO-University/blob/master/OptimizationMethodsReports/%D0%9E%D1%82%D1%87%D1%91%D1%823%D0%BB%D0%B0%D0%B1%D0%B0.pdf)
+ * Lab4. [Алгоритм Ньютона и его модификаций, квазиньютоновские методы](https://github.com/AntonDubrovin/Newton) | [Отчёт](https://github.com/AntonDubrovin/ITMO-University/blob/master/OptimizationMethodsReports/%D0%9E%D1%82%D1%87%D1%91%D1%824%D0%BB%D0%B0%D0%B1%D0%B0.pdf)
+
+ДМ лабораторная работа по машине Тьюринга
+---
+
+ * B. [Сложение двух чисел](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/aplusb.out)
+ * C. [Зеркальное отображение](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/mirror.out)
+ * D. [Тандемный повтор](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/tandem.out)
+ * E. [Сбалансированные скобки](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/balanced.out)
+ * F. [Развернутое слово](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/reverse.out)
+ * G. [Сравнение двух чисел](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/less.out)
+ * H. [Из троичной в двоичную](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/convertto2.out)
+ * I. [Умножение двух чисел](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/multiplication.out)
+ * J. [Логические выражения в постфиксной записи](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/postfixlogic.out)
+ * L. [Вычисление факториала](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/factorial.out)
+
 Web-программирование
 ----
 
@@ -66,25 +88,3 @@ C++ lite
  * [8-puzzle](https://github.com/AntonDubrovin/ITMO-University/tree/master/C%2B%2B/8-puzzle)
  * [Percolation](https://github.com/AntonDubrovin/ITMO-University/tree/master/C%2B%2B/percolation)
  * [Seam carving](https://github.com/AntonDubrovin/ITMO-University/tree/master/C%2B%2B/seam-carving)
-
-Методы оптимизации
-----
-
- * Lab1. [Методы дихотомии, золотого сечения, Фибоначчи, парабол, Брэнта](https://github.com/AntonDubrovin/OptimizationMethods/tree/master/src/info/metopt/approx/oneDimensional) | [Отчёт](https://github.com/AntonDubrovin/ITMO-University/blob/master/OptimizationMethodsReports/%D0%9E%D1%82%D1%87%D1%91%D1%821%D0%BB%D0%B0%D0%B1%D0%B0.pdf)
- * Lab2. [Методы градиентного спуска, наискорейшего спуска, сопряженных градиентов](https://github.com/AntonDubrovin/OptimizationMethods/tree/master/src/info/metopt/approx/gradient) | [Отчёт](https://github.com/AntonDubrovin/ITMO-University/blob/master/OptimizationMethodsReports/%D0%9E%D1%82%D1%87%D1%91%D1%822%D0%BB%D0%B0%D0%B1%D0%B0.pdf)
- * Lab3. [Решения СЛАУ с помощью LU разложения, метода Гаусса](https://github.com/AntonDubrovin/Gauss) | [Отчёт](https://github.com/AntonDubrovin/ITMO-University/blob/master/OptimizationMethodsReports/%D0%9E%D1%82%D1%87%D1%91%D1%823%D0%BB%D0%B0%D0%B1%D0%B0.pdf)
- * Lab4. [Алгоритм Ньютона и его модификаций, квазиньютоновские методы](https://github.com/AntonDubrovin/Newton) | [Отчёт](https://github.com/AntonDubrovin/ITMO-University/blob/master/OptimizationMethodsReports/%D0%9E%D1%82%D1%87%D1%91%D1%824%D0%BB%D0%B0%D0%B1%D0%B0.pdf)
-
-ДМ лабораторная работа по машине Тьюринга
----
-
- * B. [Сложение двух чисел](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/aplusb.out)
- * C. [Зеркальное отображение](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/mirror.out)
- * D. [Тандемный повтор](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/tandem.out)
- * E. [Сбалансированные скобки](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/balanced.out)
- * F. [Развернутое слово](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/reverse.out)
- * G. [Сравнение двух чисел](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/less.out)
- * H. [Из троичной в двоичную](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/convertto2.out)
- * I. [Умножение двух чисел](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/multiplication.out)
- * J. [Логические выражения в постфиксной записи](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/postfixlogic.out)
- * L. [Вычисление факториала](https://github.com/AntonDubrovin/ITMO-University/blob/master/TuringMachine/factorial.out)
