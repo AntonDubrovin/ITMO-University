@@ -50,7 +50,7 @@ Web-программирование
  * ДЗ 10. [Vue.js](https://github.com/AntonDubrovin/ITMO-University/tree/master/Web/lesson10(vue.js))
  * ДЗ 11. [Spring + Vue.js](https://github.com/AntonDubrovin/ITMO-University/tree/master/Web/lesson11(vueJS%2Cspring))
 
-OS-lite
+OS lite
 ----
 
  * Lab1. [Основы использования консольного интерфейса ОС Linux и интерпретатора bash](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab1)
