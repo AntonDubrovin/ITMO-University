@@ -17,7 +17,8 @@ Java-advanced
    * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/java-advanced/dz9(webCrawler)/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz9(webCrawler)/src/info/kgeorgiy/ja/dubrovin/crawler)
  * ДЗ 10, 12 Работа с сетью, Неблокирующий и асинхронный ввод-вывод. Hello UDP, HelloNonblockingUDP
    * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz10,12(UDP%20client,%20server)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz10%2C12(UDP%20client%2C%20server)/src/info/kgeorgiy/ja/dubrovin/hello)
- * ДЗ 11 Сериализация и RMI. [Физические лица](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz11(serialization%2C%20rmi))
+ * ДЗ 11 Сериализация и RMI. Физические лица
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz11(serialization,%20rmi)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz11(serialization%2C%20rmi)/src/info/kgeorgiy/ja/dubrovin/rmi)
  * ДЗ 13 Интернационализация и локализация. [Статистика текста](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz13(textStatistics))
 
 Методы оптимизации
