@@ -102,7 +102,7 @@ OS lite
  * Лабораторая работа 6. Консольный интерфейс ОС WINDOWS
    * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/OS/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F6.pdf) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab6)
 
-C++ lite
+C++ 
 ----
 
  * [8-puzzle](https://github.com/AntonDubrovin/ITMO-University/tree/master/C%2B%2B/8-puzzle)
