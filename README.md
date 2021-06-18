@@ -5,10 +5,10 @@
   <h3> Java 
     <h4> Домашнее задание 1. Обработка ошибок
      <h4> Модификации
-  * *Базовая*
-   *Класс `ExpressionParser` должен реализовывать интерфейс
-   *[Parser](java/expression/exceptions/Parser.java)
-   * Классы `CheckedAdd`, `CheckedSubtract`, `CheckedMultiply`,
++*Базовая*
+  + Класс `ExpressionParser` должен реализовывать интерфейс
+  + [Parser](java/expression/exceptions/Parser.java)
+  + Классы `CheckedAdd`, `CheckedSubtract`, `CheckedMultiply`,
         `CheckedDivide` и `CheckedNegate` должны реализовывать интерфейс
         [TripleExpression](java/expression/TripleExpression.java)
    * Нельзя использовать типы `long` и `double`
