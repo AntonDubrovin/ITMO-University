@@ -26,7 +26,7 @@ Java-advanced
 ----
 
  * ДЗ 1 Ввод-вывод. [Обход файлов](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz1(walk))
- * ДЗ 2 Collections Framework.[ArraySortedSet](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz2(arrayset))
+ * ДЗ 2 Collections Framework. [ArraySortedSet](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz2(arrayset))
  * ДЗ 3 Лямбда-выражения и потоки. [Студенты](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz3(student))
  * ДЗ 4-6 Reflection. [Implementor, JarImplementor, Javadoc](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz4-6(Implementor%2C%20jar%2C%20javadoc))
  * ДЗ 7-8 Введение в многопоточное программирование. [Итеративный параллелизм, Параллельный запуск](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/4semestr/dz78(parallelism))
