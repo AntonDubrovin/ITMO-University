@@ -10,7 +10,7 @@ Java-advanced
  * ДЗ 3 Лямбда-выражения и потоки. Студенты
    * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz3(student)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz3(student)/src/info/kgeorgiy/ja/dubrovin/student)
  * ДЗ 4-6 Reflection. Implementor, JarImplementor, Javadoc
-   * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/java-advanced/dz4-6(Implementor,%20jar,%20javadoc)/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz4-6(Implementor%2C%20jar%2C%20javadoc)/src/info/kgeorgiy/ja/dubrovin/implementor)
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz4-6(Implementor%2C%20jar%2C%20javadoc)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz4-6(Implementor%2C%20jar%2C%20javadoc)/src/info/kgeorgiy/ja/dubrovin/implementor)
  * ДЗ 7-8 Введение в многопоточное программирование. Итеративный параллелизм, Параллельный запуск
    * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz78(parallelism)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz78(parallelism)/src/info/kgeorgiy/ja/dubrovin/concurrent)
  * ДЗ 9 Многопоточное программирование на Java. Web Crawler
