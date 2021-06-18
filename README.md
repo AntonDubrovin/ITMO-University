@@ -40,23 +40,23 @@ Paradigms-2020
 ----
 
  * Java
-   * ДЗ 1. [Обработка ошибок](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/2semestr/Java/DZ1)
-   * ДЗ 2 Программирование по контракту. [Бинарный поиск](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/2semestr/Java/DZ2)
-   * ДЗ 3 Реализация ООП. [Очередь на массиве](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/2semestr/Java/DZ3)
-   * ДЗ 4 Реализация ООП. [Очередь на связном списке](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/2semestr/Java/DZ4)
-   * ДЗ 5 Generics. [Вычисления в различных типах](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/2semestr/Java/DZ5)
+   * ДЗ 1. [Обработка ошибок](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/Java/DZ1)
+   * ДЗ 2 Программирование по контракту. [Бинарный поиск](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/Java/DZ2)
+   * ДЗ 3 Реализация ООП. [Очередь на массиве](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/Java/DZ3)
+   * ДЗ 4 Реализация ООП. [Очередь на связном списке](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/Java/DZ4)
+   * ДЗ 5 Generics. [Вычисления в различных типах](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/Java/DZ5)
  * JavaScript
-   * ДЗ 6 Функции. [Функциональные выражения на JavaScript](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/2semestr/JavaScript/dz6)
-   * ДЗ 7 Объекты и методы. [Объектные выражения на JavaScript](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/2semestr/JavaScript/hw7)
-   * ДЗ 8 Что еще есть в JavaScript. [Обработка ошибок на JavaScript](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/2semestr/JavaScript/dz8)
+   * ДЗ 6 Функции. [Функциональные выражения на JavaScript](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/JavaScript/dz6)
+   * ДЗ 7 Объекты и методы. [Объектные выражения на JavaScript](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/JavaScript/hw7)
+   * ДЗ 8 Что еще есть в JavaScript. [Обработка ошибок на JavaScript](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/JavaScript/dz8)
  * Clojure
-   * ДЗ 9 Функции. [Линейная алгебра на Clojure](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/2semestr/clojure/dz9)
-   * ДЗ 10 Внешний мир. [Функциональные выражения на Clojure](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/2semestr/clojure/dz10)
-   * ДЗ 11 Объекты. [Объектные выражения на Clojure](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/2semestr/clojure/dz11)
-   * ДЗ 12 [Комбинаторные парсеры](https://github.com/AntonDubrovin/ITMO-University/tree/master/programming/2semestr/clojure/dz12)
+   * ДЗ 9 Функции. [Линейная алгебра на Clojure](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/clojure/dz9)
+   * ДЗ 10 Внешний мир. [Функциональные выражения на Clojure](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/clojure/dz10)
+   * ДЗ 11 Объекты. [Объектные выражения на Clojure](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/clojure/dz11)
+   * ДЗ 12 [Комбинаторные парсеры](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/clojure/dz12)
  * Prolog
-   * ДЗ 13 Факты, правила и вычисления. [Простые числа на Prolog](https://github.com/AntonDubrovin/ITMO-University/blob/master/programming/2semestr/Prolog/primes.pl)
-   * ДЗ 14 Задачи, унификация и объекты. [Дерево поиска на Prolog](https://github.com/AntonDubrovin/ITMO-University/blob/master/programming/2semestr/Prolog/tree-map.pl)
+   * ДЗ 13 Факты, правила и вычисления. [Простые числа на Prolog](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/Prolog/primes.pl)
+   * ДЗ 14 Задачи, унификация и объекты. [Дерево поиска на Prolog](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/Prolog/tree-map.pl)
 
 Web-программирование
 ----
