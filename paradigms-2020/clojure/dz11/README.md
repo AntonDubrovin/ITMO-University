@@ -8,8 +8,7 @@
          (Constant 2)
          (Variable "x"))
        (Constant 3)))
-    ```
-                    
+    ```             
    * Функция (evaluate expression vars) должна производить вычисление выражения expression для значений переменных, заданных отображением vars. Например, (evaluate expr {"x" 2}) должно быть равно 1.
    * Функция (toString expression) должна выдавать запись выражения в стандартной для Clojure форме.
    * Функция (parseObject "expression") должна разбирать выражения, записанные в стандартной для Clojure форме. Например,
