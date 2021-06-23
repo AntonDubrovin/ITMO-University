@@ -76,10 +76,13 @@ Paradigms-2020
      * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/clojure/dz10/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/clojure/dz10)
    * ДЗ 11 Объекты. Объектные выражения на Clojure
      * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/clojure/dz11/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/clojure/dz11)
-   * ДЗ 12 [Комбинаторные парсеры](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/clojure/dz12)
+   * ДЗ 12 Комбинаторные парсеры
+     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/clojure/dz12/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/clojure/dz12)
  * Prolog
-   * ДЗ 13 Факты, правила и вычисления. [Простые числа на Prolog](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/Prolog/primes.pl)
-   * ДЗ 14 Задачи, унификация и объекты. [Дерево поиска на Prolog](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/Prolog/tree-map.pl)
+   * ДЗ 13 Факты, правила и вычисления. Простые числа на Prolog
+     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/Prolog/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/Prolog/primes.pl)
+   * ДЗ 14 Задачи, унификация и объекты. Дерево поиска на Prolog
+     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/Prolog/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/Prolog/tree-map.pl)
 
 Web-программирование
 ----
