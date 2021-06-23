@@ -1,22 +1,30 @@
-# dz11
-
-A Clojure library designed to ... well, that part is up to you.
-
-## Usage
-
-FIXME
-
-## License
-
-Copyright © 2020 FIXME
-
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+Домашнее задание 11. Объектные выражения на Clojure
+----
+1. Разработайте конструкторы Constant, Variable, Add, Subtract, Multiply и Divide для представления выражений с одной переменной.
+   * Пример описания выражения 2x-3:
+   ```(def expr
+     (Subtract
+       (Multiply
+         (Constant 2)
+         (Variable "x"))
+       (Constant 3)))
+    ```
+                    
+   * Функция (evaluate expression vars) должна производить вычисление выражения expression для значений переменных, заданных отображением vars. Например, (evaluate expr {"x" 2}) должно быть равно 1.
+   * Функция (toString expression) должна выдавать запись выражения в стандартной для Clojure форме.
+   * Функция (parseObject "expression") должна разбирать выражения, записанные в стандартной для Clojure форме. Например,
+    ```
+    (parseObject "(- (* 2 x) 3)")
+    ```
+должно быть эквивалентно expr.
+   * Функция (diff expression "variable") должена возвращать выражение, представляющее производную исходного выражения по заданой пермененной. Например, (diff expression "x") должен возвращать выражение, эквивалентное (Constant 2), при этом выражения (Subtract (Constant 2) (Constant 0)) и
+   ```(Subtract
+     (Add
+       (Multiply (Constant 0) (Variable "x"))
+       (Multiply (Constant 2) (Constant 1)))
+     (Constant 0))
+   ```
+                    
+   так же будут считаться правильным ответом.
+2. Сложный вариант. Констуркторы Add, Subtract, Multiply и Divide должны принимать произвольное число аргументов. Разборщик так же должен допускать произвольное число аргументов для +, -, *, /.
+3. При выполнение задания можно использовать любой способ преставления объектов.
