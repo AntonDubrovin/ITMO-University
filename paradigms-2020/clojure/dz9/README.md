@@ -1,22 +1,22 @@
-# dz9
-
-A Clojure library designed to ... well, that part is up to you.
-
-## Usage
-
-FIXME
-
-## License
-
-Copyright © 2020 FIXME
-
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+Домашнее задание 9. Линейная алгебра на Clojure
+----
+1. Разработайте функции для работы с объектами линейной алгебры, которые представляются следующим образом:
+   * скаляры – числа
+   * векторы – векторы чисел;
+   * матрицы – векторы векторов чисел.
+2. Функции над векторами:
+   * v+/v-/v*/vd – покоординатное сложение/вычитание/умножение/деление;
+   * scalar/vect – скалярное/векторное произведение;
+   * v*s – умножение на скаляр.
+3. Функции над матрицами:
+   * m+/m-/m*/md – поэлементное сложение/вычитание/умножение/деление;
+   * m*s – умножение на скаляр;
+   * m*v – умножение на вектор;
+   * m*m – матричное умножение;
+   * transpose – транспонирование;
+4. Сложный вариант.
+   * Ко всем функциям должны быть указаны контракты. Например, нельзя складывать вектора разной длины.
+   * Все функции должны поддерживать произвольное число аргументов. Например (v+ [1 2] [3 4] [5 6]) должно быть равно [9 12].
+5. При выполнение задания следует обратить внимание на:
+   * Применение функций высшего порядка.
+   * Выделение общего кода для операций.
