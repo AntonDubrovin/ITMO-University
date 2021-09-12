@@ -4,23 +4,23 @@ Java-advanced
 ----
 
  * ДЗ 1 Ввод-вывод. Обход файлов
-   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz1(walk)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz1(walk)/src)
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz1(walk)/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz1(walk)/src)
  * ДЗ 2 Collections Framework. ArraySortedSet
-   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz2(arrayset)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz2(arrayset)/src/info/kgeorgiy/ja/dubrovin/arrayset)
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz2(arrayset)/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz2(arrayset)/src/info/kgeorgiy/ja/dubrovin/arrayset)
  * ДЗ 3 Лямбда-выражения и потоки. Студенты
-   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz3(student)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz3(student)/src/info/kgeorgiy/ja/dubrovin/student)
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz3(student)/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz3(student)/src/info/kgeorgiy/ja/dubrovin/student)
  * ДЗ 4-6 Reflection. Implementor, JarImplementor, Javadoc
-   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz4-6(Implementor%2C%20jar%2C%20javadoc)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz4-6(Implementor%2C%20jar%2C%20javadoc)/src/info/kgeorgiy/ja/dubrovin/implementor)
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz4-6(Implementor%2C%20jar%2C%20javadoc)/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz4-6(Implementor%2C%20jar%2C%20javadoc)/src/info/kgeorgiy/ja/dubrovin/implementor)
  * ДЗ 7-8 Введение в многопоточное программирование. Итеративный параллелизм, Параллельный запуск
-   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz78(parallelism)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz78(parallelism)/src/info/kgeorgiy/ja/dubrovin/concurrent)
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz78(parallelism)/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz78(parallelism)/src/info/kgeorgiy/ja/dubrovin/concurrent)
  * ДЗ 9 Многопоточное программирование на Java. Web Crawler
-   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz9(webCrawler)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz9(webCrawler)/src/info/kgeorgiy/ja/dubrovin/crawler)
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz9(webCrawler)/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz9(webCrawler)/src/info/kgeorgiy/ja/dubrovin/crawler)
  * ДЗ 10, 12 Работа с сетью, Неблокирующий и асинхронный ввод-вывод. Hello UDP, HelloNonblockingUDP
-   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz10,12(UDP%20client,%20server)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz10%2C12(UDP%20client%2C%20server)/src/info/kgeorgiy/ja/dubrovin/hello)
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz10,12(UDP%20client,%20server)/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz10%2C12(UDP%20client%2C%20server)/src/info/kgeorgiy/ja/dubrovin/hello)
  * ДЗ 11 Сериализация и RMI. Физические лица
-   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz11(serialization,%20rmi)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz11(serialization%2C%20rmi)/src/info/kgeorgiy/ja/dubrovin/rmi)
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz11(serialization,%20rmi)/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz11(serialization%2C%20rmi)/src/info/kgeorgiy/ja/dubrovin/rmi)
  * ДЗ 13 Интернационализация и локализация. Статистика текста
-   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz13(textStatistics)) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz13(textStatistics)/src/info/kgeorgiy/ja/dubrovin/statistics)
+   * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz13(textStatistics)/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/java-advanced/dz13(textStatistics)/src/info/kgeorgiy/ja/dubrovin/statistics)
 
 Методы оптимизации
 ----
@@ -54,22 +54,35 @@ Paradigms-2020
 
  * Java
    * ДЗ 1. [Обработка ошибок](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/Java/DZ1)
-   * ДЗ 2 Программирование по контракту. [Бинарный поиск](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/Java/DZ2)
-   * ДЗ 3 Реализация ООП. [Очередь на массиве](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/Java/DZ3)
-   * ДЗ 4 Реализация ООП. [Очередь на связном списке](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/Java/DZ4)
-   * ДЗ 5 Generics. [Вычисления в различных типах](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/Java/DZ5)
+   * ДЗ 2 Программирование по контракту. Бинарный поиск
+     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/Java/DZ2/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/Java/DZ2)
+   * ДЗ 3 Реализация ООП. Очередь на массиве
+     * [Условие](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/Java/DZ3/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/Java/DZ3)
+   * ДЗ 4 Реализация ООП. Очередь на связном списке
+     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/Java/DZ4/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/Java/DZ4)
+   * ДЗ 5 Generics. Вычисления в различных типах
+     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/Java/DZ5/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/Java/DZ5)
  * JavaScript
-   * ДЗ 6 Функции. [Функциональные выражения на JavaScript](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/JavaScript/dz6)
-   * ДЗ 7 Объекты и методы. [Объектные выражения на JavaScript](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/JavaScript/hw7)
-   * ДЗ 8 Что еще есть в JavaScript. [Обработка ошибок на JavaScript](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/JavaScript/dz8)
+   * ДЗ 6 Функции. Функциональные выражения на JavaScript
+     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/JavaScript/dz6/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/JavaScript/dz6)
+   * ДЗ 7 Объекты и методы. Объектные выражения на JavaScript
+     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/JavaScript/hw7/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/JavaScript/hw7)
+   * ДЗ 8 Что еще есть в JavaScript. Обработка ошибок на JavaScript
+     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/JavaScript/dz8/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/JavaScript/dz8)
  * Clojure
-   * ДЗ 9 Функции. [Линейная алгебра на Clojure](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/clojure/dz9)
-   * ДЗ 10 Внешний мир. [Функциональные выражения на Clojure](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/clojure/dz10)
-   * ДЗ 11 Объекты. [Объектные выражения на Clojure](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/clojure/dz11)
-   * ДЗ 12 [Комбинаторные парсеры](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/clojure/dz12)
+   * ДЗ 9 Функции. Линейная алгебра на Clojure
+     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/clojure/dz9/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/clojure/dz9)
+   * ДЗ 10 Внешний мир. Функциональные выражения на Clojure
+     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/clojure/dz10/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/clojure/dz10)
+   * ДЗ 11 Объекты. Объектные выражения на Clojure
+     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/clojure/dz11/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/clojure/dz11)
+   * ДЗ 12 Комбинаторные парсеры
+     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/clojure/dz12/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/paradigms-2020/clojure/dz12)
  * Prolog
-   * ДЗ 13 Факты, правила и вычисления. [Простые числа на Prolog](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/Prolog/primes.pl)
-   * ДЗ 14 Задачи, унификация и объекты. [Дерево поиска на Prolog](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/Prolog/tree-map.pl)
+   * ДЗ 13 Факты, правила и вычисления. Простые числа на Prolog
+     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/Prolog/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/Prolog/primes.pl)
+   * ДЗ 14 Задачи, унификация и объекты. Дерево поиска на Prolog
+     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/Prolog/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/paradigms-2020/Prolog/tree-map.pl)
 
 Web-программирование
 ----
@@ -102,7 +115,7 @@ OS lite
  * Лабораторая работа 6. Консольный интерфейс ОС WINDOWS
    * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/OS/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F6.pdf) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/OS/lab6)
 
-C++ lite
+C++ 
 ----
 
  * [8-puzzle](https://github.com/AntonDubrovin/ITMO-University/tree/master/C%2B%2B/8-puzzle)

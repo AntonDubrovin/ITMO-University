@@ -1,22 +1,13 @@
-# dz12
-
-A Clojure library designed to ... well, that part is up to you.
-
-## Usage
-
-FIXME
-
-## License
-
-Copyright © 2020 FIXME
-
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+Домашнее задание 12. Комбинаторные парсеры
+----
+1. Простой вариант. Реализуйте функцию (parseObjectSuffix "expression"), разбирающую выражения, записанные в суффиксной форме, и функцию toStringSuffix, возвращающую строковое представление выражения в этой форме. Например,
+   ```
+   (toStringSuffix (parseObjectSuffix "( ( 2 x * ) 3 - )"))
+   ```
+   должно возвращать ((2 x *) 3 -).
+2. Сложный вариант. Реализуйте функцию (parseObjectInfix "expression"), разбирающую выражения, записанные в инфиксной форме, и функцию toStringInfix, возвращающую строковое представление выражения в этой форме. Например,
+   ```
+   (toStringInfix (parseObjectInfix "2 * x - 3"))
+   ```
+   должно возвращать ((2 * x) - 3).
+3. Бонусный вариант. Добавьте в библиотеку комбинаторов возможность обработки ошибок и продемонстрируйте ее использование в вашем парсере.
