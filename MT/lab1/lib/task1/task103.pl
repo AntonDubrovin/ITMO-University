@@ -3,5 +3,5 @@ use strict;
 use warnings FATAL => 'all';
 
 while (<>) {
-    print if /\b(cat)\b/;
+    print if /cat/i;
 }
