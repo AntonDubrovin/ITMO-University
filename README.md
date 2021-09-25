@@ -3,6 +3,7 @@
 Frontend
 ----
  * Домашняя работа 1
+     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/homework1/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/homework1/homework1.js) 
 
 Методы трансляции
 ----
