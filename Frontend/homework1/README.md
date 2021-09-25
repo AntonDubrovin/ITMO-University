@@ -36,35 +36,30 @@ Tic tac toe problem
 ----
 
 // Пример 1
-----
 abProblem(1, 1)
 /*
     2
 */
 
 // Пример 2
-----
 centuryByYearProblem(2018)
 /*
     21
 */
 
 // Пример 3
-----
 colorsProblem('#FFFFFF')
 /*
     (255, 255, 255)
 */
 
 // Пример 4
-----
 fibonacciProblem(1)
 /*
     1
 */
 
 // Пример 5
-----
 matrixProblem([
     [1, 2, 3],
     [4, 5, 6],
@@ -79,28 +74,24 @@ matrixProblem([
 */
 
 // Пример 6
-----
 numberSystemProblem(5, 2)
 /*
     '101'
 */
 
 // Пример 7
-----
 phoneProblem('8-800-333-51-73')
 /*
     true
 */
 
 // Пример 8
-----
 smilesProblem(':-)')
 /*
     1
 */
 
 // Пример 9
-----
 ticTacToeProblem([
     ['x', 'x', 'x'],
     ['o', 'o', 'x'],
