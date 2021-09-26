@@ -2,16 +2,21 @@
 
 Frontend
 ----
- * Домашняя работа 1.
+ * Домашняя работа 1
      * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/homework1/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/homework1/homework1.js) 
 
 Kotlin
 ----
    * [Домашняя работа 1](https://github.com/AntonDubrovin/ITMO-University/tree/master/kotlin/homework1)
 
+Параллельное программирование
+----
+   * Stack-elimination.
+        * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/MPP/stack-elimination/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/MPP/stack-elimination) 
+
 Методы трансляции
 ----
-  * Лабораторная работа 1.
+  * Лабораторная работа 1
     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/MT/lab1/lib/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F1.pdf) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/MT/lab1/lib)  
 
 Java-advanced
