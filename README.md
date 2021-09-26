@@ -7,7 +7,7 @@ Frontend
 
 Kotlin
 ----
-   * [Домашняя работа 1](https://github.com/AntonDubrovin/ITMO-University/tree/master/kotlin/homework1)
+   * ДЗ 1. [Основы Kotlin](https://github.com/AntonDubrovin/ITMO-University/tree/master/kotlin/homework1)
 
 Параллельное программирование
 ----
