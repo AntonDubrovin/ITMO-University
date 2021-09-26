@@ -5,7 +5,12 @@ package com.h0tk3y.spbsu.kotlin.course.lesson1
  * Факториалом отрицательных чисел считайте -1. Целочисленное переполнение игнорируйте.
  */
 fun factorial(n: Int): Int = when {
-    n == 0 -> 1
     n < 0 -> -1
-    else -> n * factorial(n - 1)
+    else -> {
+        var answer = 1
+        for (i in 2..n) {
+            answer *= i
+        }
+        answer
+    }
 }

@@ -12,7 +12,17 @@ package com.h0tk3y.spbsu.kotlin.course.lesson1
 fun fibonacci(n: Int, first: Int = 1, second: Int = first): Int = when {
     n < 1 -> -1
     n == 1 -> first
-    else -> fibonacci(n - 1, second, first + second)
+    else -> {
+        var fibonacciFirst = first
+        var fibonacciSecond = second
+        var next: Int
+        for (i in 0..n - 3) {
+            next = fibonacciFirst + fibonacciSecond
+            fibonacciFirst = fibonacciSecond
+            fibonacciSecond = next
+        }
+        fibonacciSecond
+    }
 }
 
 /*
