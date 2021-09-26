@@ -7,7 +7,7 @@ Frontend
 
 Kotlin
 ----
-   * [Домашняя работа 1](https://github.com/AntonDubrovin/ITMO-University/tree/master/kotlin/homework1/lesson1)
+   * [Домашняя работа 1](https://github.com/AntonDubrovin/ITMO-University/tree/master/kotlin/homework1)
 
 Методы трансляции
 ----
