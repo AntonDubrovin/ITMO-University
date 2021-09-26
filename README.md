@@ -9,6 +9,11 @@ Kotlin
 ----
    * [Домашняя работа 1](https://github.com/AntonDubrovin/ITMO-University/tree/master/kotlin/homework1)
 
+Параллельное программирование
+----
+   * Stack-elimination
+    *[Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/MPP/stack-elimination/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/MPP/stack-elimination#readme) 
+
 Методы трансляции
 ----
   * Лабораторная работа 1.
