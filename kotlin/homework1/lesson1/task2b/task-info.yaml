@@ -1,0 +1,99 @@
+type: edu
+files:
+- name: test/Tests.kt
+  visible: false
+  text: |-
+    package com.h0tk3y.spbsu.kotlin.course.lesson1
+
+    import org.junit.Assert
+    import org.junit.Test
+
+    class Test {
+        private fun doTest(expected: Int, n: Int, first: Int? = null, second: Int? = null) {
+            val actual = when {
+                first == null -> fibonacci(n)
+                second == null -> fibonacci(n, first)
+                else -> fibonacci(n, first, second)
+            }
+            Assert.assertEquals(
+                    "fibonacci(${listOfNotNull(n, first, second).joinToString()}) should be $expected, but was $actual",
+                    expected,
+                    actual
+            )
+        }
+
+        @Test
+        fun testFibonacci() {
+            doTest(-1, 0)
+            doTest(-1, 0, 1)
+            doTest(-1, 0, 1, 1)
+
+            doTest(-1, -1)
+            doTest(-1, -1, 1)
+            doTest(-1, -1, 1, 1)
+
+            doTest(1, 1)
+            doTest(5, 1, 5)
+            doTest(10, 1, 10, 20)
+
+            doTest(13, 7)
+            doTest(65, 7, 5)
+            doTest(210, 7, 10, 20)
+
+            doTest(46368, 24)
+            doTest(231840, 24, 5)
+            doTest(750250, 24, 10, 20)
+        }
+    }
+  learner_created: false
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 589
+    length: 43
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 589
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: /* добавьте три параметра */
+  - offset: 640
+    length: 98
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 607
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: TODO()
+  text: |-
+    package com.h0tk3y.spbsu.kotlin.course.lesson1
+
+    /*
+     * Реализуйте функцию fibonacci, вычисляющую элемент последовательности Фибоначчи по номеру.
+     * Нумерация элементов с единицы.
+     * Функция должна иметь три целочисленных параметра:
+     * 1. n – номер требуемого элемента последовательности. Для номеров, меньших единицы, возвращайте -1;
+     * 2. first – значение первого элемента последовательности, имеет значение по умолчанию 1;
+     * 3. second – значение второго элемента последовательности, использует first как значение по умолчанию
+     * Целочисленное переполнение игнорируйте.
+     */
+    fun fibonacci(type here): Int = type here
+
+    /*
+     * Функцию должно быть можно вызывать следующими способами:
+     * `fibonacci(42)`
+     * `fibonacci(7, 1)`
+     * `fibonacci(11, 0, 1)`
+     * `fibonacci(7, first = 5)`
+     * `fibonacci(42, first = 1, second = 1)`
+     */
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 18 Sep 2021 15:47:38 UTC
+record: -1

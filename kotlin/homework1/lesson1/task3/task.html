@@ -1,0 +1,22 @@
+<html>
+<h3>Задача 3. Целочисленные диапазоны</h3>
+
+<p>Это задание на работу с целочисленными диапазонами – <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.ranges/-int-range/index.html"><code>IntRange</code></a>.</p>
+
+<p>Реализуйте функцию <code>intersectRanges</code>, возвращающую диапазон, являющийся пересечением двух
+    данных целочисленных диапазонов. Если данные диапазоны не пересекаются, возвращайте <code>null</code>.</p>
+
+<p>Например, пересечением дипазонов <code>1..10</code> и <code>5..20</code> является <code>5..10</code>,
+    а диапазоны <code>0..0</code> и <code>1..1</code> не пересекаются.</p>
+
+<p>Для получения границ диапазонов используйте свойства <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.ranges/-int-progression/first.html"><code>first</code></a> и <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.ranges/-int-progression/last.html"><code>last</code></a>.</p>
+
+<p>Затем реализуйте функцию <code>cut</code>, которая возвращает список, содержащий от нуля до двух непрерывных
+    диапазонов, которые получаются из диапазона <code>outerRange</code>, если из него "вырезать" <code>cutout</code>
+    (на самом деле, конечно же, "вырезать" из диапазона можно только его пересечение с другим диапазоном,
+    а остальную часть другого диапазона следует отбросить).</p>
+
+<p>Например, если из диапазона <code>0..10</code> вырезать <code>1..7</code>, получится два диапазона, <code>0..0</code>
+    и <code>8..10</code>. Если же из <code>0..10</code> вырезать <code>0..3</code>,
+    то результатом будет только один диапазон <code>4..10</code>.</p>
+</html>

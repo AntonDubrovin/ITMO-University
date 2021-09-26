@@ -1,0 +1,91 @@
+type: edu
+files:
+- name: test/Tests.kt
+  visible: false
+  text: |-
+    package com.h0tk3y.spbsu.kotlin.course.lesson1
+
+    import main
+    import org.junit.Assert
+    import org.junit.Test
+    import java.io.ByteArrayOutputStream
+    import java.io.PrintStream
+
+    class Test {
+        companion object {
+            val newline = System.getProperty("line.separator")
+        }
+
+        private fun testStdout(expected: String, fn: () -> Unit) {
+            val oldStdOut = System.out
+            try {
+                val stream = ByteArrayOutputStream()
+                stream.use {
+                    PrintStream(stream, true, "UTF-8").use { System.setOut(it); fn(); }
+                }
+                val actual = stream.toByteArray().inputStream().bufferedReader().readText()
+                Assert.assertEquals(expected, actual)
+            } finally {
+                System.setOut(oldStdOut)
+            }
+        }
+
+        @Test
+        fun testSolutionNoUsername() {
+            testStdout("ещё никогда Штирлиц не был так близок к провалу$newline") { main() }
+        }
+    }
+  learner_created: false
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 20
+    length: 29
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 20
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: '""'
+  - offset: 70
+    length: 5
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 50
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: '""'
+  text: |-
+    const val string1 = type here
+    const val string2 = type here
+
+    fun foo(
+            head: String = "никогда",
+            phrase: String = " не говори",
+            tail: String = " никогда"
+        ) = if (phrase.isNotEmpty()) {
+            "$head$phrase$tail"
+        }
+        else {
+            ""
+        }
+
+    fun main() {
+        println(
+                foo(
+                        head = foo("", phrase = string2),
+                        tail = string1,
+                        phrase = " Штирлиц "
+                )
+        )
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 19 Sep 2021 11:50:35 UTC
+record: -1
