@@ -2,7 +2,7 @@
 
 Frontend
 ----
- * Домашняя работа 1
+ * ДЗ 1. Основы java script
      * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/homework1/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/homework1/homework1.js) 
 
 Kotlin
