@@ -11,8 +11,10 @@ Kotlin
 
 Параллельное программирование
 ----
-   * Stack-elimination.
+   * Stack-elimination
         * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/MPP/stack-elimination/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/MPP/stack-elimination) 
+   * Msqueue 
+        * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/MPP/msqueue/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/MPP/msqueue) 
 
 Методы трансляции
 ----
