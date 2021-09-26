@@ -2,8 +2,12 @@
 
 Frontend
 ----
- * Домашняя работа 1
+ * Домашняя работа 1.
      * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/homework1/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/homework1/homework1.js) 
+
+Kotlin
+----
+   * [Домашняя работа 1](https://github.com/AntonDubrovin/ITMO-University/tree/master/kotlin/homework1/lesson1)
 
 Методы трансляции
 ----
