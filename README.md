@@ -9,6 +9,11 @@ Kotlin
 ----
    * ДЗ 1. [Основы Kotlin](https://github.com/AntonDubrovin/ITMO-University/tree/master/kotlin/homework1)
 
+Анализ данных
+----
+   * Лабораторная работа 1
+      * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/DataAnalysis/lab1/Lab-1.ipynb) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/DataAnalysis/lab1/lab1_DubrovinAnton.ipynb) 
+
 Параллельное программирование
 ----
    * Stack-elimination
