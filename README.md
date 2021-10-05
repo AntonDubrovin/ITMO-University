@@ -4,6 +4,8 @@ Frontend
 ----
  * ДЗ 1. Основы java script
      * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/homework1/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/homework1/homework1.js) 
+ * ДЗ 2. Основы java script-2
+     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/homework2/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/homework2/pbql.js)  
 
 Kotlin
 ----
