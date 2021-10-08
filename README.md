@@ -9,7 +9,8 @@ Frontend
 
 Kotlin
 ----
-   * ДЗ 1. [Основы Kotlin](https://github.com/AntonDubrovin/ITMO-University/tree/master/kotlin/homework1)
+   * [ДЗ 1](https://github.com/AntonDubrovin/ITMO-University/tree/master/kotlin/homework1)
+   * [ДЗ 2](https://github.com/AntonDubrovin/ITMO-University/tree/master/kotlin/homework2)
 
 Анализ данных
 ----
