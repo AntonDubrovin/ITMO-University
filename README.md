@@ -23,6 +23,10 @@ Kotlin
         * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/MPP/stack-elimination/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/MPP/stack-elimination) 
    * Msqueue 
         * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/MPP/msqueue/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/MPP/msqueue) 
+   * Possible-executions-analysis
+        * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/MPP/possible-executions-anasysis/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/MPP/possible-executions-anasysis) 
+   * Fine-grained-bank
+        * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/MPP/fine-grained-bank/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/MPP/fine-grained-bank)  
 
 Методы трансляции
 ----
