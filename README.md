@@ -29,6 +29,8 @@ Kotlin
         * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/MPP/possible-executions-anasysis/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/MPP/possible-executions-anasysis) 
    * Fine-grained-bank
         * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/MPP/fine-grained-bank/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/MPP/fine-grained-bank)  
+   * Monotonic-clock
+        * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/MPP/monotonic-clock/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/MPP/monotonic-clock) 
 
 Методы трансляции
 ----
