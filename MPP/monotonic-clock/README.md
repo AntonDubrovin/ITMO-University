@@ -46,8 +46,3 @@ interface MonotonicClock {
 
 Один из вариантов решения описан в работе Лампорта 
 [Concurrent Reading and Writing of Clocks](http://lamport.azurewebsites.net/pubs/lamport-concurrent-clocks.pdf).
-
-## Формат сдачи
-
-Выполняйте задание в этом репозитории. Инструкции по сдаче заданий находятся в 
-[этом документе](https://docs.google.com/document/d/1GQ0OI_OBkj4kyOvhgRXfacbTI9huF4XJDMOct0Lh5og). 
