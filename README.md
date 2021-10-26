@@ -17,7 +17,7 @@ Kotlin
 Функциональное программирование
 ----
    * ДЗ 1
-     * [Условие]() | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/FP/hw1/src/HW1) 
+     * Условие | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/FP/hw1/src/HW1) 
 
 Анализ данных
 ----
