@@ -14,6 +14,11 @@ Kotlin
    * [ДЗ 1](https://github.com/AntonDubrovin/ITMO-University/tree/master/kotlin/homework1)
    * [ДЗ 2](https://github.com/AntonDubrovin/ITMO-University/tree/master/kotlin/homework2)
 
+Функциональное программирование
+----
+   * ДЗ 1
+     * [Условие]() | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/FP/hw1/src/HW1) 
+
 Анализ данных
 ----
    * Лабораторная работа 1
