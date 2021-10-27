@@ -2,12 +2,12 @@
 
 Frontend
 ----
- * ДЗ 1. Основы java script
-     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/homework1/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/homework1/homework1.js) 
- * ДЗ 2. Основы java script-2
-     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/homework2/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/homework2/pbql.js)  
- * ДЗ 3. Вёртска
-     * [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/Frontend/homework3/01-about-cats/src)  
+ * JS 1. Разминка
+     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/JS/warm-up/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/JS/warm-up/homework1.js) 
+ * JS 2. Телефонная книга
+     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/JS/phone-book/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/JS/phone-book/pbql.js)  
+ * Вёрстка 1/2
+     * [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/Frontend/layout/01-02-about-cats/01-about-cats/src)  
 
 Kotlin
 ----
