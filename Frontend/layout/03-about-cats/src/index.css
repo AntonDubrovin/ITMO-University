@@ -1,0 +1,286 @@
+html {
+  background-color: rgba(137, 207, 240, 0.3);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  text-align: center;
+  font-family: "PT SansNarrow", serif;
+  font-size: 32px;
+  background-color: rgba(137, 207, 240, 0.8);
+  border-bottom: 2px solid rgba(46, 49, 49);
+  padding: 5px 0;
+}
+
+.breedRadio {
+  display: none;
+}
+
+.cats {
+  margin-top: 100px;
+}
+
+.header:first-letter {
+  color: orangered;
+}
+
+.cats .card {
+  border: 1px solid;
+}
+
+.cats .card:hover {
+  box-shadow: 5px 5px 5px 5px rgba(25, 25, 112, 0.4);
+}
+
+.footer {
+  border-top: 2px solid rgba(46, 49, 49, 0.2);
+  font-family: Arial, sans-serif;
+  font-size: 14px
+}
+
+.footer .mailPicture,
+.footer .hiddenPicture {
+  width: 17px;
+  height: 17px;
+}
+
+/* телефоны */
+@media screen and (min-width: 375px) and (max-width: 729px) {
+  .filter {
+    display: none;
+  }
+
+  .dot {
+    display: none;
+  }
+
+  .footer .mailPicture {
+    display: none;
+  }
+
+  .cats .blockCats .fullBlock {
+    display: none;
+  }
+
+  .cats .blockCats .catPicture {
+    width: 250px;
+    height: 250px;
+    margin: 10px auto;
+    padding-bottom: 20px;
+  }
+
+  .cats .blockCats .card {
+    margin-bottom: 20px;
+  }
+
+  .cats .blockCats .card .shortInfo {
+    border-top: 1px solid;
+    padding: 20px;
+  }
+
+  .cats .blockCats .card .shortInfo .catName {
+    font-size: 20px;
+    font-weight: bold;
+    color: indianred;
+  }
+
+  .footer {
+    padding: 20px 0 10px 20px;
+  }
+
+  .footer .copyright {
+    padding-top: 20px;
+  }
+}
+
+/* планшеты */
+@media screen and (min-width: 730px) and (max-width: 1199px) {
+  .cats .blockCats .fullBlock {
+    display: none;
+  }
+
+  .cats .blockCats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .cats .blockCats .catPicture {
+    width: 250px;
+    height: 250px;
+    margin: 10px auto;
+    padding-bottom: 20px;
+  }
+
+  .cats .blockCats .card .shortInfo {
+    border-top: 1px solid;
+    padding: 20px;
+  }
+
+  .cats .blockCats .card .shortInfo .catName {
+    font-size: 20px;
+    font-weight: bold;
+    color: indianred;
+  }
+
+  .filter {
+    display: none;
+  }
+
+  .dot {
+    display: none;
+  }
+
+  .footer .mailPicture {
+    display: none;
+  }
+
+  .footer .contact {
+    padding: 20px;
+    float: left;
+    line-height: 20px;
+  }
+
+  .footer .copyright {
+    padding: 20px;
+    float: right;
+  }
+}
+
+/* компьютеры*/
+@media screen and (min-width: 1200px) {
+  .cats .blockCats .catPicture {
+    width: 300px;
+    height: 300px;
+    margin: 10px 10px;
+  }
+
+  .footer .contact {
+    float: left;
+    padding: 20px 20px;
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+  }
+
+  .footer .copyright {
+    float: right;
+    padding: 20px 20px;
+  }
+
+  .footer .hiddenPicture {
+    display: none;
+  }
+
+  .cats {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+  }
+
+  .cats .blockCats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin: 0 20px;
+  }
+
+  .cats .blockCats .shortBlock {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding-bottom: 15px;
+    border-bottom: 1px solid grey;
+  }
+
+  .cats .blockCats .shortBlock .shortInfo .catName {
+    font-size: 25px;
+    font-weight: bold;
+    color: indianred;
+  }
+
+  .cats .blockCats .shortBlock .shortInfo .catShortInfo {
+    font-size: 18px;
+  }
+
+  .cats .blockCats .shortBlock .shortInfo {
+    margin: auto 0;
+  }
+
+  .cats .blockCats .fullBlock {
+    padding: 20px;
+    text-align: center;
+    font-size: 17px;
+  }
+
+  .filter {
+    float: right;
+    text-align: center;
+    margin-right: 10px;
+  }
+
+  .filter label {
+    line-height: 30px;
+    background-color: rgba(137, 207, 240, 0.4);
+    padding: 10px;
+    border: 2px solid midnightblue;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+
+  .filter label:hover {
+    background-color: rgba(137, 207, 240, 0.9);
+  }
+
+  input[type="radio"]#all:checked ~ .filter label[for="all"],
+  input[type="radio"]#others:checked ~ .filter label[for="others"],
+  input[type="radio"]#noBreed:checked ~ .filter label[for="noBreed"],
+  input[type="radio"]#british:checked ~ .filter label[for="british"] {
+    background-color: rgba(30, 144, 255, 0.7);
+  }
+
+  input[type="radio"]#all:checked ~ .blockCats .card {
+    display: block;
+  }
+
+  input[type="radio"]#others:checked ~ .blockCats .card {
+    display: none;
+  }
+
+  input[type="radio"]#others:checked ~ .blockCats .card.other {
+    display: block;
+  }
+
+  input[type="radio"]#noBreed:checked ~ .blockCats .card {
+    display: none;
+  }
+
+  input[type="radio"]#noBreed:checked ~ .blockCats .card.noBreed {
+    display: block;
+  }
+
+  input[type="radio"]#british:checked ~ .blockCats .card {
+    display: none;
+  }
+
+  input[type="radio"]#british:checked ~ .blockCats .card.british {
+    display: block;
+  }
+
+  .filter .filterAge,
+  .filter .filterBreed {
+    font-size: 25px;
+  }
+
+  .filter .filterBreedLabels {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}

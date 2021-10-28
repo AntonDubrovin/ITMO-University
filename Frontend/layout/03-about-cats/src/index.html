@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>03-about-cats</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<header class="header">
+  <span>Мурмаркет</span>
+</header>
+<div class="cats">
+  <input type="radio" name="breed" class="breedRadio" id="all" checked>
+  <input type="radio" name="breed" class="breedRadio" id="british">
+  <input type="radio" name="breed" class="breedRadio" id="noBreed">
+  <input type="radio" name="breed" class="breedRadio" id="others">
+  <article class="blockCats">
+    <div class="card british">
+      <div class="shortBlock">
+        <div class="catPicture">
+          <img src="img/cat1.jpg" class="catPicture" alt="Коби">
+        </div>
+        <div class="shortInfo">
+          <span class="catName">Коби</span><br>
+          <span class="catShortInfo">
+            Возраст: более 7 лет<br>
+            Порода: британец<br>
+            Болезни: нет<br>
+            Статус: модель<br>
+          </span>
+        </div>
+      </div>
+      <div class="fullBlock">
+        Коби родился в США в марте 2015 года. Кот Коби появился в Instagram в июне 2015 года.
+        Огромные синие глаза с густо-чёрной подводкой и ослепительно белая шерсть принесли
+        ему сотни тысяч подписчиков и миллионы лайков.
+      </div>
+    </div>
+    <div class="card other">
+      <div class="shortBlock">
+        <div class="catPicture">
+          <img src="img/cat9.jpg" class="catPicture" alt="Хосико">
+        </div>
+        <div class="shortInfo">
+          <span class="catName">Хосико</span><br>
+          <span class="catShortInfo">
+            Возраст: 6 лет<br>
+            Порода: шотландская прямоухая<br>
+            Болезни: нет<br>
+            Статус: кот из Шрека<br>
+          </span>
+        </div>
+      </div>
+      <div class="fullBlock">
+        Котик из Москвы. Именно фотографии познакомили мир с красавцем, так похожим на кота в
+        сапогах из мультфильма
+        «Шрек».
+      </div>
+    </div>
+    <div class="card noBreed">
+      <div class="shortBlock">
+        <div class="catPicture">
+          <img src="img/cat5.jpg" class="catPicture" alt="Венера">
+        </div>
+        <div class="shortInfo">
+          <span class="catName">Венера</span><br>
+          <span class="catShortInfo">
+            Возраст: 12 лет<br>
+            Порода: нет<br>
+            Болезни: нет<br>
+            Статус: химера<br>
+          </span>
+        </div>
+      </div>
+      <div class="fullBlock">
+        Кошка по кличке Венера из Аргентины — обладательница редкой генетической аномалии,
+        которая разделила морду животного буквально пополам.
+        Ее правая сторона — рыжая с золотисто-зеленым глазом, другая — черная с ярко-синим.<br>
+        <br>
+        А ещё тут много текста<br>
+        Чтоб быть уверенным<br>
+        Что карточки увеличиваются вместе<br>
+        Действительно :)
+      </div>
+    </div>
+    <div class="card british">
+      <div class="shortBlock">
+        <div class="catPicture">
+          <img src="img/cat6.jpg" class="catPicture" alt="Смузи">
+        </div>
+        <div class="shortInfo">
+          <span class="catName">Смузи</span><br>
+          <span class="catShortInfo">
+            Возраст: 7 лет<br>
+            Порода: британская длинношерстная<br>
+            Болезни: нет<br>
+            Статус: самая фотогеничная кошка<br>
+          </span>
+        </div>
+      </div>
+      <div class="fullBlock">
+        Смузи — пушистый комочек милоты, являющийся самой фотогеничной кошкой в мире.
+        Её шерсть длинна и шелковиста, её глаза как два горящих изумруда,
+        смотрящих прямо в душу, её милота буквально разрывает Instagram.
+      </div>
+    </div>
+    <div class="card other">
+      <div class="shortBlock">
+        <div class="catPicture">
+          <img src="img/cat7.jpeg" class="catPicture" alt="Альберт">
+        </div>
+        <div class="shortInfo">
+          <span class="catName">Альберт</span><br>
+          <span class="catShortInfo">
+            Возраст: более 7 лет<br>
+            Порода: манчкин<br>
+            Болезни: нет<br>
+            Статус: самая популярный манчкин<br>
+          </span>
+        </div>
+      </div>
+      <div class="fullBlock">
+        Манчкин по кличке Альберт.
+      </div>
+    </div>
+    <div class="card noBreed">
+      <div class="shortBlock">
+        <div class="catPicture">
+          <img src="img/cat8.jpg" class="catPicture" alt="Луху">
+        </div>
+        <div class="shortInfo">
+          <span class="catName">Луху</span><br>
+          <span class="catShortInfo">
+            Возраст: более 7 лет<br>
+            Порода: нет<br>
+            Болезни: нет<br>
+            Статус: самая грустная кошка<br>
+          </span>
+        </div>
+      </div>
+      <div class="fullBlock">
+        Кошка Луху из Пекина с постоянно грустным выражением мордочки вызвала интерес
+        пользователей всемирной Сети.
+        Такой вид кошке придают опущенные уголки глаз и нахмуренные брови.
+      </div>
+    </div>
+  </article>
+  <article class="filter">
+    <span class="filterAge">Возраст</span><br>
+    <input type="range" min="1" max="20" value="11" class="filterAgeRange">
+    <p class="filterAgeRangeText">от 1 до 20 лет</p>
+    <span class="filterBreed">Порода</span>
+    <div class="filterBreedLabels">
+      <label for="all">Показать всех</label>
+      <label for="british">Британцы</label>
+      <label for="noBreed">Без породы</label>
+      <label for="others">Остальные</label>
+    </div>
+  </article>
+</div>
+<footer class="footer">
+  <div class="contact">
+    <img class="mailPicture" src="img/mail.png" alt="Mail picture">
+    Напишите нам:<br>
+    <img class="hiddenPicture" src="img/mail.png" alt="Mail picture">
+    <a class="mailLink" href="mailto:cats@babuli.ru">cats@babuli.ru</a><br>
+    <span class="dot">•</span>
+    <img class="hiddenPicture" src="img/mail.png" alt="Mail picture">
+    <a class="mailLink" href="mailto:vnuchek@babuli.ru">vnuchek@babuli.ru</a>
+  </div>
+  <div class="copyright">&copy; ООО &laquo;<a href="#">Бабушкины котятки</a>&raquo;</div>
+</footer>
+</body>
+</html>
