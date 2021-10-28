@@ -8,6 +8,8 @@ Frontend
      * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/JS/phone-book/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/JS/phone-book/pbql.js)  
  * Вёрстка 1/2
      * [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/Frontend/layout/01-02-about-cats/01-about-cats/src)  
+ * Вёрствка 3
+     * [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/Frontend/layout/03-about-cats/src)  
 
 Kotlin
 ----
