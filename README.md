@@ -7,7 +7,7 @@ Frontend
  * JS 2. Телефонная книга
      * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/JS/phone-book/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/JS/phone-book/pbql.js)  
  * JS 3. Ограбление банка
-      * [Условие]() | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/JS/robbery/friends.js)
+      * [Условие] | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/JS/robbery/friends.js)
  * Вёрстка 1/2
      * [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/Frontend/layout/01-02-about-cats/01-about-cats/src)  
  * Вёрстка 3
