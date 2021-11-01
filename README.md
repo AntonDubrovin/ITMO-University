@@ -8,10 +8,12 @@ Frontend
      * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/JS/phone-book/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/JS/phone-book/pbql.js)  
  * JS 3. Ограбление банка
       * Условие | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Frontend/JS/robbery/friends.js)
- * Вёрстка 1/2
+ * Вёрстка 1/2. Мурмаркет
      * [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/Frontend/layout/01-02-about-cats/01-about-cats/src)  
- * Вёрстка 3
+ * Вёрстка 3. Котики для всех
      * [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/Frontend/layout/03-about-cats/src)  
+ * Вёрстка 4. Свинотиндер
+    * [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/Frontend/layout/04-pigs-tinder/04-pigs-tinder/src)  
 
 Kotlin
 ----
