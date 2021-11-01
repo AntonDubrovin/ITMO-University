@@ -1,0 +1,8 @@
+setup.py
+conflictPackage/_init_.py
+conflictPackage/function.py
+conflictPacketForLab2.egg-info/PKG-INFO
+conflictPacketForLab2.egg-info/SOURCES.txt
+conflictPacketForLab2.egg-info/dependency_links.txt
+conflictPacketForLab2.egg-info/requires.txt
+conflictPacketForLab2.egg-info/top_level.txt
