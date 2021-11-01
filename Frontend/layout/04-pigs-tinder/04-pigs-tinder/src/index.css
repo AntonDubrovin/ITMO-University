@@ -1,0 +1,157 @@
+html {
+  background-color: rgba(137, 207, 240, 0.3);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  text-align: center;
+  font-family: "PT SansNarrow", serif;
+  font-size: 32px;
+  background-color: rgba(137, 207, 240, 0.8);
+  border-bottom: 2px solid rgba(46, 49, 49);
+  padding: 5px 0;
+}
+
+.tinder {
+  padding-top: 30px;
+}
+
+.tinder .pig-checkbox {
+  display: none;
+}
+
+.tinder .cards {
+  position: relative;
+}
+
+.cards .card {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease-out;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.cards .card .info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-left: 40px;
+  color: darkblue;
+}
+
+.cards .card .picture img {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.cards .card,
+.cards .card .picture,
+.cards .card .picture img {
+  height: 100%;
+}
+
+.buttons {
+  display: none;
+  font-size: 2.5rem;
+}
+
+.buttons .button {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  background-color: rgb(248, 214, 219);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.05s ease-out;
+}
+
+.buttons .button:hover,
+.buttons .button:active {
+  background-color: rgba(205, 92, 92, 0.7);
+}
+
+.buttons .button:active {
+  box-shadow: none;
+}
+
+@media (orientation: portrait) {
+  .tinder {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .cards {
+    max-height: 500px;
+    height: 85vw;
+  }
+
+  .cards, .buttons {
+    max-width: 500px;
+    width: 85vw;
+    margin: 0 auto;
+  }
+
+  .buttons {
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media (orientation: landscape) {
+  .tinder {
+    height: calc(100vh - 70px);
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .cards {
+    width: calc(100vh - 70px);
+    max-width: 500px;
+    overflow: hidden;
+  }
+
+  .buttons {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+
+  .cards, .buttons {
+    height: calc(100vh - 70px);
+    max-height: 500px;
+  }
+}
+
+input#pig1:checked ~ .cards .card1,
+input#pig2:checked ~ .cards .card2,
+input#pig3:checked ~ .cards .card3,
+input#pig4:checked ~ .cards .card4,
+input#pig5:checked ~ .cards .card5,
+input#pig6:checked ~ .cards .card6,
+input#pig7:checked ~ .cards .card7,
+input#pig8:checked ~ .cards .card8 {
+  visibility: visible;
+  opacity: 1;
+}
+
+input#pig1:checked ~ .sectionButtons .buttons2,
+input#pig2:checked ~ .sectionButtons .buttons3,
+input#pig3:checked ~ .sectionButtons .buttons4,
+input#pig4:checked ~ .sectionButtons .buttons5,
+input#pig5:checked ~ .sectionButtons .buttons6,
+input#pig6:checked ~ .sectionButtons .buttons7,
+input#pig7:checked ~ .sectionButtons .buttons8 {
+  display: flex;
+}
