@@ -27,6 +27,8 @@ Kotlin
 ----
    * Лабораторная работа 1
       * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/DataAnalysis/lab1/Lab-1.ipynb) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/DataAnalysis/lab1/lab1_DubrovinAnton.ipynb) 
+   * Лабораторная работа 2.
+      * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/DataAnalysis/lab2/Lab-2.ipynb) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/DataAnalysis/lab2) 
 
 Параллельное программирование
 ----
