@@ -14,6 +14,8 @@ Frontend
      * [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/Frontend/layout/03-about-cats/src)  
  * Вёрстка 4. Свинотиндер
     * [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/Frontend/layout/04-pigs-tinder/04-pigs-tinder/src)  
+ * Вёрстка 5. Прокачай кота
+    * [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/Frontend/layout/05-about-cats/05-about-cats/src)   
 
 Kotlin
 ----
