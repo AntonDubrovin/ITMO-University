@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Прокачай кота</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<article class="form">
+  <form>
+    <h1 class="formHeader">Прокачай кота!</h1>
+    <p class="formText">
+      Подпишись на рассылку нашего тренера и получи индивидуальную
+      подобранную программу тренировок<br> для своего кота
+    </p>
+    <p class="formAgeWeight">
+      <label>
+        Кот
+        <input type="number" min="0" class="catAge">
+        лет и
+      </label>
+      <label>
+        <input type="number" min="0" class="catWeight">
+        кг
+      </label>
+    </p>
+    <p class="formRadios" aria-label="Цель питания кота">
+      <input type="radio" name="formRadio" id="weightGain" class="formRadio1">
+      <input type="radio" name="formRadio" id="loseWeight" class="formRadio2">
+      <input type="radio" name="formRadio" id="DontKnow" class="formRadio3">
+      <label for="weightGain" class="radioLabel radioLabel1">Набор массы</label>
+      <label for="loseWeight" class="radioLabel radioLabel2">Похудение</label>
+      <label for="DontKnow" class="radioLabel radioLabel3">Не знаю</label>
+    </p>
+    <p class="formEmail">
+      <input type="email" placeholder="Email (ваш)" class="email" aria-label="Ваш email">
+    </p>
+    <p class="spam">
+      <input type="checkbox" id="spamCheckbox">
+      <label for="spamCheckbox" class="spamLabel" aria-label="Хочу спам">
+        Хочу спам
+      </label>
+    </p>
+    <button class="formButton" aria-label="Подписаться">
+      Подписаться
+    </button>
+  </form>
+  <section>
+    <div class="backgroundStrip1"></div>
+    <img src="img/cat1.jpg" class="catImage" alt="Кошечка коби">
+    <div class="backgroundStrip2"></div>
+  </section>
+  <section>
+    <button class="closeButton" aria-label="Закрыть окно">
+      <img src="img/close.png" class="closeImage" alt="Закрыть">
+    </button>
+  </section>
+</article>
+</body>
+</html>
