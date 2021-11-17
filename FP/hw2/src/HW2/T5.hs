@@ -19,7 +19,7 @@ mapExceptState :: (a -> b) -> ExceptState e s a -> ExceptState e s b
 mapExceptState function state = ES $ \s ->
   case runES state s of
     Success (first :# second) -> Success (function first :# second)
-    Error   error             -> Error   error
+    Error   err               -> Error   err
 
 wrapExceptState :: a -> ExceptState e s a
 wrapExceptState a = ES $ \s -> Success(a :#s)
@@ -28,13 +28,13 @@ joinExceptState :: ExceptState e s (ExceptState e s a) -> ExceptState e s a
 joinExceptState state = ES $ \s ->
   case runES state s of
     Success (first :# second) -> runES first second
-    Error   error             -> Error error
+    Error   err               -> Error err
 
 modifyExceptState :: (s -> s) -> ExceptState e s ()
 modifyExceptState function = ES $ \s -> Success(() :# function s)
 
 throwExceptState :: e -> ExceptState e s a
-throwExceptState error = ES $ \_ -> Error error
+throwExceptState err = ES $ \_ -> Error err
 
 instance Functor (ExceptState e s) where
   fmap = mapExceptState

@@ -20,7 +20,7 @@ import Control.Applicative (Alternative (..), optional)
 import Control.Monad       (MonadPlus, mfilter, void)
 import Data.Char           (digitToInt, isDigit, isUpper)
 import Data.Foldable       (Foldable (foldl'))
-import Data.Scientific     (Scientific, scientific, toRealFloat)
+import Data.Scientific     (scientific, toRealFloat)
 import GHC.Natural         (Natural)
 import HW2.T1              (Annotated ((:#)), Except (Error, Success))
 import HW2.T4              (Expr (..), Prim (..))
@@ -33,7 +33,7 @@ newtype Parser a = P (ExceptState ParseError (Natural, String) a)
 
 runP :: Parser a -> String -> Except ParseError a
 runP (P parser) expression = case runES parser (0, expression) of
-  Error   error         -> Error   error
+  Error   err           -> Error   err
   Success (result :# _) -> Success result
 
 -- if s is [] then pChar throws Error in position = pos

@@ -15,7 +15,7 @@ joinOption None          = None
 joinOption (Some option) = option
 
 joinExcept :: Except e (Except e a) -> Except e a
-joinExcept (Error   error ) = Error error
+joinExcept (Error   err   ) = Error err
 joinExcept (Success except) = except
 
 joinAnnotated :: Semigroup e => Annotated e (Annotated e a) -> Annotated e a
@@ -29,6 +29,6 @@ joinFun (F function) = F $ \element -> getFunction (function element) element
     getFunction (F _function) = _function
 
 joinList :: List (List a) -> List a
-joinList (head :. tail) = concatList head $ joinList tail
-joinList Nil            = Nil
+joinList (h :. t) = concatList h $ joinList t
+joinList Nil      = Nil
 

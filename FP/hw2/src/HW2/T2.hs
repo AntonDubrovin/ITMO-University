@@ -54,8 +54,8 @@ wrapAnnotated :: Monoid e => a -> Annotated e a
 wrapAnnotated a = a :# mempty
 
 distExcept :: (Except e a, Except e b) -> Except e (a, b)
-distExcept (Error error  , _             ) = Error error
-distExcept (_            , Error error   ) = Error error
+distExcept (Error err    , _             ) = Error   err
+distExcept (_            , Error err     ) = Error   err
 distExcept (Success first, Success second) = Success (first, second)
 
 wrapExcept :: a -> Except e a
@@ -80,7 +80,7 @@ distStream (firstHead :> firstTail, secondHead :> secondTail)
   = (firstHead, secondHead) :> distStream (firstTail, secondTail)
 
 wrapStream :: a -> Stream a
-wrapStream a = a :> wrapStream a
+wrapStream stream = stream :> wrapStream stream
 
 distList :: (List a, List b) -> List (a, b)
 distList (_, Nil) = Nil
@@ -93,12 +93,12 @@ distList (firstHead :. firstTail, second)
      append element (_head :. _tail) = (element, _head) :. append element _tail
 
 concatList :: List a -> List a -> List a
-concatList a                        Nil    = a
-concatList Nil                      a      = a
+concatList list                     Nil    = list
+concatList Nil                      list   = list
 concatList (firstHead :. firstTail) second = firstHead :. concatList firstTail second
 
 wrapList :: a -> List a
-wrapList a = a :. Nil
+wrapList list = list :. Nil
 
 distFun :: (Fun i a, Fun i b) -> Fun i (a, b)
 distFun (F first, F second)

@@ -48,15 +48,15 @@ data Annotated e a
 infix 0 :#
 
 mapAnnotated :: (a -> b) -> Annotated e a -> Annotated e b
-mapAnnotated function (head :# tail)
-  = function head :# tail
+mapAnnotated function (h :# t)
+  = function h :# t
 
 data Except e a
   = Error e
   | Success a
 
 mapExcept :: (a -> b) -> Except e a -> Except e b
-mapExcept _        (Error   error  ) = Error error
+mapExcept _        (Error   err    ) = Error err
 mapExcept function (Success element) = Success $ function element
 
 data Prioritised a
@@ -74,8 +74,8 @@ data Stream a
 infixr 5 :>
 
 mapStream :: (a -> b) -> Stream a -> Stream b
-mapStream function (head :> tail)
-  = function head :> mapStream function tail
+mapStream function (h :> t)
+  = function h :> mapStream function t
 
 data List a
   = Nil
@@ -83,8 +83,8 @@ data List a
 infixr 5 :.
 
 mapList :: (a -> b) -> List a -> List b
-mapList _        Nil            = Nil
-mapList function (head :. tail) = function head :. mapList function tail
+mapList _        Nil      = Nil
+mapList function (h :. t) = function h :. mapList function t
 
 data Fun i a
   = F (i -> a)
