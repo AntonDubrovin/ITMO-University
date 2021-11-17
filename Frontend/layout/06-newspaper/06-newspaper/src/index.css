@@ -1,0 +1,184 @@
+html {
+  background-color: #E1F5FE;
+}
+
+@font-face {
+  font-family: Bodoni;
+  src: url("fonts/bodoni_[allfont.ru].ttf");
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+header .newspaperHeader {
+  font-family: Nakula, serif;
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: midnightblue;
+  text-shadow: 0 1px 0 rgba(0, 255, 255, .1),
+  0 2px 0 rgba(0, 255, 255, .3),
+  0 3px 0 rgba(0, 255, 255, .2),
+  0 4px 0 rgba(0, 255, 255, .25),
+  0 5px 0 rgba(0, 255, 255, .2),
+  0 6px 1px rgba(0, 0, 51, 1),
+  0 0 5px rgba(0, 0, 51, .1),
+  0 1px 3px rgba(0, 0, 51, .3),
+  0 3px 5px rgba(0, 0, 51, .2),
+  0 5px 10px rgba(0, 0, 51, .25),
+  0 10px 10px rgba(0, 0, 51, .2),
+  0 20px 20px rgba(0, 0, 51, .15);
+}
+
+header .weather,
+header .date {
+  width: 350px;
+  font-family: Z003, serif;
+  padding: 1px;
+  border: 2px black solid;
+  font-size: 25px;
+  text-align: center;
+  color: darkblue;
+}
+
+header .weather h1,
+header .date h1 {
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 7px;
+  margin-bottom: 3px;
+  color: midnightblue;
+}
+
+.SPPanorama {
+  width: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  margin-top: 20px;
+  gap: 40px;
+}
+
+.thirdGrid {
+  margin-left: 10px;
+  font-family: Noto Mono, serif;
+}
+
+.thirdGridHeader {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.thirdGridText {
+  column-count: 2;
+  column-rule: 1px solid midnightblue;
+  text-indent: 1em;
+  font-size: 17px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.thirdImg {
+  width: 350px;
+}
+
+.thirdGridText:first-letter {
+  font-weight: bold;
+  font-size: 25px;
+  color: darkred;
+}
+
+.secondGrid {
+  text-align: center;
+  font-family: Nakula, serif;
+}
+
+.secondGridHeader {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.secondGridText {
+  font-size: 16px;
+}
+
+.foodHeader {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.foodHeader:first-letter {
+  color: darkred;
+  font-size: 25px;
+}
+
+.foodText {
+  text-align: justify;
+  margin-bottom: 25px;
+  column-count: 2;
+  column-rule: 1px solid midnightblue;
+}
+
+.foodImg {
+  width: 400px;
+}
+
+.firstGridHeader {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.whereImg {
+  width: 500px;
+}
+
+.whereHead {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.whereHead:first-letter {
+  color: darkred;
+  font-size: 25px;
+}
+
+.firstGrid {
+  text-align: center;
+  font-family: Bodoni, serif;
+  font-size: 17px;
+}
+
+.whereText {
+  column-count: 2;
+  column-rule: 1px solid midnightblue;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.thirdBlock {
+  border: 1px midnightblue solid;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.thirdGridTextNormal {
+  padding-left: 10px;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.colorText {
+  font-weight: bold;
+  color: darkblue;
+}
