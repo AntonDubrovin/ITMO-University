@@ -17,13 +17,16 @@ Frontend
  * Вёрстка 4. Свинотиндер
     * [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/Frontend/layout/04-pigs-tinder/04-pigs-tinder/src)  
  * Вёрстка 5. Прокачай кота
-    * [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/Frontend/layout/05-about-cats/05-about-cats/src)   
+    * [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/Frontend/layout/05-about-cats/05-about-cats/src)
+ * Вёрстка 6. Газета
+    * [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/Frontend/layout/06-newspaper/06-newspaper/src)  
 
 Kotlin
 ----
    * [ДЗ 1](https://github.com/AntonDubrovin/ITMO-University/tree/master/kotlin/homework1)
    * [ДЗ 2](https://github.com/AntonDubrovin/ITMO-University/tree/master/kotlin/homework2)
    * [ДЗ 3](https://github.com/AntonDubrovin/ITMO-University/tree/master/kotlin/homework3/src)
+   * [ДЗ 4](https://github.com/AntonDubrovin/ITMO-University/tree/master/kotlin/homework4/src/main/kotlin/csc/markobot/dsl)
 
 Функциональное программирование
 ----
