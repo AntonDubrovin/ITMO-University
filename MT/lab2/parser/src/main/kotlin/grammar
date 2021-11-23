@@ -1,0 +1,8 @@
+E -> WO
+W -> letter
+W -> not E
+W -> (E)
+O -> or E
+O -> and E
+O -> xor E
+O ->

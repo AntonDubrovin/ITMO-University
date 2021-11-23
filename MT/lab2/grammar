@@ -1,0 +1,18 @@
+Simple grammar:
+
+E -> E or E
+E -> E and E
+E -> E xor E
+E -> not E
+E -> (E)
+E -> "a" | "b"...
+
+Grammar without left recursion:
+E -> WE'
+W -> "a" | "b"...
+W -> not E
+W -> (E)
+E' -> or E
+E' -> and E
+E' -> xor E
+E' -> eps
