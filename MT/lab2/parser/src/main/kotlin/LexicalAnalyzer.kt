@@ -28,12 +28,7 @@ class LexicalAnalyzer(private val inputStream: InputStream) {
         var operation = ""
         while (currentChar in "a".."z") {
             operation += currentChar
-            try {
-                currentChar = inputStream.read().toChar().toString()
-                currentPosition++
-            } catch (e: IOException) {
-                throw ParseException(e.message, currentPosition)
-            }
+            nextChar()
         }
         val operations = listOf("and", "or", "xor", "not")
         return operations.contains(operation)
