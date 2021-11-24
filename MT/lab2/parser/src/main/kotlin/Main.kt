@@ -24,7 +24,7 @@ fun main() {
 fun test(testDescription: String, test: String) {
     println(testDescription)
     val inputStream = test.byteInputStream()
-    println(Parser(LexicalAnalyzer(inputStream).apply { nextToken() }).parse().toExpression())
+    println(Parser(LexicalAnalyzer(inputStream).apply { nextToken() }).parse().show())
     println()
 }
 
