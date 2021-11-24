@@ -25,9 +25,9 @@ class LexicalAnalyzer(private val inputStream: InputStream) {
     }
 
     private fun nextString(): Boolean {
-        var i = 0
+        var operation = ""
         while (currentChar in "a".."z") {
-            i++
+            operation += currentChar
             try {
                 currentChar = inputStream.read().toChar().toString()
                 currentPosition++
@@ -35,7 +35,8 @@ class LexicalAnalyzer(private val inputStream: InputStream) {
                 throw ParseException(e.message, currentPosition)
             }
         }
-        return i > 1
+        val operations = listOf("and", "or", "xor", "not")
+        return operations.contains(operation)
     }
 
     fun isBlank(char: String): Boolean {
@@ -58,36 +59,40 @@ class LexicalAnalyzer(private val inputStream: InputStream) {
                 currentToken = Token.RBRACKET
             }
             "o" -> {
-                previousChar = "o"
                 currentToken = if (nextString()) {
+                    previousChar = "or"
                     Token.OR
                 } else {
+                    previousChar = "o"
                     Token.LETTER
                 }
             }
             "a" -> {
                 currentToken = if (nextString()) {
+                    previousChar = "and"
                     Token.AND
                 } else {
+                    previousChar = "a"
                     Token.LETTER
                 }
-                previousChar = "a"
             }
             "x" -> {
                 currentToken = if (nextString()) {
+                    previousChar = "xor"
                     Token.XOR
                 } else {
+                    previousChar = "x"
                     Token.LETTER
                 }
-                previousChar = "x"
             }
             "n" -> {
                 currentToken = if (nextString()) {
+                    previousChar = "not"
                     Token.NOT
                 } else {
+                    previousChar = "n"
                     Token.LETTER
                 }
-                previousChar = "n"
             }
             in "a".."z" -> {
                 previousChar = currentChar

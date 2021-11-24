@@ -1,8 +1,7 @@
-E -> WO
-W -> letter
-W -> not E
-W -> (E)
-O -> or E
-O -> and E
-O -> xor E
-O ->
+E  -> TE'
+E' -> or TE' | eps
+T  -> FT'
+T' -> and FT' | eps
+F  -> GF'
+F' -> xor GF' | eps
+G  -> letter | (E) | not (E)

@@ -3,12 +3,10 @@ class Tree(
     private vararg val children: Tree
 ) {
     fun toExpression(): String {
-        if (node == "eps") {
-            return ""
-        }
         if (children.isEmpty()) {
             return node
         }
+
         val result = mutableListOf<String>()
         children.forEach {
             if (it.toExpression() != "") {
