@@ -7,5 +7,6 @@ enum class Token {
     AND,
     XOR,
     LBRACKET,
-    RBRACKET
+    RBRACKET,
+    BOOLEAN
 }

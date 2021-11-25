@@ -4,11 +4,12 @@ import java.text.ParseException
 
 class LexicalAnalyzer(private val inputStream: InputStream) {
     var previousChar = ""
+        private set
     var currentChar = ""
         private set
     var currentPosition = 0
         private set
-    var currentToken: Token = Token.START
+    var currentToken = Token.START
         private set
 
     init {
@@ -26,12 +27,22 @@ class LexicalAnalyzer(private val inputStream: InputStream) {
 
     private fun nextString(): Boolean {
         var operation = ""
-        while (currentChar in "a".."z") {
+        while (currentChar in "A".."z") {
             operation += currentChar
             nextChar()
         }
         val operations = listOf("and", "or", "xor", "not")
         return operations.contains(operation)
+    }
+
+    private fun nextBoolean(): Boolean {
+        var boolean = ""
+        while (currentChar in "A".."z") {
+            boolean += currentChar
+            nextChar()
+        }
+        val booleans = listOf("True", "False", "Nan")
+        return booleans.contains(boolean)
     }
 
     fun isBlank(char: String): Boolean {
@@ -52,6 +63,33 @@ class LexicalAnalyzer(private val inputStream: InputStream) {
                 previousChar = ")"
                 nextChar()
                 currentToken = Token.RBRACKET
+            }
+            "T" -> {
+                currentToken = if (nextBoolean()) {
+                    previousChar = "True"
+                    Token.BOOLEAN
+                } else {
+                    previousChar = "T"
+                    Token.LETTER
+                }
+            }
+            "F" -> {
+                currentToken = if (nextBoolean()) {
+                    previousChar = "False"
+                    Token.BOOLEAN
+                } else {
+                    previousChar = "F"
+                    Token.LETTER
+                }
+            }
+            "N" -> {
+                currentToken = if (nextBoolean()) {
+                    previousChar = "Nan"
+                    Token.BOOLEAN
+                } else {
+                    previousChar = "N"
+                    Token.LETTER
+                }
             }
             "o" -> {
                 currentToken = if (nextString()) {

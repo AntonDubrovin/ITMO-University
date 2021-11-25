@@ -15,14 +15,14 @@ class Parser(private val lexicalAnalyzer: LexicalAnalyzer) {
 
     private fun E(): Tree {
         return when (lexicalAnalyzer.currentToken) {
-            Token.LETTER, Token.LBRACKET, Token.NOT -> Tree("E", T(), O())
+            Token.LETTER, Token.LBRACKET, Token.NOT, Token.BOOLEAN -> Tree("E", T(), O())
             else -> throw AssertionError(assertionErrorMessage("E"))
         }
     }
 
     private fun T(): Tree {
         return when (lexicalAnalyzer.currentToken) {
-            Token.LETTER, Token.LBRACKET, Token.NOT -> Tree("T", F(), A())
+            Token.LETTER, Token.LBRACKET, Token.NOT, Token.BOOLEAN -> Tree("T", F(), A())
             else -> throw AssertionError(assertionErrorMessage("T"))
         }
     }
@@ -41,7 +41,7 @@ class Parser(private val lexicalAnalyzer: LexicalAnalyzer) {
 
     private fun F(): Tree {
         return when (lexicalAnalyzer.currentToken) {
-            Token.LETTER, Token.LBRACKET, Token.NOT -> Tree("F", G(), X())
+            Token.LETTER, Token.LBRACKET, Token.NOT, Token.BOOLEAN -> Tree("F", G(), X())
             else -> throw AssertionError(assertionErrorMessage("F"))
         }
     }
@@ -60,25 +60,22 @@ class Parser(private val lexicalAnalyzer: LexicalAnalyzer) {
 
     private fun G(): Tree {
         return when (lexicalAnalyzer.currentToken) {
-            Token.LETTER -> Tree(lexicalAnalyzer.previousChar)
+            Token.LETTER, Token.BOOLEAN -> Tree(lexicalAnalyzer.previousChar)
                 .also {
                     lexicalAnalyzer.nextToken()
                 }
             Token.LBRACKET -> {
                 lexicalAnalyzer.nextToken()
                 val e = E()
-                checkBracket(Token.RBRACKET)
+                if (lexicalAnalyzer.currentToken != Token.RBRACKET) {
+                    throw AssertionError(assertionErrorMessage("G"))
+                }
                 lexicalAnalyzer.nextToken()
                 Tree("G", Tree("("), e, Tree(")"))
             }
             Token.NOT -> {
                 lexicalAnalyzer.nextToken()
-                checkBracket(Token.LBRACKET)
-                lexicalAnalyzer.nextToken()
-                val e = E()
-                checkBracket(Token.RBRACKET)
-                lexicalAnalyzer.nextToken()
-                Tree("G", Tree("not"), Tree("("), e, Tree(")"))
+                Tree("G", Tree("not"), E())
             }
             else -> throw AssertionError(assertionErrorMessage("G"))
         }
@@ -96,21 +93,7 @@ class Parser(private val lexicalAnalyzer: LexicalAnalyzer) {
         }
     }
 
-    private fun checkBracket(bracket: Token) {
-        if (lexicalAnalyzer.currentToken != bracket) {
-            throw AssertionError(assertionErrorMessage("G"))
-        }
-    }
-
     private fun assertionErrorMessage(state: String): String {
         return "Assertion error in state $state, token = ${lexicalAnalyzer.currentToken}"
     }
 }
-
-//E  -> TE'
-//E' -> or TE' | eps
-//T  -> FT'
-//T' -> and FT' | eps
-//F  -> GF'
-//F' -> xor GF' | eps
-//G  -> letter | (E) | not (E)

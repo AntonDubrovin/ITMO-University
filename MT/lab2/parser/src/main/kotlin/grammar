@@ -4,4 +4,4 @@ T  -> FT'
 T' -> and FT' | eps
 F  -> GF'
 F' -> xor GF' | eps
-G  -> letter | (E) | not (E)
+G  -> letter | (E) | not E
