@@ -32,7 +32,7 @@ Kotlin
 ----
    * ДЗ 1
      * Условие | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/FP/hw1/src/HW1) 
-    * ДЗ 2
+   * ДЗ 2
      * Условие | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/FP/hw2/src/HW2)  
 
 Анализ данных
