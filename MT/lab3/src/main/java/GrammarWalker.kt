@@ -22,6 +22,10 @@ class GrammarWalker : GrammarBaseListener() {
         val statement = ctx.statement().text
         addTabs()
         code.append("if (")
+        codeIf(statement)
+    }
+
+    fun codeIf(statement: String) {
         statement.split(' ').forEach {
             when {
                 brackets.contains(it[0]) -> {
@@ -54,7 +58,7 @@ class GrammarWalker : GrammarBaseListener() {
                 compareOperators.contains(it) -> {
                     code.append(" $it ")
                 }
-                else -> {
+                else -> { // number
                     code.append(it)
                 }
             }
@@ -63,11 +67,20 @@ class GrammarWalker : GrammarBaseListener() {
         countOfTabs++
     }
 
-    override fun enterElseCond(ctx: GrammarParser.ElseCondContext?) {
-        countOfTabs--
+    override fun enterElseCond(ctx: GrammarParser.ElseCondContext) {
+        countOfTabs = ctx.TAB()?.text?.length?.div(4) ?: 0
+        countOfTabs++
         addTabs()
         countOfTabs++
         code.append("} else {\n")
+    }
+
+    override fun enterElifCond(ctx: GrammarParser.ElifCondContext) {
+        countOfTabs = ctx.TAB()?.text?.length?.div(4) ?: 0
+        countOfTabs++
+        addTabs()
+        code.append("} else if (")
+        codeIf(ctx.statement().text)
     }
 
     override fun enterLine(ctx: GrammarParser.LineContext) {
@@ -81,17 +94,30 @@ class GrammarWalker : GrammarBaseListener() {
                 when {
                     input.EQUAL() != null -> {
                         when {
+                            input.STRING() != null -> {
+                                addTabs()
+                                variables[variable] = "string"
+                                code.append("$variable = ${input.STRING().text.replace("\'", "\"")};\n")
+                            }
                             input.INPUT() != null -> {
                                 if (input.INPUT().text == "int(input())") {
                                     variables[variable] = "int"
                                 } else {
-                                    variables[variable] = "float";
+                                    if (input.INPUT().text == "float(input())") {
+                                        variables[variable] = "float";
+                                    } else {
+                                        variables[variable] = "string"
+                                    }
                                 }
                                 addTabs()
                                 if (variables[variable] == "int") {
                                     code.append("scanf(\"%d\", &$variable);\n")
                                 } else {
-                                    code.append("scanf(\"%g\", &$variable);\n")
+                                    if (variables[variable] == "float") {
+                                        code.append("scanf(\"%g\", &$variable);\n")
+                                    } else {
+                                        code.append("scanf(\"%s\", &$variable);\n")
+                                    }
                                 }
                             }
                             input.NUMBER() != null -> {
@@ -146,7 +172,11 @@ class GrammarWalker : GrammarBaseListener() {
                         if (variables[printVariable] == "int") {
                             code.append("printf(\"%d\\n\", ${printVariable});\n")
                         } else {
-                            code.append("printf(\"%g\\n\", ${printVariable});\n")
+                            if (variables[printVariable] == "float") {
+                                code.append("printf(\"%g\\n\", ${printVariable});\n")
+                            } else {
+                                code.append("printf(\"%s\\n\", ${printVariable});\n")
+                            }
                         }
                     }
                     ctx.print().NUMBER() != null -> {
@@ -216,6 +246,20 @@ class GrammarWalker : GrammarBaseListener() {
         if (floatVariables.isNotEmpty()) {
             result.append("float ")
             floatVariables.forEach {
+                result.append("$it, ")
+            }
+            result.deleteRange(result.length - 2, result.length)
+            result.append(";\n")
+        }
+        val stringVariables = HashSet<String>()
+        variables.forEach {
+            if (it.value == "string") {
+                stringVariables.add(it.key)
+            }
+        }
+        if (stringVariables.isNotEmpty()) {
+            result.append("string ")
+            stringVariables.forEach {
                 result.append("$it, ")
             }
             result.deleteRange(result.length - 2, result.length)

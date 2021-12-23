@@ -11,12 +11,9 @@ class Tests {
     fun conditionTest() {
         println("Тест из условия")
         println("----------------")
-        val testString =
-            """
-a = int(input())
-b = int(input())
-print(a + b)
-"""
+        val testString = "a = int(input())\n" +
+                "b = int(input())\n" +
+                "print(a + b)\n"
         val requiredString =
             "int a, b;\n" +
                     "\n" + "int main() {\n" +
@@ -36,22 +33,19 @@ print(a + b)
     fun ifIfIfTest() {
         println("Тест на вложенные if")
         println("----------------")
-        val testString =
-            """
-a = int(input())
-b = int(input())
-if a > b:
-    if a > 100:
-        b = 0
-    else:
-        if a < 50:
-            b = 100
-        else:
-            b = 10
-else:
-    print(a + b)
-print()
-"""
+        val testString = "a = int(input())\n" +
+                "b = int(input())\n" +
+                "if a > b:\n" +
+                "    if a > 100:\n" +
+                "        b = 0\n" +
+                "    else:\n" +
+                "        if a < 50:\n" +
+                "            b = 100\n" +
+                "        else:\n" +
+                "            b = 10\n" +
+                "else:\n" +
+                "    print(a + b)\n" +
+                "print()\n"
         val requiredString =
             "int a, b;\n" +
                     "\n" +
@@ -84,29 +78,26 @@ print()
     fun randomTest() {
         println("Случайный непростой тест")
         println("----------------")
-        val testString =
-            """
-a = float(input())
-if (a > 3.5) and (a < 100.17):
-    b = 10
-else:
-    b = 0
-    c = a
-if b == 10:
-    print(a)
-else:
-    print(b)
-print()
-if b != 0:
-    if a >= 50.50 ^ b:
-        print(a + 50)
-    else:
-        f = int(input())
-        g = float(input())
-        print((f + g) / a * b)
-else:
-    print(10)
-"""
+        val testString = "a = float(input())\n" +
+                "if (a > 3.5) and (a < 100.17):\n" +
+                "    b = 10\n" +
+                "else:\n" +
+                "    b = 0\n" +
+                "    c = a\n" +
+                "if b == 10:\n" +
+                "    print(a)\n" +
+                "else:\n" +
+                "    print(b)\n" +
+                "print()\n" +
+                "if b != 0:\n" +
+                "    if a >= 50.50 ^ b:\n" +
+                "        print(a + 50)\n" +
+                "    else:\n" +
+                "        f = int(input())\n" +
+                "        g = float(input())\n" +
+                "        print((f + g) / a * b)\n" +
+                "else:\n" +
+                "    print(10)\n"
         val requiredString = "int b, f;\n" +
                 "float a, c, g;\n" +
                 "\n" +

@@ -3,13 +3,15 @@ start: code EOF;
 
 code: (condition | line)+;
 
-condition: ifCond ':' NEWLINE conditionBody+ (elseCond NEWLINE conditionBody+)?;
+condition: ifCond ':' NEWLINE conditionBody+ (elifCond NEWLINE conditionBody+)*  (elseCond NEWLINE conditionBody+)?;
 
 conditionBody: TAB line | TAB condition;
 
 ifCond: IF statement;
 
 elseCond: TAB? ELSE;
+
+elifCond: TAB? ELIF statement ':';
 
 statement:
       LBRACKET statement RBRACKET
@@ -19,7 +21,7 @@ statement:
 
 line: (input | print) NEWLINE;
 
-input: VARIABLE EQUALS expression | VARIABLE EQUAL (NUMBER | INPUT | VARIABLE | expression);
+input: VARIABLE EQUALS expression | VARIABLE EQUAL (NUMBER | INPUT | VARIABLE | STRING | expression);
 
 print: PRINT LBRACKET (VARIABLE | NUMBER | expression | ) RBRACKET;
 
@@ -32,6 +34,7 @@ expression:
 TAB: ('    ')+;
 IF: 'if ';
 ELSE: 'else:';
+ELIF: 'elif ';
 NEWLINE: '\n';
 LBRACKET: '(';
 RBRACKET: ')';
@@ -40,7 +43,7 @@ BITWISE: ' and ' | ' or ' | ' ^ ' | ' & ' | ' | ';
 BOOLEAN: 'True ' | ' False ';
 EQUAL: ' = ';
 EQUALS: ' -= ' | ' += ' | ' *= ' | ' /= ';
-INPUT: 'int(input())' | 'float(input())';
+INPUT: 'int(input())' | 'float(input())' | 'input()';
 PRINT: 'print';
 OPERATION: ' + ' | ' - ' | ' * ' | ' / ';
 VARIABLE: [a-zA-Z];
@@ -48,3 +51,4 @@ NUMBER:
       [1-9][0-9]* ('.' [0-9]*)?
     | '0'
     | '0.' [1-9]*;
+STRING:  '\'' [a-zA-Z]+ '\'';
