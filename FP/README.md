@@ -1,4 +1,3 @@
-**ITMO FP Course** Homework Checker [Download](https://int-index.gitlab.io/hw-checker/hw-checker)
 
 Homework #0
 ===========
