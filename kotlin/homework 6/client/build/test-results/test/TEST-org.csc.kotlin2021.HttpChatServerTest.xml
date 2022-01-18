@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.csc.kotlin2021.HttpChatServerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-12-30T16:04:09" hostname="anton-G3-3590" time="0.11">
+  <properties/>
+  <testcase name="badMessage()" classname="org.csc.kotlin2021.HttpChatServerTest" time="0.103"/>
+  <testcase name="goodMessage()" classname="org.csc.kotlin2021.HttpChatServerTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

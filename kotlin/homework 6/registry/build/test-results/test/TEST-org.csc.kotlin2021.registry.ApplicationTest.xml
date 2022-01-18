@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.csc.kotlin2021.registry.ApplicationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-12-30T16:03:44" hostname="anton-G3-3590" time="0.822">
+  <properties/>
+  <testcase name="register user()" classname="org.csc.kotlin2021.registry.ApplicationTest" time="0.788"/>
+  <testcase name="delete user()" classname="org.csc.kotlin2021.registry.ApplicationTest" time="0.012"/>
+  <testcase name="list users()" classname="org.csc.kotlin2021.registry.ApplicationTest" time="0.011"/>
+  <testcase name="health endpoint()" classname="org.csc.kotlin2021.registry.ApplicationTest" time="0.008"/>
+  <system-out><![CDATA[2021-12-30 19:03:44.253 [Test worker] INFO  ktor.test - Autoreload is disabled because the development mode is off.
+2021-12-30 19:03:44.258 [Test worker] INFO  ktor.test - Application started in 0.031 seconds.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

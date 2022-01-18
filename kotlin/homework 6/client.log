@@ -1,0 +1,3 @@
+12:12:17.440 [main] [] ERROR main - Error! Illegal user name 'aaaaa' 
+java.lang.IllegalArgumentException: Illegal user name 'aaaaa'
+	at org.csc.kotlin2021.MainKt.main(Main.kt:36)

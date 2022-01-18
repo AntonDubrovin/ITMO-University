@@ -1,0 +1,178 @@
+01:39:13.346 [Thread-4] [] INFO  http-server - Autoreload is disabled because the development mode is off. 
+01:39:13.484 [Thread-4] [] INFO  http-server - Responding at http://127.0.0.1:9999 
+01:39:13.486 [Thread-4] [] INFO  http-server - Application started in 0.16 seconds. 
+01:39:13.486 [Thread-4] [] DEBUG http-server - Application started: io.ktor.application.Application@1ae613f7 
+01:45:49.724 [Thread-4] [] INFO  http-server - Autoreload is disabled because the development mode is off. 
+01:45:49.819 [Thread-4] [] INFO  http-server - Responding at http://127.0.0.1:9999 
+01:45:49.820 [Thread-4] [] INFO  http-server - Application started in 0.112 seconds. 
+01:45:49.821 [Thread-4] [] DEBUG http-server - Application started: io.ktor.application.Application@3dfd7139 
+01:47:10.658 [Thread-4] [] INFO  http-server - Autoreload is disabled because the development mode is off. 
+01:47:10.739 [Thread-4] [] INFO  http-server - Responding at http://127.0.0.1:9999 
+01:47:10.740 [Thread-4] [] INFO  http-server - Application started in 0.094 seconds. 
+01:47:10.741 [Thread-4] [] DEBUG http-server - Application started: io.ktor.application.Application@135db31f 
+01:47:11.545 [eventLoopGroupProxy-4-1 @call-handler#3] [] DEBUG http-server - [32m200 OK[m: [36mGET[m - /v1/ping 
+01:47:11.660 [eventLoopGroupProxy-4-1 @call-handler#4] [] ERROR http-server - Unhandled: POST - /v1/message 
+org.opentest4j.AssertionFailedError: expected: <testUserName> but was: <Bad name>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1152)
+	at kotlin.test.junit5.JUnit5Asserter.assertEquals(JUnitSupport.kt:32)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals(Assertions.kt:63)
+	at kotlin.test.AssertionsKt.assertEquals(Unknown Source)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals$default(Assertions.kt:62)
+	at kotlin.test.AssertionsKt.assertEquals$default(Unknown Source)
+	at org.csc.kotlin2021.HttpChatServerTest$TestChatMessageListener.messageReceived(HttpChatServerTest.kt:30)
+	at org.csc.kotlin2021.server.HttpChatServer$configureModule$1$4$2.invokeSuspend(HttpChatServer.kt:75)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at io.ktor.util.pipeline.SuspendFunctionGun.resumeRootWith(SuspendFunctionGun.kt:191)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:147)
+	at io.ktor.util.pipeline.SuspendFunctionGun.access$loop(SuspendFunctionGun.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun$continuation$1.resumeWith(SuspendFunctionGun.kt:93)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.ktor.server.netty.EventLoopGroupProxy$Companion.create$lambda-1$lambda-0(NettyApplicationEngine.kt:251)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+01:47:11.676 [eventLoopGroupProxy-4-1 @call-handler#5] [] DEBUG http-server - [32m200 OK[m: [36mPOST[m - /v1/message 
+01:47:36.439 [Thread-4] [] INFO  http-server - Autoreload is disabled because the development mode is off. 
+01:47:36.531 [Thread-4] [] INFO  http-server - Responding at http://127.0.0.1:9999 
+01:47:36.532 [Thread-4] [] INFO  http-server - Application started in 0.105 seconds. 
+01:47:36.532 [Thread-4] [] DEBUG http-server - Application started: io.ktor.application.Application@4e9f6df0 
+01:47:37.384 [eventLoopGroupProxy-4-1 @call-handler#3] [] DEBUG http-server - [32m200 OK[m: [36mGET[m - /v1/ping 
+01:47:37.496 [eventLoopGroupProxy-4-1 @call-handler#4] [] ERROR http-server - Unhandled: POST - /v1/message 
+org.opentest4j.AssertionFailedError: expected: <testUserName> but was: <Bad name>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1152)
+	at kotlin.test.junit5.JUnit5Asserter.assertEquals(JUnitSupport.kt:32)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals(Assertions.kt:63)
+	at kotlin.test.AssertionsKt.assertEquals(Unknown Source)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals$default(Assertions.kt:62)
+	at kotlin.test.AssertionsKt.assertEquals$default(Unknown Source)
+	at org.csc.kotlin2021.HttpChatServerTest$TestChatMessageListener.messageReceived(HttpChatServerTest.kt:30)
+	at org.csc.kotlin2021.server.HttpChatServer$configureModule$1$4$2.invokeSuspend(HttpChatServer.kt:75)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at io.ktor.util.pipeline.SuspendFunctionGun.resumeRootWith(SuspendFunctionGun.kt:191)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:147)
+	at io.ktor.util.pipeline.SuspendFunctionGun.access$loop(SuspendFunctionGun.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun$continuation$1.resumeWith(SuspendFunctionGun.kt:93)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.ktor.server.netty.EventLoopGroupProxy$Companion.create$lambda-1$lambda-0(NettyApplicationEngine.kt:251)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+01:47:37.517 [eventLoopGroupProxy-4-1 @call-handler#5] [] DEBUG http-server - [32m200 OK[m: [36mPOST[m - /v1/message 
+18:37:57.327 [Thread-3] [] INFO  http-server - Autoreload is disabled because the development mode is off. 
+18:37:57.380 [Thread-3] [] INFO  http-server - Responding at http://127.0.0.1:9999 
+18:37:57.380 [Thread-3] [] INFO  http-server - Application started in 0.059 seconds. 
+18:37:57.380 [Thread-3] [] DEBUG http-server - Application started: io.ktor.application.Application@1c71e270 
+18:37:57.864 [eventLoopGroupProxy-4-1 @call-handler#3] [] DEBUG http-server - [32m200 OK[m: [36mGET[m - /v1/ping 
+18:37:57.970 [eventLoopGroupProxy-4-1 @call-handler#4] [] ERROR http-server - Unhandled: POST - /v1/message 
+org.opentest4j.AssertionFailedError: expected: <testUserName> but was: <Bad name>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1152)
+	at kotlin.test.junit5.JUnit5Asserter.assertEquals(JUnitSupport.kt:32)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals(Assertions.kt:63)
+	at kotlin.test.AssertionsKt.assertEquals(Unknown Source)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals$default(Assertions.kt:62)
+	at kotlin.test.AssertionsKt.assertEquals$default(Unknown Source)
+	at org.csc.kotlin2021.HttpChatServerTest$TestChatMessageListener.messageReceived(HttpChatServerTest.kt:29)
+	at org.csc.kotlin2021.server.HttpChatServer$configureModule$1$4$2.invokeSuspend(HttpChatServer.kt:74)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at io.ktor.util.pipeline.SuspendFunctionGun.resumeRootWith(SuspendFunctionGun.kt:191)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:147)
+	at io.ktor.util.pipeline.SuspendFunctionGun.access$loop(SuspendFunctionGun.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun$continuation$1.resumeWith(SuspendFunctionGun.kt:93)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.ktor.server.netty.EventLoopGroupProxy$Companion.create$lambda-1$lambda-0(NettyApplicationEngine.kt:251)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+18:37:57.985 [eventLoopGroupProxy-4-1 @call-handler#5] [] DEBUG http-server - [32m200 OK[m: [36mPOST[m - /v1/message 
+18:38:05.244 [Thread-3] [] INFO  http-server - Autoreload is disabled because the development mode is off. 
+18:38:05.297 [Thread-3] [] INFO  http-server - Responding at http://127.0.0.1:9999 
+18:38:05.304 [Thread-3] [] INFO  http-server - Application started in 0.06 seconds. 
+18:38:05.305 [Thread-3] [] DEBUG http-server - Application started: io.ktor.application.Application@1c71e270 
+18:38:05.749 [eventLoopGroupProxy-4-1 @call-handler#3] [] DEBUG http-server - [32m200 OK[m: [36mGET[m - /v1/ping 
+18:38:05.859 [eventLoopGroupProxy-4-1 @call-handler#4] [] ERROR http-server - Unhandled: POST - /v1/message 
+org.opentest4j.AssertionFailedError: expected: <testUserName> but was: <Bad name>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1152)
+	at kotlin.test.junit5.JUnit5Asserter.assertEquals(JUnitSupport.kt:32)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals(Assertions.kt:63)
+	at kotlin.test.AssertionsKt.assertEquals(Unknown Source)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals$default(Assertions.kt:62)
+	at kotlin.test.AssertionsKt.assertEquals$default(Unknown Source)
+	at org.csc.kotlin2021.HttpChatServerTest$TestChatMessageListener.messageReceived(HttpChatServerTest.kt:29)
+	at org.csc.kotlin2021.server.HttpChatServer$configureModule$1$4$2.invokeSuspend(HttpChatServer.kt:74)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at io.ktor.util.pipeline.SuspendFunctionGun.resumeRootWith(SuspendFunctionGun.kt:191)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:147)
+	at io.ktor.util.pipeline.SuspendFunctionGun.access$loop(SuspendFunctionGun.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun$continuation$1.resumeWith(SuspendFunctionGun.kt:93)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.ktor.server.netty.EventLoopGroupProxy$Companion.create$lambda-1$lambda-0(NettyApplicationEngine.kt:251)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+18:38:05.873 [eventLoopGroupProxy-4-1 @call-handler#5] [] DEBUG http-server - [32m200 OK[m: [36mPOST[m - /v1/message 
+19:04:08.693 [Thread-3] [] INFO  http-server - Autoreload is disabled because the development mode is off. 
+19:04:08.745 [Thread-3] [] INFO  http-server - Responding at http://127.0.0.1:9999 
+19:04:08.745 [Thread-3] [] INFO  http-server - Application started in 0.061 seconds. 
+19:04:08.746 [Thread-3] [] DEBUG http-server - Application started: io.ktor.application.Application@1c71e270 
+19:04:09.200 [eventLoopGroupProxy-4-1 @call-handler#3] [] DEBUG http-server - [32m200 OK[m: [36mGET[m - /v1/ping 
+19:04:09.300 [eventLoopGroupProxy-4-1 @call-handler#4] [] ERROR http-server - Unhandled: POST - /v1/message 
+org.opentest4j.AssertionFailedError: expected: <testUserName> but was: <Bad name>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1152)
+	at kotlin.test.junit5.JUnit5Asserter.assertEquals(JUnitSupport.kt:32)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals(Assertions.kt:63)
+	at kotlin.test.AssertionsKt.assertEquals(Unknown Source)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals$default(Assertions.kt:62)
+	at kotlin.test.AssertionsKt.assertEquals$default(Unknown Source)
+	at org.csc.kotlin2021.HttpChatServerTest$TestChatMessageListener.messageReceived(HttpChatServerTest.kt:29)
+	at org.csc.kotlin2021.server.HttpChatServer$configureModule$1$4$2.invokeSuspend(HttpChatServer.kt:74)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at io.ktor.util.pipeline.SuspendFunctionGun.resumeRootWith(SuspendFunctionGun.kt:191)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:147)
+	at io.ktor.util.pipeline.SuspendFunctionGun.access$loop(SuspendFunctionGun.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun$continuation$1.resumeWith(SuspendFunctionGun.kt:93)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.ktor.server.netty.EventLoopGroupProxy$Companion.create$lambda-1$lambda-0(NettyApplicationEngine.kt:251)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+19:04:09.313 [eventLoopGroupProxy-4-1 @call-handler#5] [] DEBUG http-server - [32m200 OK[m: [36mPOST[m - /v1/message 
