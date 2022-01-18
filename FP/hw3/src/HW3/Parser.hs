@@ -302,8 +302,8 @@ operatorTable =
   , [ binaryLeft  "+"  HiFunAdd
     , binaryLeft  "-"  HiFunSub
     ]
-  , [ binaryNo    "<=" HiFunNotLessThan
-    , binaryNo    ">=" HiFunNotGreaterThan
+  , [ binaryNo    "<=" HiFunNotGreaterThan
+    , binaryNo    ">=" HiFunNotLessThan
     , binaryNo    ">"  HiFunGreaterThan
     , binaryNo    "<"  HiFunLessThan
     , binaryNo    "==" HiFunEquals

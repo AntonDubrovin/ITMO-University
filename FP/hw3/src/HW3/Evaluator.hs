@@ -514,7 +514,7 @@ evalIndex (HiValueList list) ind = do
 evalIndex (HiValueBytes bytes) ind = do
   evalBytes <- evalUnpackBytes [HiValueBytes bytes]
   evalIndex evalBytes ind
-evalIndex _ _ = throwE HiErrorInvalidArgument
+evalIndex _ _ = throwE HiErrorInvalidFunction
 
 -- | Function for returns element in dictionary by index.
 -- Just returns element by index or null, if there is no such key in dictionary.
