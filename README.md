@@ -31,6 +31,8 @@ Kotlin
 Функциональное программирование
 ----
    * [Условия](https://github.com/AntonDubrovin/ITMO-University/blob/master/FP/README.md)
+   * ДЗ 0
+     * [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/FP/hw0/src/HW0) 
    * ДЗ 1
      * [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/FP/hw1/src/HW1) 
    * ДЗ 2
