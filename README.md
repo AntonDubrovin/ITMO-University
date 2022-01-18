@@ -27,6 +27,8 @@ Kotlin
    * [ДЗ 2](https://github.com/AntonDubrovin/ITMO-University/tree/master/kotlin/homework2)
    * [ДЗ 3](https://github.com/AntonDubrovin/ITMO-University/tree/master/kotlin/homework3/src)
    * [ДЗ 4](https://github.com/AntonDubrovin/ITMO-University/tree/master/kotlin/homework4/src/main/kotlin/csc/markobot/dsl)
+   * [ДЗ 5](https://github.com/AntonDubrovin/ITMO-University/tree/master/kotlin/homework%205/main/kotlin/ru/senin/kotlin/wiki)
+   * [ДЗ 6](https://github.com/AntonDubrovin/ITMO-University/tree/master/kotlin/homework%206)
 
 Функциональное программирование
 ----
