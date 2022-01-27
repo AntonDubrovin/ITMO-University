@@ -1,0 +1,28 @@
+grammar GrammarCalculator;
+start returns Double: addSub EOF {return addSubRes};
+
+addSub returns Double: mulDiv addSubEval(mulDivRes) {return addSubEvalRes};
+addSubEval (curResult: Double) returns Double: addEval(curResult) {return addEvalRes} | subEval(curResult) {return subEvalRes} | EPS {return curResult};
+
+addEval (curResult: Double) returns Double: ADD mulDiv addSubEval(curResult + mulDivRes) {return addSubEvalRes};
+
+subEval (curResult: Double) returns Double: SUB mulDiv addSubEval(curResult - mulDivRes) {return addSubEvalRes};
+
+mulDiv returns Double: nums mulDivEval(numsRes) {return mulDivEvalRes};
+mulDivEval (curResult: Double) returns Double: mulEval(curResult) {return mulEvalRes} | divEval(curResult) {return divEvalRes} | EPS {return curResult};
+
+mulEval (curResult: Double) returns Double: MUL nums mulDivEval(curResult * numsRes) {return mulDivEvalRes};
+
+divEval (curResult: Double) returns Double: DIV nums mulDivEval(curResult / numsRes) {return mulDivEvalRes};
+
+nums returns Double: NUM {return NUMRes.toDouble()} | LBRACKET addSub RBRACKET {return addSubRes};
+
+NUM: [0-9]+;
+
+LBRACKET: '(';
+RBRACKET: ')';
+
+MUL: '*';
+DIV: '/';
+ADD: '+';
+SUB: '-';
