@@ -73,7 +73,7 @@ Kotlin
   * Лабораторная работа 3. Вариант 3.
     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/MT/lab3/03-bison-antlr.pdf) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/MT/lab3/src/main/java)
   * Лабораторная работа 4.
-    * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/MT/Lab4/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/MT/Lab4)  
+    * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/MT/Lab4/README.md) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/MT/Lab4/src/main)  
 
 Java-advanced
 ----
