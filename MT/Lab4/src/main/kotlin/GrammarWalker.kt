@@ -44,7 +44,8 @@ class GrammarWalker : GrammarBaseListener() {
         }
         currentNoneTerminal.name = name
         currentNoneTerminal.nonTerminalRules = currentRule.toMutableList()
-        currentNoneTerminal.returnType = ctx.returnType()?.text?.substring(8, ctx.returnType()?.text!!.length).toString()
+        currentNoneTerminal.returnType =
+            ctx.returnType()?.text?.substring(8, ctx.returnType()?.text!!.length).toString()
         currentNoneTerminal.arguments = ctx.arguments()?.text
         nonTerminals.add(currentNoneTerminal.copy())
         currentNoneTerminal = LexicalElement.NonTerminal("", mutableListOf(), "", "")
@@ -52,7 +53,11 @@ class GrammarWalker : GrammarBaseListener() {
     }
 
     override fun exitRuleOnly(ctx: GrammarParser.RuleOnlyContext) {
-        currentRule.add(Rule(currentRules.toList(), ctx.returnn()?.text?.substring(1, ctx.returnn()?.text?.length?.minus(1)!!)))
+        currentRule.add(
+            Rule(
+                currentRules.toList(), ctx.returnn()?.text?.substring(1, ctx.returnn()?.text?.length?.minus(1)!!)
+            )
+        )
         currentRules.clear()
     }
 

@@ -8,20 +8,25 @@ addEval (curResult: Double) returns Double: ADD mulDiv addSubEval(curResult + mu
 
 subEval (curResult: Double) returns Double: SUB mulDiv addSubEval(curResult - mulDivRes) {return addSubEvalRes};
 
-mulDiv returns Double: nums mulDivEval(numsRes) {return mulDivEvalRes};
+mulDiv returns Double: pow mulDivEval(powRes) {return mulDivEvalRes};
 mulDivEval (curResult: Double) returns Double: mulEval(curResult) {return mulEvalRes} | divEval(curResult) {return divEvalRes} | EPS {return curResult};
 
-mulEval (curResult: Double) returns Double: MUL nums mulDivEval(curResult * numsRes) {return mulDivEvalRes};
+mulEval (curResult: Double) returns Double: MUL pow mulDivEval(curResult * powRes) {return mulDivEvalRes};
 
-divEval (curResult: Double) returns Double: DIV nums mulDivEval(curResult / numsRes) {return mulDivEvalRes};
+divEval (curResult: Double) returns Double: DIV pow mulDivEval(curResult / powRes) {return mulDivEvalRes};
 
-nums returns Double: NUM {return NUMRes.toDouble()} | LBRACKET addSub RBRACKET {return addSubRes};
+pow returns Double: nums powEval {return powEvalRes(numsRes)};
+
+powEval returns (Double) -> Double: POW nums powEval {return {x->Math.pow(x,powEvalRes(numsRes))}} | EPS {return {x->x}};
+
+nums returns Double: NUM {return NUMRes.toDouble()} | LBRACKET addSub RBRACKET {return addSubRes} | SUB addSub {return -1*addSubRes};
 
 NUM: [0-9]+;
 
 LBRACKET: '(';
 RBRACKET: ')';
 
+POW: '**';
 MUL: '*';
 DIV: '/';
 ADD: '+';

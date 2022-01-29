@@ -34,7 +34,13 @@ class ParserGenerator {
                 } else {
                     file.appendLine("\t\t\t${follow[it.name]!!.joinToString(", TOKENS.", prefix = "TOKENS.")} -> {")
                 }
-                file.appendLine("\t\t\t\t${rule.returnCode ?: ""}")
+                if (rule.returnCode != null) {
+                    file.appendLine(
+                        "\t\t\t\t${
+                            rule.returnCode
+                        }"
+                    )
+                }
                 file.appendLine("\t\t\t}")
             }
             file.appendLine("\t\t\telse -> {")

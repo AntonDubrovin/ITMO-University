@@ -12,6 +12,10 @@ fun main() {
     createGrammar("GrammarSecond.g4", "secondTask", "SecondTask")
     println("-----------CALCULATOR-----------")
     createGrammar("GrammarCalculator.gAnton", "calculator", "Calculator")
+    println("-----------NOT LL-----------")
+    createGrammar("NotLL.gAnton", "notLL", "NotLL")
+    println("-----------NOT LL SECOND-----------")
+    createGrammar("NotLLSecond.gAnton", "notLLSecond", "NotLLSecond")
 }
 
 fun createGrammar(taskName: String, path: String, name: String) {
@@ -25,39 +29,59 @@ fun createGrammar(taskName: String, path: String, name: String) {
     walker.walk(grammarWalker, tree)
     val terminals = grammarWalker.terminals
     val nonTerminals = grammarWalker.nonTerminals
-    println("Terminals:")
+    println("-----------------------------------TERMINALS $name-----------------------------------")
     terminals.forEach {
         println("${it.name} ${it.regex}")
     }
-    println("--------------")
-    println("NonTerminals:")
+    println("-----------------------------------NON TERMINALS $name-----------------------------------")
     nonTerminals.forEach {
         println("${it.name} ${it.nonTerminalRules} ${it.returnType} ${it.arguments}")
     }
-    val firstFollow = FirstFollow()
-    println("FIRST")
-    val first = firstFollow.buildFirst(nonTerminals, terminals)
-    println("-----")
-    println("First")
+    val first = buildFirst(nonTerminals, terminals)
+    println("-----------------------------------FIRST $name-----------------------------------")
     first.forEach {
         println("${it.key} ${it.value}")
     }
-    println("-------")
-    val follow = firstFollow.buildFollow(first, nonTerminals, terminals)
-    println("Follow")
+    val follow = buildFollow(first, nonTerminals, terminals)
+    println("-----------------------------------FOLLOW $name-----------------------------------")
     follow.forEach {
         println("${it.key} ${it.value}")
     }
-    val dir = File("$path/")
-    if (!dir.isDirectory) {
-        dir.mkdirs()
+    println("------------------------------------LL GRAMMAR $name-----------------------------------")
+    val checkLL = checkLL(nonTerminals, first, follow)
+    println(checkLL)
+    if (checkLL) {
+        val parserGenerator = ParserGenerator()
+        val dir = File("$path/")
+        if (!dir.isDirectory) {
+            dir.mkdirs()
+        }
+        val parserDir = File("$path/${name}Parser.kt")
+        if (!parserDir.isFile) {
+            parserDir.createNewFile()
+        }
+        parserDir.writeText(
+            parserGenerator.createFunction(
+                nonTerminals, terminals, first, follow, path
+            )
+        )
+        val tokensGenerator = TokensGenerator()
+        val tokensDir = File("$path/${name}Tokens.kt")
+        if (!tokensDir.isFile) {
+            tokensDir.createNewFile()
+        }
+        tokensDir.writeText(tokensGenerator.createTokens(terminals, path))
+        val lexerGenerator = LexerGenerator()
+        val lexerDir = File("$path/${name}Lexer.kt")
+        if (!lexerDir.isFile) {
+            lexerDir.createNewFile()
+        }
+        lexerDir.writeText(lexerGenerator.createLexer(path))
+        val runGenerator = RunGenerator()
+        val runDir = File("$path/${name}Run.kt")
+        if (!runDir.isFile) {
+            runDir.createNewFile()
+        }
+        runDir.writeText(runGenerator.createRun(path))
     }
-    val parserGenerator = ParserGenerator()
-    File("$path/${name}Parser.kt").writeText(parserGenerator.createFunction(nonTerminals, terminals, first, follow, path))
-    val tokensGenerator = TokensGenerator()
-    File("$path/${name}Tokens.kt").writeText(tokensGenerator.createTokens(terminals, path))
-    val lexerGenerator = LexerGenerator()
-    File("$path/${name}Lexer.kt").writeText(lexerGenerator.createLexer(path))
-    val runGenerator = RunGenerator()
-    File("$path/${name}Run.kt").writeText(runGenerator.createRun(path))
 }

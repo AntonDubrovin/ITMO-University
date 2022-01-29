@@ -2,7 +2,7 @@ package calculator
 class Parser(private val lexer: Lexer) {
 	private fun start(): Double {
 		when(lexer.token) {
-			TOKENS.NUM, TOKENS.LBRACKET -> {
+			TOKENS.NUM, TOKENS.LBRACKET, TOKENS.SUB -> {
 				val addSubRes = addSub()
 				return addSubRes
 			}
@@ -13,7 +13,7 @@ class Parser(private val lexer: Lexer) {
 	}
 	private fun addSub(): Double {
 		when(lexer.token) {
-			TOKENS.NUM, TOKENS.LBRACKET -> {
+			TOKENS.NUM, TOKENS.LBRACKET, TOKENS.SUB -> {
 				val mulDivRes = mulDiv()
 				val addSubEvalRes = addSubEval(mulDivRes)
 				return addSubEvalRes
@@ -33,7 +33,7 @@ class Parser(private val lexer: Lexer) {
 				val subEvalRes = subEval(curResult)
 				return subEvalRes
 			}
-			TOKENS.EOF, TOKENS.RBRACKET -> {
+			TOKENS.EOF, TOKENS.RBRACKET, TOKENS.ADD, TOKENS.SUB, TOKENS.MUL, TOKENS.DIV, TOKENS.POW -> {
 				return curResult
 			}
 			else -> {
@@ -69,9 +69,9 @@ class Parser(private val lexer: Lexer) {
 	}
 	private fun mulDiv(): Double {
 		when(lexer.token) {
-			TOKENS.NUM, TOKENS.LBRACKET -> {
-				val numsRes = nums()
-				val mulDivEvalRes = mulDivEval(numsRes)
+			TOKENS.NUM, TOKENS.LBRACKET, TOKENS.SUB -> {
+				val powRes = pow()
+				val mulDivEvalRes = mulDivEval(powRes)
 				return mulDivEvalRes
 			}
 			else -> {
@@ -89,7 +89,7 @@ class Parser(private val lexer: Lexer) {
 				val divEvalRes = divEval(curResult)
 				return divEvalRes
 			}
-			TOKENS.EOF, TOKENS.ADD, TOKENS.SUB, TOKENS.RBRACKET -> {
+			TOKENS.EOF, TOKENS.ADD, TOKENS.SUB, TOKENS.RBRACKET, TOKENS.MUL, TOKENS.DIV, TOKENS.POW -> {
 				return curResult
 			}
 			else -> {
@@ -101,8 +101,8 @@ class Parser(private val lexer: Lexer) {
 		when(lexer.token) {
 			TOKENS.MUL -> {
 				val MULRes = skip(TOKENS.MUL)
-				val numsRes = nums()
-				val mulDivEvalRes = mulDivEval(curResult * numsRes)
+				val powRes = pow()
+				val mulDivEvalRes = mulDivEval(curResult * powRes)
 				return mulDivEvalRes
 			}
 			else -> {
@@ -114,9 +114,37 @@ class Parser(private val lexer: Lexer) {
 		when(lexer.token) {
 			TOKENS.DIV -> {
 				val DIVRes = skip(TOKENS.DIV)
-				val numsRes = nums()
-				val mulDivEvalRes = mulDivEval(curResult / numsRes)
+				val powRes = pow()
+				val mulDivEvalRes = mulDivEval(curResult / powRes)
 				return mulDivEvalRes
+			}
+			else -> {
+				throw IllegalArgumentException("Wrong token")
+			}
+		}
+	}
+	private fun pow(): Double {
+		when(lexer.token) {
+			TOKENS.NUM, TOKENS.LBRACKET, TOKENS.SUB -> {
+				val numsRes = nums()
+				val powEvalRes = powEval()
+				return powEvalRes(numsRes)
+			}
+			else -> {
+				throw IllegalArgumentException("Wrong token")
+			}
+		}
+	}
+	private fun powEval(): (Double) -> Double {
+		when(lexer.token) {
+			TOKENS.POW -> {
+				val POWRes = skip(TOKENS.POW)
+				val numsRes = nums()
+				val powEvalRes = powEval()
+				return {x->Math.pow(x,powEvalRes(numsRes))}
+			}
+			TOKENS.EOF, TOKENS.ADD, TOKENS.SUB, TOKENS.MUL, TOKENS.DIV, TOKENS.RBRACKET, TOKENS.POW -> {
+				return {x->x}
 			}
 			else -> {
 				throw IllegalArgumentException("Wrong token")
@@ -134,6 +162,11 @@ class Parser(private val lexer: Lexer) {
 				val addSubRes = addSub()
 				val RBRACKETRes = skip(TOKENS.RBRACKET)
 				return addSubRes
+			}
+			TOKENS.SUB -> {
+				val SUBRes = skip(TOKENS.SUB)
+				val addSubRes = addSub()
+				return -1*addSubRes
 			}
 			else -> {
 				throw IllegalArgumentException("Wrong token")

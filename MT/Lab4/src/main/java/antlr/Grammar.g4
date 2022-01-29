@@ -21,12 +21,14 @@ argument:  WORD ': ' RETURNTYPE;
 
 returnType: RETURNS WS? RETURNTYPE;
 
-returnn: FIGURELBRACKET RETURN WS? '$'? (WORD | DOT | LBRACKET | RBRACKET)+ FIGURERBRACKET;
+returnn: FIGURELBRACKET RETURN WS? '$'? (WORD | DOT | LBRACKET | RBRACKET | OPERATIONS | FIGURERBRACKET | FIGURELBRACKET | ARROW | COMMA)+ FIGURERBRACKET;
 
 terminal: WORD ': ' WS? (STRING | REGEX | '\'' OPERATIONS '\'') WS? SEMILOCON NEWLINE;
 
 STRING: '\'' (WORD | LBRACKET | RBRACKET | ' ')+ '\'';
-OPERATIONS: ('*' | '/' | '+' | '-');
+ARROW: '->';
+COMMA: ',';
+OPERATIONS: ('*' | '/' | '+' | '-' | '^' | '**');
 DOT: '.';
 LBRACKET: '(';
 RBRACKET: ')';
@@ -38,7 +40,7 @@ REGEX: '[a-z]' | '[0-9]+';
 
 OR: ' | ';
 
-RETURNTYPE: 'Int' | 'String' | 'Boolean' | 'Double';
+RETURNTYPE: 'Int' | 'String' | 'Boolean' | 'Double' | '(Double) -> Double';
 RETURNS: 'returns';
 RETURN: 'return';
 

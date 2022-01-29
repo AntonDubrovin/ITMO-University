@@ -1,0 +1,6 @@
+grammar NotLL;
+start: A | A B;
+
+A: 'A';
+
+B: 'A';

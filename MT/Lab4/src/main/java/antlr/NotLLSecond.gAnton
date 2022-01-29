@@ -1,0 +1,4 @@
+grammar NotLLSecond;
+start: A | start A;
+
+A: 'A';
