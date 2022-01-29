@@ -48,8 +48,12 @@ Kotlin
       * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/DataAnalysis/lab1/Lab-1.ipynb) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/DataAnalysis/lab1/lab1_DubrovinAnton.ipynb) 
    * Лабораторная работа 2.
       * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/DataAnalysis/lab2/Lab-2.ipynb) | [Решение](https://github.com/AntonDubrovin/ITMO-University/tree/master/DataAnalysis/lab2) 
+   * Лабораторная работа 3.
+      * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/DataAnalysis/lab3/Lab-3.ipynb) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/DataAnalysis/lab3/lab3-DubrovinAnton.ipynb)  
    * Лабораторная работа 4.
-      * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/DataAnalysis/lab4/Lab-4.ipynb) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/DataAnalysis/lab4/lab4-DubrovinAnton.ipynb)  
+      * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/DataAnalysis/lab4/Lab-4.ipynb) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/DataAnalysis/lab4/lab4-DubrovinAnton.ipynb)
+   * Бонусная лабораторная работа.
+      * [Условие](https://www.kaggle.com/c/itmo-andan-competition#) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/DataAnalysis/bonus/competition.ipynb)
 
 Параллельное программирование
 ----
