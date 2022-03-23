@@ -1,5 +1,11 @@
 Некоторые домашние задания из курсов университета ИТМО
 
+Machine learning
+----
+  * Лабораторная работа 1. kNN
+    * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/ML/lab1/1.%20kNN.docx.pdf) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/ML/lab1/lab1.ipynb) 
+
+
 Frontend
 ----
  * JS 1. Разминка
