@@ -4,7 +4,7 @@ Machine learning
 ----
   * Лабораторная работа 1. kNN
     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/ML/lab1/1.%20kNN.docx.pdf) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/ML/lab1/lab1.ipynb) 
-    * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/ML/lab4/4.%20Bayes.pdf) | [Решение] (https://github.com/AntonDubrovin/ITMO-University/blob/master/ML/lab4/lab4.ipynb)
+    * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/ML/lab4/4.%20Bayes.pdf) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/ML/lab4/lab4.ipynb)
 
 
 Frontend
