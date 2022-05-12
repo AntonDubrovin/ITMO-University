@@ -6,6 +6,8 @@ Machine learning
     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/ML/lab1/1.%20kNN.docx.pdf) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/ML/lab1/lab1.ipynb) 
   * Лабораторная работа 4. Bayes
     * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/ML/lab4/4.%20Bayes.pdf) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/ML/lab4/lab4.ipynb)
+  * Лабораторная работ 6. CNN
+    * [Условие](https://github.com/AntonDubrovin/ITMO-University/blob/master/ML/lab6/6.%20CNN.pdf) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/ML/lab6/lab6.ipynb)
 
 
 Frontend
