@@ -1,5 +1,24 @@
 Некоторые домашние задания из курсов университета ИТМО
 
+Биоинформатика
+----
+  * 1. Find a Median String
+    * [Условие](https://rosalind.info/problems/ba2b/) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Биоинформатика/1.Find%20A%20Median%20string/solve1.py)
+  * 2. Implement RandomizedMotifSearch
+    * [Условие](https://rosalind.info/problems/ba2f/) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Биоинформатика/2.%20Implement%20RandomizedMotifSearch/solve2.py)
+  * 3. Reconstruct a String from its Paired Composition
+    * [Условие](https://rosalind.info/problems/ba3j/) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Биоинформатика/3.%20Reconstruct%20a%20String%20from%20its%20Paired%20Composition/solve3.py) 
+  * 4. Align Two Strings Using Affine Gap Penalties
+    * [Условие](https://rosalind.info/problems/ba5j/) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Биоинформатика/4.%20%20Align%20Two%20Strings%20Using%20Affine%20Gap%20Penalties/solve4.py)  
+  * 5. Find a Shortest Transformation of One Genome into Another by 2-Breaks
+    * [Условие](https://rosalind.info/problems/ba6d/) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Биоинформатика/5.%20Find%20a%20Shortest%20Transformation%20of%20One%20Genome%20into%20Another%20by%202-Breaks/solve5.py)
+  * 6. Implement AdditivePhylogeny
+    * [Условие](https://rosalind.info/problems/ba7c/) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Биоинформатика/6.%20Implement%20AdditivePhylogeny/solve6.py)
+  * 7. Pattern Matching with the Suffix Array
+    * [Условие](https://rosalind.info/problems/ba9h/) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Биоинформатика/7.%20Pattern%20Matching%20with%20the%20Suffix%20Array/solve7.py)
+  * 8. Implement the Viterbi Algorithm
+    * [Условие](https://rosalind.info/problems/ba10c/) | [Решение](https://github.com/AntonDubrovin/ITMO-University/blob/master/Биоинформатика/8.%20Implement%20the%20Viterbi%20Algorithm/solve8.py)  
+
 Machine learning
 ----
   * Лабораторная работа 1. kNN
